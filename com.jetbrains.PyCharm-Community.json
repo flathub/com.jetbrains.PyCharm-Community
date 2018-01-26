@@ -7,9 +7,6 @@
         "org.freedesktop.Sdk.Extension.openjdk9"
     ],
     "command": "pycharm-desktop",
-    "rename-appdata-file": "pycharm-community.appdata.xml",
-    "rename-desktop-file": "pycharm-community.desktop",
-    "rename-icon-file": "pycharm.png",
     "separate-locales": false,
     "finish-args": [
         "--share=ipc",
@@ -42,11 +39,9 @@
                 "cp -r pycharm-community-2017.3/* /app/pycharm",
                 "chmod -R a-s,go+rX,go-w /app/pycharm",
                 "install pycharm-community-2017.3/bin/pycharm.sh /app/bin/pycharm",
-                "install -Dm644 pycharm-community-2017.3/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/pycharm.png",
-                "install -Dm644 pycharm-community.desktop /app/share/applications/pycharm-community.desktop",
-                "install -Dm644 pycharm-community.appdata.xml /app/share/appdata/pycharm-community.appdata.xml"
-            ],
-            "post-install": [
+                "install -Dm644 pycharm-community-2017.3/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
+                "install -Dm644 com.jetbrains.PyCharm-Community.desktop /app/share/applications/com.jetbrains.PyCharm-Community.desktop",
+                "install -Dm644 com.jetbrains.PyCharm-Community.appdata.xml /app/share/appdata/com.jetbrains.PyCharm-Community.appdata.xml",
                 "install -m755 pycharm-desktop /app/bin/pycharm-desktop"
             ],
             "sources": [
@@ -57,11 +52,11 @@
                 },
                 {
                     "type": "file",
-                    "path": "pycharm-community.appdata.xml"
+                    "path": "com.jetbrains.PyCharm-Community.appdata.xml"
                 },
                 {
                     "type": "file",
-                    "path": "pycharm-community.desktop"
+                    "path": "com.jetbrains.PyCharm-Community.desktop"
                 },
                 {
                     "type": "script",
