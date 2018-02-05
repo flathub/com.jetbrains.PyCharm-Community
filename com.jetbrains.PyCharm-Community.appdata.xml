@@ -12,10 +12,10 @@
     </description>
     <screenshots>
         <screenshot type="default" width="1968" height="814">
-           http://www.jetbrains.com/pycharm/img/40/autocomplete@2x.png
+           https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg
         </screenshot>
-        <screenshot width="642" height="690">
-           http://www.jetbrains.com/pycharm/img/40/scr_why_smartassist.png
+        <screenshot width="1968" height="814">
+           https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg
         </screenshot>
     </screenshots>
     <url type="homepage">http://www.jetbrains.com/pycharm/</url>
