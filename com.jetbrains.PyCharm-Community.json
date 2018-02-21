@@ -47,8 +47,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2017.3.tar.gz",
-                    "sha256": "b973581cb3de0f0f5a203231f67b21a45b7dd58968393cef49d48403cb1b8ad1"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2017.3.3.tar.gz",
+                    "sha256": "7974700acf1a16e45f8d92adb13dd6460323e3ada58d92064d4d18ef28ba37c9"
                 },
                 {
                     "type": "file",
