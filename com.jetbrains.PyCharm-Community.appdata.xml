@@ -22,6 +22,7 @@
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2017.3" date="2017-11-29">
         <release version="2017.3.4" date="2018-03-06">
             <description>
                 <p>Indexing Performance</p>
