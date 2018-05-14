@@ -31,15 +31,15 @@
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
-                "tar xzfv pycharm-community-2017.3.tar.gz",
-                "rm -f pycharm-community-2017.3/bin/fsnotifier*",
-                "rm -f pycharm-community-2017.3/help/*",
+                "tar xzfv pycharm-community-2017.3.4.tar.gz",
+                "rm -f pycharm-community-2017.3.4/bin/fsnotifier*",
+                "rm -f pycharm-community-2017.3.4/help/*",
                 "install -dm755 /app/bin",
                 "install -dm755 /app/pycharm",
-                "cp -r pycharm-community-2017.3/* /app/pycharm",
+                "cp -r pycharm-community-2017.3.4/* /app/pycharm",
                 "chmod -R a-s,go+rX,go-w /app/pycharm",
-                "install pycharm-community-2017.3/bin/pycharm.sh /app/bin/pycharm",
-                "install -Dm644 pycharm-community-2017.3/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
+                "install pycharm-community-2017.3.4/bin/pycharm.sh /app/bin/pycharm",
+                "install -Dm644 pycharm-community-2017.3.4/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
                 "install -Dm644 com.jetbrains.PyCharm-Community.desktop /app/share/applications/com.jetbrains.PyCharm-Community.desktop",
                 "install -Dm644 com.jetbrains.PyCharm-Community.appdata.xml /app/share/appdata/com.jetbrains.PyCharm-Community.appdata.xml",
                 "install -m755 pycharm-desktop /app/bin/pycharm-desktop"
@@ -47,8 +47,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2017.3.tar.gz",
-                    "sha256": "b973581cb3de0f0f5a203231f67b21a45b7dd58968393cef49d48403cb1b8ad1"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2017.3.4.tar.gz",
+                    "sha256": "048810228293c41377bce069eba4905e1e0c12ea7ac83605adeac89cf138fc08"
                 },
                 {
                     "type": "file",
