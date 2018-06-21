@@ -2,7 +2,8 @@
 <!-- Copyright 2015 Petr Hracek <phracek@redhat.com> -->
 <application>
     <id type="desktop">com.jetbrains.PyCharm-Community.desktop</id>
-    <licence>CC-BY-SA</licence>
+    <metadata_license>CC-BY-SA</metadata_license>
+    <project_license>Apache-2.0</project_license>
     <name>PyCharm-Community</name>
     <summary>Pycharm - The most intelligent Python IDE</summary>
     <description>
