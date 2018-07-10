@@ -3,9 +3,6 @@
     "runtime": "org.freedesktop.Sdk",
     "runtime-version": "1.6",
     "sdk": "org.freedesktop.Sdk",
-    "sdk-extensions": [
-        "org.freedesktop.Sdk.Extension.openjdk9"
-    ],
     "command": "pycharm-desktop",
     "separate-locales": false,
     "finish-args": [
@@ -17,17 +14,9 @@
         "--socket=session-bus",
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
-        "--filesystem=xdg-run/keyring",
-        "--env=PATH=/usr/bin:/app/bin:/usr/lib/sdk/openjdk9/bin"
+        "--filesystem=xdg-run/keyring"
     ],
     "modules": [
-          {
-              "name": "openjdk",
-              "buildsystem": "simple",
-              "build-commands": [
-                "/usr/lib/sdk/openjdk9/install.sh"
-              ]
-          },
           {
             "name": "pycharm",
             "buildsystem": "simple",
@@ -63,7 +52,7 @@
                     "type": "script",
                     "dest-filename": "pycharm-desktop",
                     "commands": [
-                        "exec env PYCHARM_JDK=/usr/lib/sdk/openjdk9 PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh \"$@\""
+                        "exec env PYCHARM_JDK=/app/pycharm/jre64/ PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh \"$@\""
                     ]
                 }
             ]
