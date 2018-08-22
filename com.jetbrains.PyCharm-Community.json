@@ -51,15 +51,15 @@
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
-                "tar xzfv pycharm-community-2018.1.4.tar.gz",
-                "rm -f pycharm-community-2018.1.4/help/*",
+                "tar xzfv pycharm-community-2018.2.1.tar.gz",
+                "rm -f pycharm-community-2018.2.1/help/*",
                 "install -dm755 /app/bin",
                 "install -dm755 /app/pycharm",
-                "cp -r pycharm-community-2018.1.4/* /app/pycharm",
+                "cp -r pycharm-community-2018.2.1/* /app/pycharm",
                 "chmod -R a-s,go+rX,go-w /app/pycharm",
                 "/usr/bin/python3 /app/pycharm/helpers/pydev/setup_cython.py build_ext --inplace",
-                "install pycharm-community-2018.1.4/bin/pycharm.sh /app/bin/pycharm",
-                "install -Dm644 pycharm-community-2018.1.4/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
+                "install pycharm-community-2018.2.1/bin/pycharm.sh /app/bin/pycharm",
+                "install -Dm644 pycharm-community-2018.2.1/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
                 "install -Dm644 com.jetbrains.PyCharm-Community.desktop /app/share/applications/com.jetbrains.PyCharm-Community.desktop",
                 "install -Dm644 com.jetbrains.PyCharm-Community.appdata.xml /app/share/appdata/com.jetbrains.PyCharm-Community.appdata.xml",
                 "install -m755 pycharm-desktop /app/bin/pycharm-desktop"
@@ -67,8 +67,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.1.4.tar.gz",
-                    "sha256": "90953ca424bb331348e3575975fab4e189ab126ddc367223e3a7cb01b1563f3b"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.2.1.tar.gz",
+                    "sha256": "587c411d18b20832458855008a05a5aebcc4f060ad89ddeadf56810e26e67693"
                 },
                 {
                     "type": "file",
