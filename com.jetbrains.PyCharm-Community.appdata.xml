@@ -23,6 +23,7 @@
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2018.2.2" date="2018-08-21" />
         <release version="2018.1.4" date="2018-06-10" />
     </releases>
     <content_rating type="oars-1.0">

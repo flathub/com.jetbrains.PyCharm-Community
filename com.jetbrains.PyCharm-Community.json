@@ -1,7 +1,7 @@
 {
     "app-id": "com.jetbrains.PyCharm-Community",
     "runtime": "org.freedesktop.Sdk",
-    "runtime-version": "1.6",
+    "runtime-version": "18.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "pycharm-desktop",
     "separate-locales": false,
@@ -18,6 +18,7 @@
         "--device=all"
     ],
     "modules": [
+        "shared-modules/python2.7/python-2.7.15.json",
         {
             "name": "python2-virtualenv",
             "buildsystem": "simple",
@@ -51,15 +52,15 @@
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
-                "tar xzfv pycharm-community-2018.1.4.tar.gz",
-                "rm -f pycharm-community-2018.1.4/help/*",
+                "tar xzfv pycharm-community-2018.2.2.tar.gz",
+                "rm -f pycharm-community-2018.2.2/help/*",
                 "install -dm755 /app/bin",
                 "install -dm755 /app/pycharm",
-                "cp -r pycharm-community-2018.1.4/* /app/pycharm",
+                "cp -r pycharm-community-2018.2.2/* /app/pycharm",
                 "chmod -R a-s,go+rX,go-w /app/pycharm",
                 "/usr/bin/python3 /app/pycharm/helpers/pydev/setup_cython.py build_ext --inplace",
-                "install pycharm-community-2018.1.4/bin/pycharm.sh /app/bin/pycharm",
-                "install -Dm644 pycharm-community-2018.1.4/bin/pycharm.png /app/share/icons/hicolor/96x96/apps/com.jetbrains.PyCharm-Community.png",
+                "install pycharm-community-2018.2.2/bin/pycharm.sh /app/bin/pycharm",
+                "install -Dm644 pycharm-community-2018.2.2/bin/pycharm.png /app/share/icons/hicolor/128x128/apps/com.jetbrains.PyCharm-Community.png",
                 "install -Dm644 com.jetbrains.PyCharm-Community.desktop /app/share/applications/com.jetbrains.PyCharm-Community.desktop",
                 "install -Dm644 com.jetbrains.PyCharm-Community.appdata.xml /app/share/appdata/com.jetbrains.PyCharm-Community.appdata.xml",
                 "install -m755 pycharm-desktop /app/bin/pycharm-desktop"
@@ -67,8 +68,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.1.4.tar.gz",
-                    "sha256": "90953ca424bb331348e3575975fab4e189ab126ddc367223e3a7cb01b1563f3b"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.2.2.tar.gz",
+                    "sha256": "e413afa2e7a96166cd3b0d9ce823a13c5efc9bfcde0814b9ceeddecf30ef045b"
                 },
                 {
                     "type": "file",
