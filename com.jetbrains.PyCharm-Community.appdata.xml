@@ -23,6 +23,16 @@
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2018.2.3" date="2018-09-06">
+            <description>
+                <ul>
+                    <li>A number of improvements and fixes for the integrated Python console</li>
+                    <li>Fixes for the new Quick Documentation window which was new in Pycharm 2018.2</li>
+                    <li>Fixes for few false positives: install an already existing package intention, type checks</li>
+                    <li>And much more, including improvements from the IntelliJ platform, WebStorm, and DataGrip, see the release notes for details.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2018.2.2" date="2018-08-21" />
         <release version="2018.1.4" date="2018-06-10" />
     </releases>
