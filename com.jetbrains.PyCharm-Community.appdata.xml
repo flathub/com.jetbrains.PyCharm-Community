@@ -23,6 +23,14 @@
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2018.2.4" date="2018-09-21">
+            <description>
+                <ul>
+                    <li>Various small pipenv improvements</li>
+                    <li>A bug in our pytest with fixtures support was fixed: previously, if yield statements were used in the fixture, PyCharm would assume that the return type of the function was a Generator. Now, the correct return type is inferred, preventing false positives.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2018.2.3" date="2018-09-06">
             <description>
                 <ul>
