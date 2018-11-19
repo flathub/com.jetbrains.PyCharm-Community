@@ -23,6 +23,15 @@
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2018.2.5" date="2018-11-14">
+            <description>
+                <ul>
+                    <li>An issue that causes PyCharm to crash on Ubuntu 16.04 has been resolved</li>
+                    <li>Matplotlib 3.0.0 can now be imported in the Python Console</li>
+                    <li>Python code now folds correctly after it’s minimized with Ctrl+Shift+Numpad – (Cmd+Shift+- on macOS)</li>
+                </ul>
+            </description>
+        </release>
         <release version="2018.2.4" date="2018-09-21">
             <description>
                 <ul>
