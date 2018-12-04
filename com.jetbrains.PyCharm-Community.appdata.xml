@@ -8,21 +8,30 @@
     <summary>Pycharm - The most intelligent Python IDE</summary>
     <description>
         <p>
-          PyCharm’s smart code editor provides first-class support for Python, JavaScript, CoffeeScript, TypeScript, CSS, popular template languages and more. Take advantage of language-aware code completion, error detection, and on-the-fly code fixes!
+            PyCharm’s smart code editor provides first-class support for Python, JavaScript, CoffeeScript, TypeScript, CSS, popular template languages and more. Take advantage of language-aware code completion, error detection, and on-the-fly code fixes!
         </p>
     </description>
     <screenshots>
         <screenshot type="default" width="1968" height="814">
-           https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg
+            https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg
         </screenshot>
         <screenshot width="1968" height="814">
-           https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg
+            https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg
         </screenshot>
     </screenshots>
     <url type="homepage">http://www.jetbrains.com/pycharm/</url>
 
     <updatecontact>phracek@redhat.com</updatecontact>
     <releases>
+        <release version="2018.3" date="2018-11-21">
+            <description>
+                <ul>
+                    <li>For those of you on Windows who are developing applications that run on Linux: Windows Subsystem for Linux is a quick and easy way to always have a Linux environment available. PyCharm 2018.3 can now be configured to use a Python interpreter inside WSL.</li>
+                    <li>One of the most-requested features in our issue tracker were multiline TODOs, and we’re happy to announce that these are now available in PyCharm 2018.3.</li>
+                    <li>Even though search everywhere (double-shift) is not at all a new feature, we’ve made some great usability improvements, and now it’s easy to see how you can narrow down the results.</li>
+                </ul>
+            </description>
+        </release>
         <release version="2018.2.5" date="2018-11-14">
             <description>
                 <ul>
@@ -75,5 +84,4 @@
         <content_attribute id="money-purchasing">none</content_attribute>
         <content_attribute id="money-gambling">none</content_attribute>
     </content_rating>
-
 </application>
