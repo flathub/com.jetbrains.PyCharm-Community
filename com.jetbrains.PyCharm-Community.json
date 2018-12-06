@@ -84,6 +84,7 @@
                     "type": "script",
                     "dest-filename": "pycharm-desktop",
                     "commands": [
+                        "ln -s /proc/mounts /etc/mtab",
                         "exec env PYCHARM_JDK=/app/pycharm/jre64/ PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh \"$@\""
                     ]
                 }
