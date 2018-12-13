@@ -12,15 +12,22 @@
 		<p>In addition to Python, PyCharm supports JavaScript, CoffeeScript, TypeScript, Cython, SQL, HTML/CSS, template languages, AngularJS, Node.js, and more.</p>
 		<p>A huge collection of tools out of the box: an integrated debugger and test runner; Python profiler; a built-in terminal; and integration with major VCS and built-in Database Tools.</p>
 	</description>
-	<categories>
-		<category>Development</category>
-		<category>IDE</category>
-	</categories>
 	<url type="homepage">http://www.jetbrains.com/pycharm/</url>
 	<url type="bugtracker">https://youtrack.jetbrains.com/</url>
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2018.3.1" date="2018-12-05">
+			<description>
+				<ul>
+					<li>A fix for the recently added WSL support in PyCharm 2018.3</li>
+					<li>An issue where PyCharm couldn’t correctly authenticate over SSH using a passphrase-protected private key has been resolved.</li>
+					<li>A few fixes for Docker and Docker Compose</li>
+					<li>Fixes for the embedded terminal</li>
+					<li>Many fixes coming from WebStorm, DataGrip and IntelliJ IDEA</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3" date="2018-11-21">
 			<description>
 				<ul>
