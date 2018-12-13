@@ -5,6 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "pycharm-desktop",
     "separate-locales": false,
+    "rename-icon": "pycharm",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
@@ -24,7 +25,7 @@
             "buildsystem": "simple",
             "build-commands": [
                 "pip2 install --no-index --find-links=\"file://${PWD}\" --install-option=\"--prefix=${FLATPAK_DEST}\" virtualenv",
-                "mv /app/bin/virtualenv /app/bin/virtualenv2"
+                "mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2"
             ],
             "sources": [
                 {
@@ -52,25 +53,30 @@
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
-                "tar xzfv pycharm-community-2018.3.tar.gz",
-                "rm -f pycharm-community-2018.3/help/*",
-                "install -dm755 /app/bin",
-                "install -dm755 /app/pycharm",
-                "cp -r pycharm-community-2018.3/* /app/pycharm",
-                "chmod -R a-s,go+rX,go-w /app/pycharm",
-                "/usr/bin/python3 /app/pycharm/helpers/pydev/setup_cython.py build_ext --inplace",
-                "install pycharm-community-2018.3/bin/pycharm.sh /app/bin/pycharm",
-                "install -Dm644 pycharm-community-2018.3/bin/pycharm.png /app/share/icons/hicolor/128x128/apps/com.jetbrains.PyCharm-Community.png",
-                "install -Dm644 pycharm-community-2018.3/bin/pycharm.svg /app/share/icons/hicolor/scalable/apps/com.jetbrains.PyCharm-Community.svg",
-                "install -Dm644 com.jetbrains.PyCharm-Community.desktop /app/share/applications/com.jetbrains.PyCharm-Community.desktop",
-                "install -Dm644 com.jetbrains.PyCharm-Community.appdata.xml /app/share/appdata/com.jetbrains.PyCharm-Community.appdata.xml",
-                "install -m755 pycharm-desktop /app/bin/pycharm-desktop"
+                "tar xzfv pycharm-community-2018.3.1.tar.gz",
+                "rm -f pycharm-community-2018.3.1/help/*",
+                "install -dm755 ${FLATPAK_DEST}/bin",
+                "install -dm755 ${FLATPAK_DEST}/pycharm",
+                "cp -r pycharm-community-2018.3.1/* ${FLATPAK_DEST}/pycharm",
+                "chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm",
+                "/usr/bin/python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace",
+                "install pycharm-community-2018.3.1/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm",
+                "install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2018.3.1/bin/pycharm.svg",
+                "install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop",
+                "install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml",
+                "install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop"
+            ],
+            "post-install": [
+                "for size in 16 24 32 48 64 128 256 512; do
+                rsvg-convert -w $size -h $size -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg
+                install -Dm644 $size.png /app/share/icons/hicolor/${size}x${size}/apps/pycharm.png
+                done"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.tar.gz",
-                    "sha256": "07f3308b4df69f93cdc727b94da96b50611b6c2442eb57eec4675e4af880f94d"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.1.tar.gz",
+                    "sha256": "5312f1ac5afe4a05147ab37a998bce89bf1453d11d5a210c956984dabb457a0b"
                 },
                 {
                     "type": "file",
