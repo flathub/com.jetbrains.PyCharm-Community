@@ -71,7 +71,7 @@
                 rsvg-convert -w $size -h $size -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg
                 install -Dm644 $size.png /app/share/icons/hicolor/${size}x${size}/apps/pycharm.png
                 done"
-      			],
+            ],
             "sources": [
                 {
                     "type": "file",
