@@ -69,7 +69,7 @@
             "post-install": [
                 "for size in 16 24 32 48 64 128 256 512; do
                 rsvg-convert -w $size -h $size -f png -o $size.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg
-                install -Dm644 $size.png /app/share/icons/hicolor/${size}x${size}/apps/pycharm.png
+                install -Dm644 $size.png ${FLATPAK_DEST}/share/icons/hicolor/${size}x${size}/apps/pycharm.png
                 done"
             ],
             "sources": [
