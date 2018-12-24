@@ -17,6 +17,17 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2018.3.2" date="2018-12-19">
+			<description>
+				<ul>
+					<li>PyCharm splits F-strings for you</li>
+					<li>Clicking ‘View as DataFrame’ in the debugger would lead to an exception that is now fixed.</li>
+					<li>Entering Hebrew text in the ‘Search Everywhere’ window would cause the IDE to hang. This has been resolved.</li>
+					<li>An issue with MySQL handling NULL datetimes has been resolved.</li>
+					<li>Many fixes coming from WebStorm, DataGrip and IntelliJ IDEA</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3.1" date="2018-12-05">
 			<description>
 				<ul>
