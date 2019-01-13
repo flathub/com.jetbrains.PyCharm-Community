@@ -17,6 +17,18 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2018.3.3" date="2019-01-10">
+			<description>
+				<ul>
+					<li>The debugger’s on-demand variable loading policy for NumPy arrays and Pandas DataFrames.</li>
+					<li>File encoding specification inspection for Python 3.</li>
+					<li>A fix for an extra __init__.py file created when moving a class into another module</li>
+					<li>Several Docker and Docker Compose support fixes</li>
+					<li>Fixes for embedded terminal</li>
+					<li>Many fixes coming from WebStorm, DataGrip and IntelliJ IDEA</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3.2" date="2018-12-19">
 			<description>
 				<ul>

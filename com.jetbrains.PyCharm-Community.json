@@ -53,15 +53,15 @@
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
-                "tar xzfv pycharm-community-2018.3.2.tar.gz",
-                "rm -f pycharm-community-2018.3.2/help/*",
+                "tar xzfv pycharm-community-2018.3.3.tar.gz",
+                "rm -f pycharm-community-2018.3.3/help/*",
                 "install -dm755 ${FLATPAK_DEST}/bin",
                 "install -dm755 ${FLATPAK_DEST}/pycharm",
-                "cp -r pycharm-community-2018.3.2/* ${FLATPAK_DEST}/pycharm",
+                "cp -r pycharm-community-2018.3.3/* ${FLATPAK_DEST}/pycharm",
                 "chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm",
                 "/usr/bin/python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace",
-                "install pycharm-community-2018.3.2/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm",
-                "install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2018.3.2/bin/pycharm.svg",
+                "install pycharm-community-2018.3.3/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm",
+                "install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2018.3.3/bin/pycharm.svg",
                 "install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop",
                 "install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml",
                 "install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop"
@@ -75,8 +75,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.2.tar.gz",
-                    "sha256": "8eedae360aaf3e0480171d43a12db66f0623b5a7cc1cf239e98e8d9aed272aaa"
+                    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.3.tar.gz",
+                    "sha256": "72d36572370253a6c95862444b0807caf3c4afe1b044a73a2b80f585039ed236"
                 },
                 {
                     "type": "file",
