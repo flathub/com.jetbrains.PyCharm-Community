@@ -52,8 +52,13 @@
         {
         "name": "python3-pipenv",
         "buildsystem": "simple",
+        "build-options": {
+            "build-args": [
+                "--share=network"
+            ]
+        },
         "build-commands": [
-            "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pipenv"
+            "pip3 install --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pipenv"
         ],
         "sources": [
             {
