@@ -52,10 +52,31 @@
         {
         "name": "python3-pipenv",
         "buildsystem": "simple",
+        "build-options":
         "build-commands": [
             "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pipenv"
         ],
         "sources": [
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/8b/f4/360aa656ddb0f4168aeaa1057d8784b95d1ce12f34332c1cf52420b6db4e/virtualenv-16.3.0.tar.gz",
+                "sha256": "729f0bcab430e4ef137646805b5b1d8efbb43fe53d4a0f33328624a84a5121f7"
+            },
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/af/69/4bf2faa88f0f158bfcc8d66e270e8dafdda92e22f374cf111bde93924b17/virtualenv-clone-0.5.1.tar.gz",
+                "sha256": "217bd3f0880c9f85672c0bcc9ad9e0354ab7dfa89c2f117e63aa878b4279f5bf"
+            },
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-2018.11.29.tar.gz",
+                "sha256": "47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7"
+            },
+            {
+                "type": "file",
+                "url": "https://files.pythonhosted.org/packages/c8/89/ad7f27938e59db1f0f55ce214087460f65048626e2226531ba6cb6da15f0/pip-19.0.1.tar.gz",
+                "sha256": "e81ddd35e361b630e94abeda4a1eddd36d47a90e71eb00f38f46b57f787cd1a5"
+            },
             {
                 "type": "file",
                 "url": "https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz",
