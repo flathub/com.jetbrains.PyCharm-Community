@@ -52,7 +52,6 @@
         {
         "name": "python3-pipenv",
         "buildsystem": "simple",
-        "build-options":
         "build-commands": [
             "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pipenv"
         ],
