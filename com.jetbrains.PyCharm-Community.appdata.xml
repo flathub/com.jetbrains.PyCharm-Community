@@ -17,6 +17,16 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2018.3.4" date="2019-01-30">
+			<description>
+				<ul>
+					<li>Pasting a new name over a variable that was defined right after an indented block, would cause PyCharm to incorrectly indent the variable.</li>
+					<li>In some cases inserting a newline in an f-string would lead to invalid code.</li>
+					<li>PyCharm can now create Python 3.7 Conda environments</li>
+					<li>Many improvements in SQL support. Did you know that PyCharm Professional Edition bundles all features from JetBrains DataGrip in its Database tool window?</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3.3" date="2019-01-10">
 			<description>
 				<ul>
