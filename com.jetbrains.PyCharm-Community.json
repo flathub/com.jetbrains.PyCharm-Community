@@ -50,6 +50,85 @@
         ]
         },
         {
+        "name": "python3-pipenv",
+        "buildsystem": "simple",
+        "build-commands": [
+            "echo '##> extracting pipenv'",
+            "echo \"export var_dirname=$(dirname $(tar --wildcards -zxvpf pipenv-*.tar.gz pipenv*/setup.py))\" > var_file",
+            "echo",
+            "echo '##> patching setup.py'",
+            "source ./var_file; perl -pe 's|\\Qsetup_requires=[\"invoke\", \"parver\"],\\E||g' \"${var_dirname}/setup.py\" > \"${var_dirname}/setup_patched.py\"",
+            "source ./var_file; mv \"${var_dirname}/setup_patched.py\" \"${var_dirname}/setup.py\"",
+            "echo",
+            "echo '##> rebuilding pipenv.tar.gz'",
+            "source ./var_file; gzip -d \"${var_dirname}.tar.gz\"",
+            "source ./var_file; tar -uf \"${var_dirname}.tar\" \"${var_dirname}/setup.py\"",
+            "source ./var_file; gzip \"${var_dirname}.tar\"",
+            "echo '##> cleanup'",
+            "source ./var_file; rm \"${var_dirname}.tar\"; rm ./var_file",
+            "pip3 install --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} pipenv"
+        ],
+        "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz",
+                    "sha256": "d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/0f/9e/26b1d194aab960063b266170e53c39f73ea0d0d3f5ce23313e0ec8ee9bdf/attrs-18.2.0.tar.gz",
+                    "sha256": "10cbf6e27dbce8c30807caf056c8eb50917e0eaafe86347671b57254006c3e69"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/eb/e9/378a72d8790faee46688cd35a233c091b26ee41255a9657155d15e675da0/Arpeggio-1.9.0.tar.gz",
+                    "sha256": "a5258b84f76661d558492fa87e42db634df143685a0e51802d59cae7daad8732"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/74/75/ee4710c824c601a9201b71c6ee38b09d38f2db1796dabb193f3f80a4a9f5/parver-0.2.1.tar.gz",
+                    "sha256": "1b37a691af145a3a193eff269d53ba5b2ab16dfbb65d47d85360755919f5fe4b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d8/55/221a530d66bf78e72996453d1e2dedef526063546e131d70bed548d80588/wheel-0.32.3.tar.gz",
+                    "sha256": "029703bf514e16c8271c3821806a1c171220cc5bdd325cbf4e7da1e056a01db6"
+                },
+
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/cc/5e/7c7bbbfb0323a2e58b8ba45b4e082e40e195656394f30a70a6822c8c807f/setuptools-40.7.2.zip",
+                    "sha256": "746ef46712e4fa3079a4076a2e98fc96189faf2542b224568232b9ba070495e7"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/8b/f4/360aa656ddb0f4168aeaa1057d8784b95d1ce12f34332c1cf52420b6db4e/virtualenv-16.3.0.tar.gz",
+                    "sha256": "729f0bcab430e4ef137646805b5b1d8efbb43fe53d4a0f33328624a84a5121f7"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/af/69/4bf2faa88f0f158bfcc8d66e270e8dafdda92e22f374cf111bde93924b17/virtualenv-clone-0.5.1.tar.gz",
+                    "sha256": "217bd3f0880c9f85672c0bcc9ad9e0354ab7dfa89c2f117e63aa878b4279f5bf"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/55/54/3ce77783acba5979ce16674fc98b1920d00b01d337cfaaf5db22543505ed/certifi-2018.11.29.tar.gz",
+                    "sha256": "47f9c83ef4c0c621eaef743f133f09fa8a74a9b75f037e8624f83bd1b6626cb7"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/c8/89/ad7f27938e59db1f0f55ce214087460f65048626e2226531ba6cb6da15f0/pip-19.0.1.tar.gz",
+                    "sha256": "e81ddd35e361b630e94abeda4a1eddd36d47a90e71eb00f38f46b57f787cd1a5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz",
+                    "sha256": "a673e606e8452185e9817a987572b55360f4d28b50831ef3b42ac3cab3fee846"
+                }
+
+        ]
+        },
+        {
             "name": "pycharm",
             "buildsystem": "simple",
             "build-commands": [
