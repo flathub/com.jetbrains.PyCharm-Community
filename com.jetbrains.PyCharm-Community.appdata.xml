@@ -17,6 +17,15 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2018.3.5" date="2019-02-27">
+			<description>
+				<ul>
+					<li>If you have a private key with a passphrase, and would use to like native ssh rather than our built-in client for accessing remote git repositories, you’re now able to enter your passphrase in a dialog. This was previously only possible in combination with ssh-agent.</li>
+					<li>The behavior of search everywhere was adjusted to rank partial filename matches higher in the results.</li>
+					<li>The plugins redesign lead to issues with installing plugins offline. This has been resolved.</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3.4" date="2019-01-30">
 			<description>
 				<ul>
