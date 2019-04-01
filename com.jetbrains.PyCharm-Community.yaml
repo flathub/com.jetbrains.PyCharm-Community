@@ -1,0 +1,119 @@
+app-id: com.jetbrains.PyCharm-Community
+runtime: org.freedesktop.Sdk
+runtime-version: '18.08'
+sdk: org.freedesktop.Sdk
+command: pycharm-desktop
+separate-locales: false
+rename-icon: pycharm
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --share=network
+  - --device=dri
+  - --filesystem=host
+  - --socket=session-bus
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.secrets
+  - --filesystem=xdg-run/keyring
+  - --device=all
+  - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
+modules:
+  - shared-modules/python2.7/python-2.7.15.json
+
+  - name: python2-virtualenv
+    buildsystem: simple
+    build-commands:
+      - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}" virtualenv
+      - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
+    modules:
+      - name: python2-setuptools
+        buildsystem: simple
+        build-commands:
+          - python2 setup.py install --prefix=${FLATPAK_DEST} --optimize=1
+        sources:
+          - type: archive
+            url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+            sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/37/db/89d6b043b22052109da35416abc3c397655e4bd3cff031446ba02b9654fa/virtualenv-16.4.3.tar.gz
+        sha256: 984d7e607b0a5d1329425dd8845bd971b957424b5ba664729fab51ab8c11bc39
+
+  - name: python3-virtualenv
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} virtualenv
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/37/db/89d6b043b22052109da35416abc3c397655e4bd3cff031446ba02b9654fa/virtualenv-16.4.3.tar.gz
+        sha256: 984d7e607b0a5d1329425dd8845bd971b957424b5ba664729fab51ab8c11bc39
+      - type: file
+        url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+        sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+      - type: file
+        url: https://files.pythonhosted.org/packages/b7/cf/1ea0f5b3ce55cacde1e84cdde6cee1ebaff51bd9a3e6c7ba4082199af6f6/wheel-0.33.1.tar.gz
+        sha256: 66a8fd76f28977bb664b098372daef2b27f60dc4d1688cfab7b37a09448f0e9d
+
+  - name: python3-pipenv
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} pipenv
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
+        sha256: a673e606e8452185e9817a987572b55360f4d28b50831ef3b42ac3cab3fee846
+      - type: file
+        url: https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz
+        sha256: d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73
+      - type: file
+        url: https://files.pythonhosted.org/packages/cc/d9/931a24cc5394f19383fbbe3e1147a0291276afa43a0dc3ed0d6cd9fda813/attrs-19.1.0.tar.gz
+        sha256: f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399
+      - type: file
+        url: https://files.pythonhosted.org/packages/eb/e9/378a72d8790faee46688cd35a233c091b26ee41255a9657155d15e675da0/Arpeggio-1.9.0.tar.gz
+        sha256: a5258b84f76661d558492fa87e42db634df143685a0e51802d59cae7daad8732
+      - type: file
+        url: https://files.pythonhosted.org/packages/ef/80/cef14194e2dd62582cc0a4f5f2db78fb00de3ba5d1bc0e50897b398ea984/invoke-1.2.0.tar.gz
+        sha256: dc492f8f17a0746e92081aec3f86ae0b4750bf41607ea2ad87e5a7b5705121b7
+      - type: file
+        url: https://files.pythonhosted.org/packages/74/75/ee4710c824c601a9201b71c6ee38b09d38f2db1796dabb193f3f80a4a9f5/parver-0.2.1.tar.gz
+        sha256: 1b37a691af145a3a193eff269d53ba5b2ab16dfbb65d47d85360755919f5fe4b
+      - type: file
+        url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+        sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+      - type: file
+        url: https://files.pythonhosted.org/packages/b7/cf/1ea0f5b3ce55cacde1e84cdde6cee1ebaff51bd9a3e6c7ba4082199af6f6/wheel-0.33.1.tar.gz
+        sha256: 66a8fd76f28977bb664b098372daef2b27f60dc4d1688cfab7b37a09448f0e9d
+      - type: file
+        url: https://files.pythonhosted.org/packages/af/69/4bf2faa88f0f158bfcc8d66e270e8dafdda92e22f374cf111bde93924b17/virtualenv-clone-0.5.1.tar.gz
+        sha256: 217bd3f0880c9f85672c0bcc9ad9e0354ab7dfa89c2f117e63aa878b4279f5bf
+      - type: file
+        url: https://files.pythonhosted.org/packages/06/b8/d1ea38513c22e8c906275d135818fee16ad8495985956a9b7e2bb21942a1/certifi-2019.3.9.tar.gz
+        sha256: b26104d6835d1f5e49452a26eb2ff87fe7090b89dfcaee5ea2212697e1e1d7ae
+
+  - name: pycharm
+    buildsystem: simple
+    build-commands:
+      - tar xzfv pycharm-community-2019.1.tar.gz
+      - rm -f pycharm-community-2019.1/help/*
+      - install -dm755 ${FLATPAK_DEST}/bin
+      - install -dm755 ${FLATPAK_DEST}/pycharm
+      - cp -r pycharm-community-2019.1/* ${FLATPAK_DEST}/pycharm
+      - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
+      - python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace
+      - install pycharm-community-2019.1/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.1/bin/pycharm.svg
+      - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
+      - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
+      - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
+    sources:
+      - type: file
+        url: https://download.jetbrains.com/python/pycharm-community-2019.1.tar.gz
+        sha256: ce881dcc2f5882cbc5e6784653b2296b90c2fb4a4569c4a914eac96b9ea8789c
+      - type: file
+        path: com.jetbrains.PyCharm-Community.appdata.xml
+      - type: file
+        path: com.jetbrains.PyCharm-Community.desktop
+      - type: script
+        dest-filename: pycharm-desktop
+        commands:
+          - exec env PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh "$@"

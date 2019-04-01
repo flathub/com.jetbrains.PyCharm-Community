@@ -17,6 +17,16 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.1" date="2019-03-27">
+			<description>
+				<ul>
+					<li>Jupyter Notebooks support has been completely redesigned. Direct editing of Notebooks is now available in PyCharm 2019.1, with a convenient side-by-side view that helps you get a better overview of your Notebook’s source code while seeing the output right next to it. You can run and debug cells straight from the IDE.</li>
+					<li>Quick documentation for HTML and CSS has been improved. Quick question: when writing a ‘padding’ property in CSS, what comes first? Left and right, or top and bottom? Just write ‘padding’ in a CSS file and press Ctrl-Q (or Ctrl-J on macOS) to find the answer!</li>
+					<li>Navigate quickly to recent locations, rather than files. When you’re making quick edits, you frequently need to go back and forth between locations. The recent files popup (Ctrl-E, or Cmd-E on macOS) has always been there to quickly move between files you’re editing, but now we’ve also got the new and improved recent locations popup. Try it now: just press Ctrl-Shift-E (or Cmd-Shift-E on macOS).</li>
+					<li>We’ve ending support for two Python versions: 2.6 (that has been end-of-life since 2013), and 3.4 (which just reached end-of-life). If you’re still using these versions, you’ll receive a warning that these versions are no longer supported. Some PyCharm functionality might no longer work, and we won’t fix any bugs related to these Python versions anymore.</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2018.3.5" date="2019-02-27">
 			<description>
 				<ul>
@@ -110,7 +120,7 @@
 		<release version="2018.1.4" date="2018-06-10" />
 	</releases>
 	<project_license>Apache-2.0</project_license>
-	<developer_name>JetBrains</developer_name>
+	<developer_name>JetBrains s.r.o.</developer_name>
 	<screenshots>
 		<screenshot type="default">
 			<image type="source">https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg</image>
