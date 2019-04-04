@@ -17,6 +17,16 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.1.1" date="2019-04-03">
+			<description>
+				<ul>
+					<li>AltGr works correctly</li>
+					<li>Previously, Python 3.8 pre-release interpreters were detected as Python 3.7, they’re now correctly identified as Python 3.8</li>
+					<li>Various issues related to Conda environments have been fixed</li>
+					<li>Some JavaScript and Angular inspection issues were resolved</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.1" date="2019-03-27">
 			<description>
 				<ul>
