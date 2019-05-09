@@ -9,7 +9,6 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --share=network
-  - --device=dri
   - --filesystem=host
   - --socket=session-bus
   - --talk-name=org.freedesktop.Notifications
@@ -25,19 +24,25 @@ modules:
     build-commands:
       - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}" virtualenv
       - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
-    modules:
-      - name: python2-setuptools
-        buildsystem: simple
-        build-commands:
-          - python2 setup.py install --prefix=${FLATPAK_DEST} --optimize=1
-        sources:
-          - type: archive
-            url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
-            sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+    # modules:
+    #   - name: python2-setuptools
+    #     buildsystem: simple
+    #     build-commands:
+    #       - python2 setup.py install --prefix=${FLATPAK_DEST} --optimize=1
+    #     sources:
+    #       - type: archive
+    #         url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+    #         sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/37/db/89d6b043b22052109da35416abc3c397655e4bd3cff031446ba02b9654fa/virtualenv-16.4.3.tar.gz
         sha256: 984d7e607b0a5d1329425dd8845bd971b957424b5ba664729fab51ab8c11bc39
+      - type: file
+        url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+        sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+      - type: file
+        url: https://files.pythonhosted.org/packages/b7/cf/1ea0f5b3ce55cacde1e84cdde6cee1ebaff51bd9a3e6c7ba4082199af6f6/wheel-0.33.1.tar.gz
+        sha256: 66a8fd76f28977bb664b098372daef2b27f60dc4d1688cfab7b37a09448f0e9d
 
   - name: python3-virtualenv
     buildsystem: simple
