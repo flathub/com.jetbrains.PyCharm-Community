@@ -9,7 +9,6 @@ finish-args:
   - --share=ipc
   - --socket=x11
   - --share=network
-  - --device=dri
   - --filesystem=host
   - --socket=session-bus
   - --talk-name=org.freedesktop.Notifications
@@ -18,26 +17,23 @@ finish-args:
   - --device=all
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
 modules:
-  - shared-modules/python2.7/python-2.7.15.json
+  - shared-modules/python2.7/python-2.7.json
 
   - name: python2-virtualenv
     buildsystem: simple
     build-commands:
       - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}" virtualenv
       - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
-    modules:
-      - name: python2-setuptools
-        buildsystem: simple
-        build-commands:
-          - python2 setup.py install --prefix=${FLATPAK_DEST} --optimize=1
-        sources:
-          - type: archive
-            url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
-            sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/37/db/89d6b043b22052109da35416abc3c397655e4bd3cff031446ba02b9654fa/virtualenv-16.4.3.tar.gz
         sha256: 984d7e607b0a5d1329425dd8845bd971b957424b5ba664729fab51ab8c11bc39
+      - type: file
+        url: https://files.pythonhosted.org/packages/c2/f7/c7b501b783e5a74cf1768bc174ee4fb0a8a6ee5af6afa92274ff964703e0/setuptools-40.8.0.zip
+        sha256: 6e4eec90337e849ade7103723b9a99631c1f0d19990d6e8412dc42f5ae8b304d
+      - type: file
+        url: https://files.pythonhosted.org/packages/b7/cf/1ea0f5b3ce55cacde1e84cdde6cee1ebaff51bd9a3e6c7ba4082199af6f6/wheel-0.33.1.tar.gz
+        sha256: 66a8fd76f28977bb664b098372daef2b27f60dc4d1688cfab7b37a09448f0e9d
 
   - name: python3-virtualenv
     buildsystem: simple
@@ -93,22 +89,22 @@ modules:
   - name: pycharm
     buildsystem: simple
     build-commands:
-      - tar xzfv pycharm-community-2019.1.1.tar.gz
-      - rm -f pycharm-community-2019.1.1/help/*
+      - tar xzfv pycharm-community-2019.1.2.tar.gz
+      - rm -f pycharm-community-2019.1.2/help/*
       - install -dm755 ${FLATPAK_DEST}/bin
       - install -dm755 ${FLATPAK_DEST}/pycharm
-      - cp -r pycharm-community-2019.1.1/* ${FLATPAK_DEST}/pycharm
+      - cp -r pycharm-community-2019.1.2/* ${FLATPAK_DEST}/pycharm
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
       - python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace
-      - install pycharm-community-2019.1.1/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
-      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.1.1/bin/pycharm.svg
+      - install pycharm-community-2019.1.2/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.1.2/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
       - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2019.1.1.tar.gz
-        sha256: 8dfe988a7a57d318d30a3c52b15dad6374da66a72f662ab6d46f4f5d673ae5ff
+        url: https://download.jetbrains.com/python/pycharm-community-2019.1.2.tar.gz
+        sha256: b0fd17fa3c26addd53302c90a2aa45719c0192da04b59174d78818b144935d15
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
