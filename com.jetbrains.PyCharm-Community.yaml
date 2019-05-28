@@ -18,9 +18,19 @@ finish-args:
   - --device=all
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
 modules:
-  - shared-modules/python2.7/python-2.7.json
   - shared-modules/glew/glew.json
   - shared-modules/glu/glu-9.0.0.json
+  - shared-modules/python2.7/python-2.7.json
+
+  - name: freeglut
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_INSTALL_LIBDIR=${FLATPAK_DEST}/lib
+      - -DOpenGL_GL_PREFERENCE=LEGACY
+    sources:
+      - type: archive
+        url: "https://datapacket.dl.sourceforge.net/project/freeglut/freeglut/3.0.0/freeglut-3.0.0.tar.gz"
+        sha256: 2a43be8515b01ea82bcfa17d29ae0d40bd128342f0930cd1f375f1ff999f76a2
 
   - name: python2-virtualenv
     buildsystem: simple
