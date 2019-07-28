@@ -17,6 +17,16 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.2" date="2019-07-24">
+			<description>
+				<ul>
+					<li>Jupyter Notebook Integration has been improved. Some of the most highly requested Jupyter Notebook features have been implemented in this version. Now you will be able run all cells with a single button click, select and configure your Jupyter server using a specific project and port to listen to, keep track of variables while debugging them by getting their current state, restart the kernel and publish notebooks from PyCharm to JetBrains Datalore</li>
+					<li>Syntax highlight support for many other languages has been added. Do you work on projects where code in a different language sneaks into your project? PyCharm will now highlight the syntax of Windows .bat files, C#, C++, Groovy, Lua, Makefiles, and more</li>
+					<li>We are adding support for some major Python 3.8 features. Try out positional-only parameters, variable assignment within expressions, ‘Final’ qualifier to restrict usage of methods, classes and variables, and new ways to use f-strings to present values and variables</li>
+					<li>cURL format is now supported for HTTP requests. Just copy your cURL formatted request and paste it directly into your HTTP Request file for it to be converted into its format, and then feel free to modify request params, headers, or body</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.1.3" date="2019-05-30" />
 		<release version="2019.1.2" date="2019-05-08" />
 		<release version="2019.1.1" date="2019-04-03">
