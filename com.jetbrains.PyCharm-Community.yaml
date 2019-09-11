@@ -102,15 +102,15 @@ modules:
   - name: pycharm
     buildsystem: simple
     build-commands:
-      - tar xzfv pycharm-community-2019.2.1.tar.gz
-      - rm -f pycharm-community-2019.2.1/help/*
+      - tar xzfv pycharm-community-2019.2.2.tar.gz
+      - rm -f pycharm-community-2019.2.2/help/*
       - install -dm755 ${FLATPAK_DEST}/bin
       - install -dm755 ${FLATPAK_DEST}/pycharm
-      - cp -r pycharm-community-2019.2.1/* ${FLATPAK_DEST}/pycharm
+      - cp -r pycharm-community-2019.2.2/* ${FLATPAK_DEST}/pycharm
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
       - python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace
-      - install pycharm-community-2019.2.1/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
-      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.1/bin/pycharm.svg
+      - install pycharm-community-2019.2.2/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.2/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
       - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
@@ -122,8 +122,8 @@ modules:
         done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2019.2.1.tar.gz
-        sha256: 25a2d9e685f344249d3cee1f6c7207dd2618d5dd1bfa9b5230260029b9886e28
+        url: https://download.jetbrains.com/python/pycharm-community-2019.2.2.tar.gz
+        sha256: 795f8ac674f59df3049bf678bd9544001188b964e6439c7924d9f5f0b2949390
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file

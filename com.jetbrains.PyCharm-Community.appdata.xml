@@ -17,6 +17,18 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.2.2" date="2019-09-11">
+			<description>
+				<ul>
+					<li>Some code insight fixes were implemented for Python 3.8</li>
+					<li>An error on the Python Console that was not showing documentation for functions was resolved</li>
+					<li>Some issues were solved for IPython that were causing the debugger not to work properly</li>
+					<li>We had some regression issues with the debugger causing breakpoints to be ignored and/or throw exceptions and the data viewer not to show the proper information and those were solved</li>
+					<li>A problem that caused PyCharm to stall when a Docker server was configured as remote python interpreter was fixed</li>
+					<li>An issue that was causing one remote interpreter not be used from two different machines was solved as well</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.2.1" date="2019-08-23">
 			<description>
 				<ul>
