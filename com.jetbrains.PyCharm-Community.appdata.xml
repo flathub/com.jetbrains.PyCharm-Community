@@ -17,6 +17,19 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+	<release version="2019.2.3" date="2019-09-25">
+			<description>
+				<ul>
+					<li>We solved an issue that was causing an error when invoking string literals</li>
+					<li>Regression errors were fixed in the debugger</li>
+					<li>The usage of multiprocessing on programs resulted on the inability to debug them and that was solved</li>
+					<li>We fixed the issue that caused uncaught exceptions not to show traceback data</li>
+					<li>Breakpoint usage while executing code in debug mode was causing different execution behaviors resulting in errors and that was fixed</li>
+					<li>The problem causing Python interpreter not to be properly set if downloaded from the Windows Store was fixed</li>
+					<li>The SVN performance was improved to avoid unnecessary processing of SVN operations’ results. Now projects with large amount of files using such version control system will experience enhanced processing times</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.2.2" date="2019-09-11">
 			<description>
 				<ul>
