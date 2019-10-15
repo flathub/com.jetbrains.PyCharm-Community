@@ -19,7 +19,7 @@ finish-args:
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
 modules:
   - shared-modules/glew/glew.json
-  - shared-modules/glu/glu-9.0.0.json
+  - shared-modules/glu/glu-9.json
   - shared-modules/python2.7/python-2.7.json
 
   - name: freeglut
@@ -102,15 +102,15 @@ modules:
   - name: pycharm
     buildsystem: simple
     build-commands:
-      - tar xzfv pycharm-community-2019.2.2.tar.gz
-      - rm -f pycharm-community-2019.2.2/help/*
+      - tar xzfv pycharm-community-2019.2.3.tar.gz
+      - rm -f pycharm-community-2019.2.3/help/*
       - install -dm755 ${FLATPAK_DEST}/bin
       - install -dm755 ${FLATPAK_DEST}/pycharm
-      - cp -r pycharm-community-2019.2.2/* ${FLATPAK_DEST}/pycharm
+      - cp -r pycharm-community-2019.2.3/* ${FLATPAK_DEST}/pycharm
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
       - python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace
-      - install pycharm-community-2019.2.2/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
-      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.2/bin/pycharm.svg
+      - install pycharm-community-2019.2.3/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.3/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
       - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
@@ -122,8 +122,8 @@ modules:
         done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2019.2.2.tar.gz
-        sha256: 795f8ac674f59df3049bf678bd9544001188b964e6439c7924d9f5f0b2949390
+        url: https://download.jetbrains.com/python/pycharm-community-2019.2.3.tar.gz
+        sha256: 205cf868b64bce3099c65a4e600d01e416a7ba81eff117df8a2b525222b7de09
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
