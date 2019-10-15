@@ -17,7 +17,7 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
-	<release version="2019.2.3" date="2019-09-25">
+		<release version="2019.2.3" date="2019-09-25">
 			<description>
 				<ul>
 					<li>We solved an issue that was causing an error when invoking string literals</li>
