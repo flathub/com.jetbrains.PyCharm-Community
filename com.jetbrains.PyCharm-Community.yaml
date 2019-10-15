@@ -19,7 +19,7 @@ finish-args:
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
 modules:
   - shared-modules/glew/glew.json
-  - shared-modules/glu/glu-9.0.0.json
+  - shared-modules/glu/glu-9.json
   - shared-modules/python2.7/python-2.7.json
 
   - name: freeglut
