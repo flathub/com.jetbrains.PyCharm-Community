@@ -17,6 +17,26 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.2.4" date="2019-11-01">
+			<description>
+				<p>Fixed in this Version:</p>
+				<ul>
+					<li>A regression issue that caused Pytest not to work properly with the debugger console was fixed</li>
+					<li>The debugger console problem for PyQt5 that caused it to crash was solved</li>
+					<li>We fixed an issue that was causing NumPy arrays not to be properly formatted in the Data View panel</li>
+					<li>The IronPython problem causing the debugger to fail was fixed</li>
+					<li>We took care of the debugger stack trace messages that are displayed when the debugger is stopped so they won’t show so you can properly know when the process was ended</li>
+					<li>The regression issue causing the Pytest test suite to raise an error in PyCharm was solved</li>
+				</ul>
+				<p>Further Improvements:</p>
+				<ul>
+					<li>A platform issue that was modifying original file permissions upon saving them was solved</li>
+					<li>We tweaked the error messages for SSH connections to show information properly</li>
+					<li>Adding data source for databases via the explorer now opens directly the actual type of data source selected</li>
+					<li>Completion for databases is now aware of the database or schema you’re currently working with so it will only show suggestions that belong to that context</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.2.3" date="2019-09-25">
 			<description>
 				<ul>
