@@ -25,12 +25,15 @@ modules:
   - name: freeglut
     buildsystem: cmake-ninja
     config-opts:
-      - -DCMAKE_INSTALL_LIBDIR=${FLATPAK_DEST}/lib
+      - -DCMAKE_INSTALL_PREFIX=${FLATPAK_DEST}
+      - -DCMAKE_BUILD_TYPE=Release
       - -DOpenGL_GL_PREFERENCE=LEGACY
+      - -DFREEGLUT_BUILD_DEMOS=OFF
+      - -DFREEGLUT_BUILD_STATIC_LIBS=OFF
     sources:
       - type: archive
-        url: "https://datapacket.dl.sourceforge.net/project/freeglut/freeglut/3.0.0/freeglut-3.0.0.tar.gz"
-        sha256: 2a43be8515b01ea82bcfa17d29ae0d40bd128342f0930cd1f375f1ff999f76a2
+        url: "https://datapacket.dl.sourceforge.net/project/freeglut/freeglut/3.2.1/freeglut-3.2.1.tar.gz"
+        sha256: d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68
 
   - name: python2-virtualenv
     buildsystem: simple
@@ -39,11 +42,11 @@ modules:
       - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/11/74/2c151a13ef41ab9fb43b3c4ff9e788e0496ed7923b2078d42cab30622bdf/virtualenv-16.7.4.tar.gz
-        sha256: 94a6898293d07f84a98add34c4df900f8ec64a570292279f6d91c781d37fd305
+        url: https://files.pythonhosted.org/packages/e7/80/15d28e5a075fb02366ce97558120bb987868dab3600233ec7be032dc6d01/virtualenv-16.7.7.tar.gz
+        sha256: d257bb3773e48cac60e475a19b608996c73f4d333b3ba2e4e57d5ac6134e0136
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/ca/7279974e489e8b65003fe618a1a741d6350227fa2bf48d16be76c7422423/setuptools-41.2.0.zip
-        sha256: 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
+        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
       - type: file
         url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
         sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
@@ -54,11 +57,11 @@ modules:
       - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/11/74/2c151a13ef41ab9fb43b3c4ff9e788e0496ed7923b2078d42cab30622bdf/virtualenv-16.7.4.tar.gz
-        sha256: 94a6898293d07f84a98add34c4df900f8ec64a570292279f6d91c781d37fd305
+        url: https://files.pythonhosted.org/packages/e7/80/15d28e5a075fb02366ce97558120bb987868dab3600233ec7be032dc6d01/virtualenv-16.7.7.tar.gz
+        sha256: d257bb3773e48cac60e475a19b608996c73f4d333b3ba2e4e57d5ac6134e0136
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/ca/7279974e489e8b65003fe618a1a741d6350227fa2bf48d16be76c7422423/setuptools-41.2.0.zip
-        sha256: 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
+        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
       - type: file
         url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
         sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
@@ -72,11 +75,11 @@ modules:
         url: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
         sha256: a673e606e8452185e9817a987572b55360f4d28b50831ef3b42ac3cab3fee846
       - type: file
-        url: https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/six-1.12.0.tar.gz
-        sha256: d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73
+        url: https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz
+        sha256: 30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66
       - type: file
-        url: https://files.pythonhosted.org/packages/cc/d9/931a24cc5394f19383fbbe3e1147a0291276afa43a0dc3ed0d6cd9fda813/attrs-19.1.0.tar.gz
-        sha256: f0b870f674851ecbfbbbd364d6b5cbdff9dcedbc7f3f5e18a6891057f21fe399
+        url: https://files.pythonhosted.org/packages/98/c3/2c227e66b5e896e15ccdae2e00bbc69aa46e9a8ce8869cc5fa96310bf612/attrs-19.3.0.tar.gz
+        sha256: f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72
       - type: file
         url: https://files.pythonhosted.org/packages/eb/e9/378a72d8790faee46688cd35a233c091b26ee41255a9657155d15e675da0/Arpeggio-1.9.0.tar.gz
         sha256: a5258b84f76661d558492fa87e42db634df143685a0e51802d59cae7daad8732
@@ -87,8 +90,8 @@ modules:
         url: https://files.pythonhosted.org/packages/74/75/ee4710c824c601a9201b71c6ee38b09d38f2db1796dabb193f3f80a4a9f5/parver-0.2.1.tar.gz
         sha256: 1b37a691af145a3a193eff269d53ba5b2ab16dfbb65d47d85360755919f5fe4b
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/ca/7279974e489e8b65003fe618a1a741d6350227fa2bf48d16be76c7422423/setuptools-41.2.0.zip
-        sha256: 66b86bbae7cc7ac2e867f52dc08a6bd064d938bac59dfec71b9b565dd36d6012
+        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
+        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
       - type: file
         url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
         sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
@@ -96,21 +99,24 @@ modules:
         url: https://files.pythonhosted.org/packages/d7/a7/08b88808c409722361459f1ae24474530d83593d6ded346f1d3649326838/virtualenv-clone-0.5.3.tar.gz
         sha256: c88ae171a11b087ea2513f260cdac9232461d8e9369bcd1dc143fc399d220557
       - type: file
-        url: https://files.pythonhosted.org/packages/c5/67/5d0548226bcc34468e23a0333978f0e23d28d0b3f0c71a151aef9c3f7680/certifi-2019.6.16.tar.gz
-        sha256: 945e3ba63a0b9f577b1395204e13c3a231f9bc0223888be653286534e5873695
+        url: https://files.pythonhosted.org/packages/62/85/7585750fd65599e88df0fed59c74f5075d4ea2fe611deceb95dd1c2fb25b/certifi-2019.9.11.tar.gz
+        sha256: e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50
+      - type: file
+        url: https://files.pythonhosted.org/packages/5b/82/1462f86e6c3600f2471d5f552fcc31e39f17717023df4bab712b4a9db1b3/pytest-runner-5.2.tar.gz
+        sha256: 96c7e73ead7b93e388c5d614770d2bae6526efd997757d3543fe17b557a0942b
 
   - name: pycharm
     buildsystem: simple
     build-commands:
-      - tar xzfv pycharm-community-2019.2.4.tar.gz
-      - rm -f pycharm-community-2019.2.4/help/*
+      - tar xzfv pycharm-community-2019.2.5.tar.gz
+      - rm -f pycharm-community-2019.2.5/help/*
       - install -dm755 ${FLATPAK_DEST}/bin
       - install -dm755 ${FLATPAK_DEST}/pycharm
-      - cp -r pycharm-community-2019.2.4/* ${FLATPAK_DEST}/pycharm
+      - cp -r pycharm-community-2019.2.5/* ${FLATPAK_DEST}/pycharm
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
       - python3 ${FLATPAK_DEST}/pycharm/helpers/pydev/setup_cython.py build_ext --inplace
-      - install pycharm-community-2019.2.4/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
-      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.4/bin/pycharm.svg
+      - install pycharm-community-2019.2.5/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm-community-2019.2.5/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
       - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
@@ -122,8 +128,8 @@ modules:
         done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2019.2.4.tar.gz
-        sha256: c8f5090d74cc7fa460d06d9caebf61a889ba4de239b62198c788d311ba1fb401
+        url: https://download.jetbrains.com/python/pycharm-community-2019.2.5.tar.gz
+        sha256: c1ef83352ce2110e3505b11e46906a784b3ccb970d4584e33506840a5029ba6e
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
