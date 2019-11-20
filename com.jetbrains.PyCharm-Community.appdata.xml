@@ -17,6 +17,19 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.2.5" date="2019-11-19">
+			<description>
+				<p>New in this Version:</p>
+				<ul>
+					<li>TypedDict support for Python 3.8</li>
+				</ul>
+				<p>Further Improvements:</p>
+				<ul>
+					<li>We’ve fixed and issue that caused the generation of a large skeleton file on remote interpreters</li>
+					<li>The issue causing the Python plugin for IntelliJ not to work properly with the debugger when a tests Python module was created was solved</li>
+				</ul>
+			</description>
+		</release>
 		<release version="2019.2.4" date="2019-11-01">
 			<description>
 				<p>Fixed in this Version:</p>
