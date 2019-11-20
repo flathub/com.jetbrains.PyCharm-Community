@@ -25,8 +25,11 @@ modules:
   - name: freeglut
     buildsystem: cmake-ninja
     config-opts:
-      - -DCMAKE_INSTALL_LIBDIR=${FLATPAK_DEST}/lib
+      - -DCMAKE_INSTALL_PREFIX=${FLATPAK_DEST}
+      - -DCMAKE_BUILD_TYPE=Release
       - -DOpenGL_GL_PREFERENCE=LEGACY
+      - -DFREEGLUT_BUILD_DEMOS=OFF
+      - -DFREEGLUT_BUILD_STATIC_LIBS=OFF
     sources:
       - type: archive
         url: "https://datapacket.dl.sourceforge.net/project/freeglut/freeglut/3.2.1/freeglut-3.2.1.tar.gz"
