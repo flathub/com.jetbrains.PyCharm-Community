@@ -17,6 +17,7 @@
 	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
 	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
 	<releases>
+		<release version="2019.3.1" date="2019-12-19"/>
 		<release version="2019.3" date="2019-12-02">
 			<description>
 				<ul>
@@ -118,8 +119,8 @@
 				</ul>
 			</description>
 		</release>
-		<release version="2019.1.3" date="2019-05-30" />
-		<release version="2019.1.2" date="2019-05-08" />
+		<release version="2019.1.3" date="2019-05-30"/>
+		<release version="2019.1.2" date="2019-05-08"/>
 		<release version="2019.1.1" date="2019-04-03">
 			<description>
 				<ul>
@@ -229,8 +230,8 @@
 				</ul>
 			</description>
 		</release>
-		<release version="2018.2.2" date="2018-08-21" />
-		<release version="2018.1.4" date="2018-06-10" />
+		<release version="2018.2.2" date="2018-08-21"/>
+		<release version="2018.1.4" date="2018-06-10"/>
 	</releases>
 	<project_license>Apache-2.0</project_license>
 	<developer_name>JetBrains s.r.o.</developer_name>
@@ -243,5 +244,5 @@
 		</screenshot>
 	</screenshots>
 	<update_contact>sakcheen+flathub_AT_gmail.com</update_contact>
-	<content_rating type="oars-1.1" />
+	<content_rating type="oars-1.1"/>
 </component>
