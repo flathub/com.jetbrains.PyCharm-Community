@@ -132,6 +132,9 @@ modules:
         url: https://download.jetbrains.com/python/pycharm-community-2019.3.tar.gz
         sha256: c41dbf3925a7ecbbe5ce3d5f4389cab686efda81757e6e48c21e9a6f6ce660b2
         dest-filename: pycharm-community.tar.gz
+        x-checker-data:
+          type: jetbrains
+          code: PCC
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
