@@ -32,13 +32,14 @@ modules:
       - -DFREEGLUT_BUILD_STATIC_LIBS=OFF
     sources:
       - type: archive
-        url: "https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz"
+        url: https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz
         sha256: d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68
 
   - name: python2-virtualenv
     buildsystem: simple
     build-commands:
-      - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}" virtualenv
+      - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}"
+        virtualenv
       - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
     sources:
       - type: file
@@ -54,7 +55,8 @@ modules:
   - name: python3-virtualenv
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} virtualenv
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        virtualenv
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/e7/80/15d28e5a075fb02366ce97558120bb987868dab3600233ec7be032dc6d01/virtualenv-16.7.7.tar.gz
@@ -69,7 +71,8 @@ modules:
   - name: python3-pipenv
     buildsystem: simple
     build-commands:
-      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} pipenv
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        pipenv
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
@@ -115,26 +118,26 @@ modules:
       - install -dm755 ${FLATPAK_DEST}/pycharm
       - cp -r pycharm/* ${FLATPAK_DEST}/pycharm
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
-      - python3 ${FLATPAK_DEST}/pycharm/plugins/python-ce/helpers/pydev/setup_cython.py build_ext --inplace
+      - python3 ${FLATPAK_DEST}/pycharm/plugins/python-ce/helpers/pydev/setup_cython.py
+        build_ext --inplace
       - install pycharm/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
       - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
       - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
-      - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg";
-        icon_out="${FLATPAK_ID}.png";
-        for s in {32,64,128,256,512}; do
-        rsvg-convert "${icon_in}" -w "${s}" -h "${s}" -a -f png -o "${icon_out}";
-        install -p -Dm644 "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/";
+      - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg"; icon_out="${FLATPAK_ID}.png";
+        for s in {32,64,128,256,512}; do rsvg-convert "${icon_in}" -w "${s}" -h "${s}"
+        -a -f png -o "${icon_out}"; install -p -Dm644 "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/";
         done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2019.3.tar.gz
-        sha256: c41dbf3925a7ecbbe5ce3d5f4389cab686efda81757e6e48c21e9a6f6ce660b2
+        url: https://download.jetbrains.com/python/pycharm-community-2019.3.1.tar.gz
+        sha256: bb243322951a2d195d9ab12a6990cdbf3d7cc284f17cd5f6ce3376f5ce16f0b2
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
           code: PCC
+        size: 389620376
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
@@ -142,4 +145,5 @@ modules:
       - type: script
         dest-filename: pycharm-desktop
         commands:
-          - exec env PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh "$@"
+          - exec env PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh
+            "$@"
