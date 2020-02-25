@@ -28,7 +28,7 @@ flatpak install --user mypycharm com.jetbrains.PyCharm-Community
 flatpak run com.jetbrains.PyCharm-Community
 ```
 
-## How tu uninstall PyCharm-Community
+## How to uninstall PyCharm-Community
 
 ```
 flatpak uninstall --user com.jetbrains.PyCharm-Community
