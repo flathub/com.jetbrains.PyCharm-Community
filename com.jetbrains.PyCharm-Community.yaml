@@ -32,8 +32,9 @@ modules:
     sources:
       - type: archive
         url: https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz
-        sha256: d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68
+        sha256: 251a85b3bac687974f360d3796048c20ded3bf0bd69e0d1cfd1db23d013f89ed
 
+        size: 746
   - name: python2-virtualenv
     buildsystem: simple
     build-commands:
