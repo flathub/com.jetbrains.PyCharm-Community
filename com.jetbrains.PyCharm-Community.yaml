@@ -130,13 +130,13 @@ modules:
         done;
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2020.2.tar.gz
-        sha256: 60b2eeea5237f536e5d46351fce604452ce6b16d037d2b7696ef37726e1ff78a
+        url: https://download.jetbrains.com/python/pycharm-community-2020.2.1.tar.gz
+        sha256: ca81009294fcd8ac89fd5ffd18084c5654dfb9cff06dba8104125366362ab44e
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
           code: PCC
-        size: 399199416
+        size: 404677355
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
