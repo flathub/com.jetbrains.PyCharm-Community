@@ -1,6 +1,6 @@
 app-id: com.jetbrains.PyCharm-Community
 runtime: org.freedesktop.Sdk
-runtime-version: '19.08'
+runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: pycharm-desktop
 separate-locales: false
