@@ -17,7 +17,7 @@ finish-args:
   - --filesystem=xdg-run/keyring
   - --device=all
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
-  - --env=PATH=/app/bin:/usr/bin:/app/extensions/bin
+  - --env=PATH=/app/bin:/usr/bin:/app/extensions/bin:app/packages/bin
   - --env=PYTHONPATH=/app/packages/python
 add-extensions:
   com.jetbrains.PyCharm.Extensions:
@@ -31,11 +31,10 @@ add-extensions:
      directory: packages
      version: '20.08'
      add-ld-path: lib
-     merge-dirs: lib;python
+     merge-dirs: bin;lib;python
      subdirectories: true
      no-autodownload: true
 modules:
-
   - name: virtualenv
     buildsystem: simple
     build-commands:
