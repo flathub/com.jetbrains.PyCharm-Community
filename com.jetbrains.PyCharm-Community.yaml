@@ -1,6 +1,6 @@
 app-id: com.jetbrains.PyCharm-Community
 runtime: org.freedesktop.Sdk
-runtime-version: '19.08'
+runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
 command: pycharm-desktop
 separate-locales: false
@@ -17,95 +17,104 @@ finish-args:
   - --filesystem=xdg-run/keyring
   - --device=all
   - --env=PYCHARM_JDK=${FLATPAK_DEST}/pycharm/jre64/
+  - --env=PATH=/app/bin:/usr/bin:/app/extensions/bin:app/packages/bin
+  - --env=PYTHONPATH=/app/packages/python
+add-extensions:
+  com.jetbrains.PyCharm.Extensions:
+     directory: extensions
+     version: '20.08'
+     add-ld-path: lib
+     merge-dirs: bin;lib
+     subdirectories: true
+     no-autodownload: true
+  com.jetbrains.PyCharm.Packages:
+     directory: packages
+     version: '20.08'
+     add-ld-path: lib
+     merge-dirs: bin;lib;python
+     subdirectories: true
+     no-autodownload: true
 modules:
-  - shared-modules/glew/glew.json
-  - shared-modules/glu/glu-9.json
-  - shared-modules/python2.7/python-2.7.json
-
-  - name: freeglut
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=Release
-      - -DOpenGL_GL_PREFERENCE=LEGACY
-      - -DFREEGLUT_BUILD_DEMOS=OFF
-      - -DFREEGLUT_BUILD_STATIC_LIBS=OFF
-    sources:
-      - type: archive
-        url: https://downloads.sourceforge.net/freeglut/freeglut-3.2.1.tar.gz
-        sha256: d4000e02102acaf259998c870e25214739d1f16f67f99cb35e4f46841399da68
-
-  - name: python2-virtualenv
-    buildsystem: simple
-    build-commands:
-      - pip2 install --no-index --find-links="file://${PWD}" --install-option="--prefix=${FLATPAK_DEST}"
-        virtualenv
-      - mv ${FLATPAK_DEST}/bin/virtualenv ${FLATPAK_DEST}/bin/virtualenv2
-    sources:
-      - type: file
-        url: https://files.pythonhosted.org/packages/e7/80/15d28e5a075fb02366ce97558120bb987868dab3600233ec7be032dc6d01/virtualenv-16.7.7.tar.gz
-        sha256: d257bb3773e48cac60e475a19b608996c73f4d333b3ba2e4e57d5ac6134e0136
-      - type: file
-        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
-        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
-      - type: file
-        url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
-        sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
-
-  - name: python3-virtualenv
+  - name: virtualenv
     buildsystem: simple
     build-commands:
       - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/e7/80/15d28e5a075fb02366ce97558120bb987868dab3600233ec7be032dc6d01/virtualenv-16.7.7.tar.gz
-        sha256: d257bb3773e48cac60e475a19b608996c73f4d333b3ba2e4e57d5ac6134e0136
+        url: https://files.pythonhosted.org/packages/aa/bd/2a3082a5af997eef7324a3557d2ef3fa641e064c79c33404013310297e45/virtualenv-20.0.31.tar.gz
+        sha256: 43add625c53c596d38f971a465553f6318decc39d98512bc100fa1b1e839c8dc
       - type: file
-        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
-        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
+        url: https://files.pythonhosted.org/packages/02/49/3f7a2c9617e73107d38c7be98d953f39e46a1813d2113786da30511eddfc/setuptools-50.2.0.zip
+        sha256: f9e49bed35a9e40d91d903eb30a52a66afbb55b1303713b36777f0ad49cec319
       - type: file
-        url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
-        sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
+        url: https://files.pythonhosted.org/packages/83/72/611c121b6bd15479cb62f1a425b2e3372e121b324228df28e64cc28b01c2/wheel-0.35.1.tar.gz
+        sha256: 99a22d87add3f634ff917310a3d87e499f19e663413a52eb9232c447aa646c9f
+      - type: file
+        url: https://files.pythonhosted.org/packages/cd/66/fa77e809b7cb1c2e14b48c7fc8a8cd657a27f4f9abb848df0c967b6e4e11/setuptools_scm-4.1.2.tar.gz
+        sha256: a8994582e716ec690f33fec70cca0f85bd23ec974e3f783233e4879090a7faa8
+      - type: file
+        url: https://files.pythonhosted.org/packages/14/ec/6ee2168387ce0154632f856d5cc5592328e9cf93127c5c9aeca92c8c16cb/filelock-3.0.12.tar.gz
+        sha256: 18d82244ee114f543149c66a6e0c14e9c4f8a1044b5cdaadd0f82159d6a6ff59
+      - type: file
+        url: https://files.pythonhosted.org/packages/d7/d8/05696357e0311f5b5c316d7b95f46c669dd9c15aaeecbb48c7d0aeb88c40/appdirs-1.4.4.tar.gz
+        sha256: 7d5d0167b2b1ba821647616af46a749d1c653740dd0d2415100fe26e27afdf41
+      - type: file
+        url: https://files.pythonhosted.org/packages/2f/83/1eba07997b8ba58d92b3e51445d5bf36f9fba9cb8166bcae99b9c3464841/distlib-0.3.1.zip
+        sha256: edf6116872c863e1aa9d5bb7cb5e05a022c519a4594dc703843343a9ddd9bff1
 
-  - name: python3-pipenv
+  - name: pipenv
     buildsystem: simple
     build-commands:
       - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/fd/e9/01822318551caa0d62a181ba3b10f0f3757bb1e270da97165bd52db92776/pipenv-2018.11.26.tar.gz
-        sha256: a673e606e8452185e9817a987572b55360f4d28b50831ef3b42ac3cab3fee846
+        url: https://files.pythonhosted.org/packages/cc/0a/ed147c6bb2245ac9b275ef28db37b338181f1afe696317e0372786b57107/pipenv-2020.8.13.tar.gz
+        sha256: eff0e10eadb330f612edfa5051d3d8e775e9e0e918c3c50361da703bd0daa035
       - type: file
-        url: https://files.pythonhosted.org/packages/94/3e/edcf6fef41d89187df7e38e868b2dd2182677922b600e880baad7749c865/six-1.13.0.tar.gz
-        sha256: 30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66
+        url: https://files.pythonhosted.org/packages/02/49/3f7a2c9617e73107d38c7be98d953f39e46a1813d2113786da30511eddfc/setuptools-50.2.0.zip
+        sha256: f9e49bed35a9e40d91d903eb30a52a66afbb55b1303713b36777f0ad49cec319
       - type: file
-        url: https://files.pythonhosted.org/packages/98/c3/2c227e66b5e896e15ccdae2e00bbc69aa46e9a8ce8869cc5fa96310bf612/attrs-19.3.0.tar.gz
-        sha256: f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72
+        url: https://files.pythonhosted.org/packages/83/72/611c121b6bd15479cb62f1a425b2e3372e121b324228df28e64cc28b01c2/wheel-0.35.1.tar.gz
+        sha256: 99a22d87add3f634ff917310a3d87e499f19e663413a52eb9232c447aa646c9f
       - type: file
-        url: https://files.pythonhosted.org/packages/eb/e9/378a72d8790faee46688cd35a233c091b26ee41255a9657155d15e675da0/Arpeggio-1.9.0.tar.gz
-        sha256: a5258b84f76661d558492fa87e42db634df143685a0e51802d59cae7daad8732
+        url: https://files.pythonhosted.org/packages/1d/51/076f3a72af6c874e560be8a6145d6ea5be70387f21e65d42ddd771cbd93a/virtualenv-clone-0.5.4.tar.gz
+        sha256: 665e48dd54c84b98b71a657acb49104c54e7652bce9c1c4f6c6976ed4c827a29
       - type: file
-        url: https://files.pythonhosted.org/packages/bc/c6/2b1d2ec1b30e570c548fa841ab729ddb83bddf08100082d263c080faa5c3/invoke-1.3.0.tar.gz
-        sha256: c52274d2e8a6d64ef0d61093e1983268ea1fc0cd13facb9448c4ef0c9a7ac7da
+        url: https://files.pythonhosted.org/packages/40/a7/ded59fa294b85ca206082306bba75469a38ea1c7d44ea7e1d64f5443d67a/certifi-2020.6.20.tar.gz
+        sha256: 5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3
+
+  - name: conda
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST}
+        conda
+    sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/74/75/ee4710c824c601a9201b71c6ee38b09d38f2db1796dabb193f3f80a4a9f5/parver-0.2.1.tar.gz
-        sha256: 1b37a691af145a3a193eff269d53ba5b2ab16dfbb65d47d85360755919f5fe4b
+        url: https://files.pythonhosted.org/packages/74/4e/c533c3136427be62c38cc0e038cabf167bb54489c2ced2f6df903c456861/conda-4.3.16.tar.gz
+        sha256: a91ef821343dea3ba9670f3d10b36c1ace4f4c36d70c175d8fc8886e94285953
       - type: file
-        url: https://files.pythonhosted.org/packages/11/0a/7f13ef5cd932a107cd4c0f3ebc9d831d9b78e1a0e8c98a098ca17b1d7d97/setuptools-41.6.0.zip
-        sha256: 6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722
+        url: https://files.pythonhosted.org/packages/c0/fd/e38d68774c0a345b0090d608a90f1fbf423970d812f7ec7aef9ac024e648/pycosat-0.6.3.zip
+        sha256: 4c99874946a7e939bb941bbb019dd2c20e6068e3107c91366e7779c69d70e0ed
       - type: file
-        url: https://files.pythonhosted.org/packages/59/b0/11710a598e1e148fb7cbf9220fd2a0b82c98e94efbdecb299cb25e7f0b39/wheel-0.33.6.tar.gz
-        sha256: 10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646
+        url: https://files.pythonhosted.org/packages/da/67/672b422d9daf07365259958912ba533a0ecab839d4084c487a5fe9a5405f/requests-2.24.0.tar.gz
+        sha256: b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b
       - type: file
-        url: https://files.pythonhosted.org/packages/d7/a7/08b88808c409722361459f1ae24474530d83593d6ded346f1d3649326838/virtualenv-clone-0.5.3.tar.gz
-        sha256: c88ae171a11b087ea2513f260cdac9232461d8e9369bcd1dc143fc399d220557
+        url: https://files.pythonhosted.org/packages/17/2f/f38332bf6ba751d1c8124ea70681d2b2326d69126d9058fbd9b4c434d268/ruamel.yaml-0.16.12.tar.gz
+        sha256: 076cc0bc34f1966d920a49f18b52b6ad559fbe656a0748e3535cf7b3f29ebf9e
       - type: file
-        url: https://files.pythonhosted.org/packages/62/85/7585750fd65599e88df0fed59c74f5075d4ea2fe611deceb95dd1c2fb25b/certifi-2019.9.11.tar.gz
-        sha256: e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50
+        url: https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz
+        sha256: 84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae
       - type: file
-        url: https://files.pythonhosted.org/packages/5b/82/1462f86e6c3600f2471d5f552fcc31e39f17717023df4bab712b4a9db1b3/pytest-runner-5.2.tar.gz
-        sha256: 96c7e73ead7b93e388c5d614770d2bae6526efd997757d3543fe17b557a0942b
+        url: https://files.pythonhosted.org/packages/ea/b7/e0e3c1c467636186c39925827be42f16fee389dc404ac29e930e9136be70/idna-2.10.tar.gz
+        sha256: b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6
+      - type: file
+        url: https://files.pythonhosted.org/packages/81/f4/87467aeb3afc4a6056e1fe86626d259ab97e1213b1dfec14c7cb5f538bf0/urllib3-1.25.10.tar.gz
+        sha256: 91056c15fa70756691db97756772bb1eb9678fa585d9184f24534b100dc60f4a
+      - type: file
+        url: https://files.pythonhosted.org/packages/fa/a1/f9c009a633fce3609e314294c7963abe64934d972abea257dce16a15666f/ruamel.yaml.clib-0.2.2.tar.gz
+        sha256: 2d24bd98af676f4990c4d715bcdc2a60b19c56a3fb3a763164d2d8ca0e806ba7
 
   - name: pycharm
     buildsystem: simple
@@ -128,6 +137,8 @@ modules:
         for s in {32,64,128,256,512}; do rsvg-convert "${icon_in}" -w "${s}" -h "${s}"
         -a -f png -o "${icon_out}"; install -p -Dm644 "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/";
         done;
+      - install -d "${FLATPAK_DEST}/extensions"
+      - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
         url: https://download.jetbrains.com/python/pycharm-community-2020.2.1.tar.gz
