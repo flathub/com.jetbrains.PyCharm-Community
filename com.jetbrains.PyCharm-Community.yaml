@@ -21,19 +21,19 @@ finish-args:
   - --env=PYTHONPATH=/app/packages/python
 add-extensions:
   com.jetbrains.PyCharm.Extensions:
-     directory: extensions
-     version: '20.08'
-     add-ld-path: lib
-     merge-dirs: bin;lib
-     subdirectories: true
-     no-autodownload: true
+    directory: extensions
+    version: '20.08'
+    add-ld-path: lib
+    merge-dirs: bin;lib
+    subdirectories: true
+    no-autodownload: true
   com.jetbrains.PyCharm.Packages:
-     directory: packages
-     version: '20.08'
-     add-ld-path: lib
-     merge-dirs: bin;lib;python
-     subdirectories: true
-     no-autodownload: true
+    directory: packages
+    version: '20.08'
+    add-ld-path: lib
+    merge-dirs: bin;lib;python
+    subdirectories: true
+    no-autodownload: true
 modules:
   - name: virtualenv
     buildsystem: simple
@@ -141,13 +141,13 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2020.2.1.tar.gz
-        sha256: ca81009294fcd8ac89fd5ffd18084c5654dfb9cff06dba8104125366362ab44e
+        url: https://download.jetbrains.com/python/pycharm-community-2020.2.2.tar.gz
+        sha256: dbc02bbfecb1526fd36d9d4d751ff159bd3a7abfd77410696fc3162c18853ba8
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
           code: PCC
-        size: 404677355
+        size: 404517937
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
