@@ -2,7 +2,7 @@ app-id: com.jetbrains.PyCharm-Community
 runtime: org.freedesktop.Sdk
 runtime-version: '20.08'
 sdk: org.freedesktop.Sdk
-command: pycharm-desktop
+command: pycharm
 separate-locales: false
 rename-icon: pycharm
 finish-args:
@@ -132,7 +132,6 @@ modules:
       - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
-      - install -m755 pycharm-desktop ${FLATPAK_DEST}/bin/pycharm-desktop
       - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/pycharm.svg"; icon_out="${FLATPAK_ID}.png";
         for s in {32,64,128,256,512}; do rsvg-convert "${icon_in}" -w "${s}" -h "${s}"
         -a -f png -o "${icon_out}"; install -p -Dm644 "${icon_out}" -t "${FLATPAK_DEST}/share/icons/hicolor/${s}x${s}/apps/";
@@ -152,8 +151,13 @@ modules:
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
         path: com.jetbrains.PyCharm-Community.desktop
-      - type: script
-        dest-filename: pycharm-desktop
-        commands:
-          - exec env PYCHARM_VM_OPTIONS=/app/pycharm/bin/pycharm64.vmoptions /app/pycharm/bin/pycharm.sh
-            "$@"
+
+  - name: wrapper
+    buildsystem: meson
+    config-opts:
+      - "-Deditor_binary=/app/pycharm/bin/pycharm.sh"
+      - "-Dprogram_name=pycharm"
+      - "-Deditor_title=PyCharm"
+    sources:
+      - type: dir
+        path: jetbrains-flatpak-wrapper
