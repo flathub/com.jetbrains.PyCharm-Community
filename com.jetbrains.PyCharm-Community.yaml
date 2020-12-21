@@ -140,13 +140,12 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2020.3.tar.gz
-        sha256: 4b92d912c9650b4a94dfe0869e9c92a85d00de2f7dea688897e41dd1b1fe51b0
+        url: https://download.jetbrains.com/python/pycharm-community-2020.3.1.tar.gz
+        sha256: 93bd6791c0b805341b7c6d300104b9691ad85d4890ed4c11eaca545a5b2e85b9
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
           code: PCC
-        size: 486641961
       - type: file
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
@@ -155,9 +154,9 @@ modules:
   - name: wrapper
     buildsystem: meson
     config-opts:
-      - "-Deditor_binary=/app/pycharm/bin/pycharm.sh"
-      - "-Dprogram_name=pycharm"
-      - "-Deditor_title=PyCharm"
+      - -Deditor_binary=/app/pycharm/bin/pycharm.sh
+      - -Dprogram_name=pycharm
+      - -Deditor_title=PyCharm
     sources:
       - type: dir
         path: jetbrains-flatpak-wrapper
