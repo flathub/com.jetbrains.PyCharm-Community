@@ -140,8 +140,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2020.3.4.tar.gz
-        sha256: 65b792c7ca695ff19b8896de7befc20f533a61394c0828a9c48fc6b1c1820076
+        url: https://download.jetbrains.com/python/pycharm-community-2020.3.5.tar.gz
+        sha256: 9ba38b5f1d60d2587bf59f15cf93607aed724b4b00625c3d7396d89f8aec616d
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
