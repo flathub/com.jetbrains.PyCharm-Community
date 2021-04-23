@@ -140,8 +140,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2021.1.tar.gz
-        sha256: 7060bfdc54397b6cc783ff0b1724b8027e2bc3ea9f7e68e43ca37ea10fa42fc6
+        url: https://download.jetbrains.com/python/pycharm-community-2021.1.1.tar.gz
+        sha256: 10331302819324794e70843a73bfedbc6023778e4374f57f80608983be4e7a11
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
