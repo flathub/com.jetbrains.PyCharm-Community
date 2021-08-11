@@ -83,6 +83,12 @@ modules:
         x-checker-data:
           type: pypi
           name: distlib
+      - type: file
+        url: https://files.pythonhosted.org/packages/58/cb/ee4234464290e3dee893cf37d1adc87c24ade86ff6fc55f04a9bf9f1ec4f/platformdirs-2.2.0.tar.gz
+        sha256: 632daad3ab546bd8e6af0537d09805cec458dce201bccfe23012df73332e181e
+        x-checker-data:
+          type: pypi
+          name: platformdirs
 
   - name: pipenv
     buildsystem: simple
