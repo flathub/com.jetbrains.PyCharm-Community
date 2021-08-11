@@ -138,6 +138,12 @@ modules:
         x-checker-data:
           type: pypi
           name: certifi
+      - type: file
+        url: https://files.pythonhosted.org/packages/a9/bb/ab59bdb1dc8e14add54c70e9bccb8d54379bdf73ec8cebbbf638ab76590f/virtualenv-clone-0.5.6.tar.gz
+        sha256: 997c7d225eabc4d09e77672461f4bdf9f3a8ea9dc9e4a847b0e83dc8bad9573a
+        x-checker-data:
+          type: pypi
+          name: virtualenv-clone
 
   - name: conda
     buildsystem: simple
