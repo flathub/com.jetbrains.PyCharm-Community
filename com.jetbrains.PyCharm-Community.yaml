@@ -199,6 +199,12 @@ modules:
         x-checker-data:
           type: pypi
           name: ruamel.yaml.clib
+      - type: file
+        url: https://files.pythonhosted.org/packages/e7/4e/2af0238001648ded297fb54ceb425ca26faa15b341b4fac5371d3938666e/charset-normalizer-2.0.4.tar.gz
+        sha256: f23667ebe1084be45f6ae0538e4a5a865206544097e4e8bbcacf42cd02a348f3
+        x-checker-data:
+          type: pypi
+          name: charset-normalizer
 
   - name: pycharm
     buildsystem: simple
