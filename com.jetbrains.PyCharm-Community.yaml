@@ -170,8 +170,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/13/7a/e712608d82687cd3b01855c87c4c30ce9155f3781ef5e27e8ea093529bb0/ruamel.yaml-0.17.15.tar.gz
-        sha256: 7c64b97d4f4588410f19c4f259e4f724803b1981334654f516936f5c5710fe2a
+        url: https://files.pythonhosted.org/packages/71/81/f597606e81f53eb69330e3f8287e9b5a3f7ed0481824036d550da705cd82/ruamel.yaml-0.17.16.tar.gz
+        sha256: 1a771fc92d3823682b7f0893ad56cb5a5c87c48e62b5399d6f42c8759a583b33
         x-checker-data:
           type: pypi
           name: ruamel.yaml
