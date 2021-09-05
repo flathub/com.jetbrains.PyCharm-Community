@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/db/e2/c0ced9ccffb61432305665c22842ea120c0f649eec47ecf2a45c596707c4/setuptools-57.4.0.tar.gz
-        sha256: 6bac238ffdf24e8806c61440e755192470352850f3419a52f26ffe0a1a64f465
+        url: https://files.pythonhosted.org/packages/00/59/5a302942bd2e36194cc37a408989a87d6423e000859713dc3dd440c9dbae/setuptools-58.0.0.tar.gz
+        sha256: ee45f4d69c4bbd21a27b60a7f1f32cbdcd34755cb613e5c4edcb58145394a0a3
         x-checker-data:
           type: pypi
           name: setuptools
@@ -60,8 +60,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/57/38/930b1241372a9f266a7df2b184fb9d4f497c2cef2e016b014f82f541fe7c/setuptools_scm-6.0.1.tar.gz
-        sha256: d1925a69cb07e9b29416a275b9fadb009a23c148ace905b2fb220649a6c18e92
+        url: https://files.pythonhosted.org/packages/4e/62/056c0127bf45c493168167aed15c4ccb70d2c69154fb1f4acaffc2bab761/setuptools_scm-6.3.1.tar.gz
+        sha256: 0f6a263912b13798c028b9a271d91af3bde0e42784091c797deccc3ad3a7f596
         x-checker-data:
           type: pypi
           name: setuptools-scm
@@ -115,8 +115,8 @@ modules:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/db/e2/c0ced9ccffb61432305665c22842ea120c0f649eec47ecf2a45c596707c4/setuptools-57.4.0.tar.gz
-        sha256: 6bac238ffdf24e8806c61440e755192470352850f3419a52f26ffe0a1a64f465
+        url: https://files.pythonhosted.org/packages/00/59/5a302942bd2e36194cc37a408989a87d6423e000859713dc3dd440c9dbae/setuptools-58.0.0.tar.gz
+        sha256: ee45f4d69c4bbd21a27b60a7f1f32cbdcd34755cb613e5c4edcb58145394a0a3
         x-checker-data:
           type: pypi
           name: setuptools
