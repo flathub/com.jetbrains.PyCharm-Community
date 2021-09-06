@@ -130,7 +130,7 @@ modules:
         sha256: *setuptools_sha256
       - type: file
         url: *wheel_url
-        sha256: wheel_sha256
+        sha256: *wheel_sha256
       - type: file
         url: *virtualenv_url
         sha256: *virtualenv_sha256
