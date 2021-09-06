@@ -42,20 +42,20 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/6d/89/9691b0d0521c069bd238585ccb7f4035b8393d843a50491270e7dae0209e/virtualenv-20.7.2.tar.gz
-        sha256: 9ef4e8ee4710826e98ff3075c9a4739e2cb1040de6a2a8d35db0055840dc96a0
+        url: &virtualenv_url https://files.pythonhosted.org/packages/6d/89/9691b0d0521c069bd238585ccb7f4035b8393d843a50491270e7dae0209e/virtualenv-20.7.2.tar.gz
+        sha256: &virtualenv_sha256 9ef4e8ee4710826e98ff3075c9a4739e2cb1040de6a2a8d35db0055840dc96a0
         x-checker-data:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/00/59/5a302942bd2e36194cc37a408989a87d6423e000859713dc3dd440c9dbae/setuptools-58.0.0.tar.gz
-        sha256: ee45f4d69c4bbd21a27b60a7f1f32cbdcd34755cb613e5c4edcb58145394a0a3
+        url: &setuptools_url https://files.pythonhosted.org/packages/00/59/5a302942bd2e36194cc37a408989a87d6423e000859713dc3dd440c9dbae/setuptools-58.0.0.tar.gz
+        sha256: &setuptools_sha256 ee45f4d69c4bbd21a27b60a7f1f32cbdcd34755cb613e5c4edcb58145394a0a3
         x-checker-data:
           type: pypi
           name: setuptools
       - type: file
-        url: https://files.pythonhosted.org/packages/4e/be/8139f127b4db2f79c8b117c80af56a3078cc4824b5b94250c7f81a70e03b/wheel-0.37.0.tar.gz
-        sha256: e2ef7239991699e3355d54f8e968a21bb940a1dbf34a4d226741e64462516fad
+        url: &wheel_url https://files.pythonhosted.org/packages/4e/be/8139f127b4db2f79c8b117c80af56a3078cc4824b5b94250c7f81a70e03b/wheel-0.37.0.tar.gz
+        sha256: &wheel_sha256 e2ef7239991699e3355d54f8e968a21bb940a1dbf34a4d226741e64462516fad
         x-checker-data:
           type: pypi
           name: wheel
@@ -106,6 +106,12 @@ modules:
         x-checker-data:
           type: pypi
           name: tomli
+      - type: file
+        url: https://files.pythonhosted.org/packages/6f/cd/3653de7b1d61f0ef95f2459ac752f23a91dbc84f991787201aa52d0cf1cc/flit_core-3.3.0.tar.gz
+        sha256: b1404accffd6504b5f24eeca9ec5d3c877f828d16825348ba81515fa084bd5f0
+        x-checker-data:
+          type: pypi
+          name: flit-core
 
   - name: pipenv
     buildsystem: simple
@@ -120,23 +126,14 @@ modules:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/00/59/5a302942bd2e36194cc37a408989a87d6423e000859713dc3dd440c9dbae/setuptools-58.0.0.tar.gz
-        sha256: ee45f4d69c4bbd21a27b60a7f1f32cbdcd34755cb613e5c4edcb58145394a0a3
-        x-checker-data:
-          type: pypi
-          name: setuptools
+        url: *setuptools_url
+        sha256: *setuptools_sha256
       - type: file
-        url: https://files.pythonhosted.org/packages/4e/be/8139f127b4db2f79c8b117c80af56a3078cc4824b5b94250c7f81a70e03b/wheel-0.37.0.tar.gz
-        sha256: e2ef7239991699e3355d54f8e968a21bb940a1dbf34a4d226741e64462516fad
-        x-checker-data:
-          type: pypi
-          name: wheel
+        url: *wheel_url
+        sha256: wheel_sha256
       - type: file
-        url: https://files.pythonhosted.org/packages/6d/89/9691b0d0521c069bd238585ccb7f4035b8393d843a50491270e7dae0209e/virtualenv-20.7.2.tar.gz
-        sha256: 9ef4e8ee4710826e98ff3075c9a4739e2cb1040de6a2a8d35db0055840dc96a0
-        x-checker-data:
-          type: pypi
-          name: virtualenv
+        url: *virtualenv_url
+        sha256: *virtualenv_sha256
       - type: file
         url: https://files.pythonhosted.org/packages/6d/78/f8db8d57f520a54f0b8a438319c342c61c22759d8f9a1cd2e2180b5e5ea9/certifi-2021.5.30.tar.gz
         sha256: 2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee
