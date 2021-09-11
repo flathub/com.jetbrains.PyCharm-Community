@@ -60,8 +60,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/4e/62/056c0127bf45c493168167aed15c4ccb70d2c69154fb1f4acaffc2bab761/setuptools_scm-6.3.1.tar.gz
-        sha256: 0f6a263912b13798c028b9a271d91af3bde0e42784091c797deccc3ad3a7f596
+        url: https://files.pythonhosted.org/packages/4b/0d/ecb9595fae02467edba5023eb8a23c688d2b438a6a8d1a9e2b8649faf23d/setuptools_scm-6.3.2.tar.gz
+        sha256: a49aa8081eeb3514eb9728fa5040f2eaa962d6c6f4ec9c32f6c1fba88f88a0f2
         x-checker-data:
           type: pypi
           name: setuptools-scm
