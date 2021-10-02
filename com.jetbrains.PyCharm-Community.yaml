@@ -66,8 +66,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/18/3d/82769bc929807a11e455265a402c9012a31dacd72a1b85795f337bb0c3fe/filelock-3.2.0.tar.gz
-        sha256: 85ecb30757aa19d06bfcdad29cc332b9a3e4851bf59976aea1e8dadcbd9ef883
+        url: https://files.pythonhosted.org/packages/40/8b/94990052eb2165c3e8bd803f523d12c675616db48944ce18c22857ee8a4f/filelock-3.2.1.tar.gz
+        sha256: 9cdd29c411ab196cf4c35a1da684f7b9da723696cb356efa45bf5eb1ff313ee3
         x-checker-data:
           type: pypi
           name: filelock
