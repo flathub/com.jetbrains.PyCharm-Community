@@ -66,8 +66,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/fd/6e/665a6cb363bee26e40954ee812e4e733fd7cafd84c06e0c7c2357641abd6/filelock-3.3.0.tar.gz
-        sha256: 8c7eab13dc442dc249e95158bcc12dec724465919bdc9831fdbf0660f03d1785
+        url: https://files.pythonhosted.org/packages/8f/eb/6faad9294c8a8d59b7599a8a7c669c0e4c317fa5012bc36f1c8b379972a5/filelock-3.3.1.tar.gz
+        sha256: 34a9f35f95c441e7b38209775d6e0337f9a3759f3565f6c5798f19618527c76f
         x-checker-data:
           type: pypi
           name: filelock
@@ -110,9 +110,9 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/6f/cd/3653de7b1d61f0ef95f2459ac752f23a91dbc84f991787201aa52d0cf1cc/flit_core-3.3.0.tar.gz
         sha256: b1404accffd6504b5f24eeca9ec5d3c877f828d16825348ba81515fa084bd5f0
-        x-checker-data:
-          type: pypi
-          name: flit-core
+        # x-checker-data:
+        #   type: pypi
+        #   name: flit-core
       - type: file
         url: https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz
         sha256: 7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7
@@ -197,8 +197,8 @@ modules:
           type: pypi
           name: chardet
       - type: file
-        url: https://files.pythonhosted.org/packages/cb/38/4c4d00ddfa48abe616d7e572e02a04273603db446975ab46bbcd36552005/idna-3.2.tar.gz
-        sha256: 467fbad99067910785144ce333826c71fb0e63a425657295239737f7ecd125f3
+        url: https://files.pythonhosted.org/packages/62/08/e3fc7c8161090f742f504f40b1bccbfc544d4a4e09eb774bf40aafce5436/idna-3.3.tar.gz
+        sha256: 9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d
         x-checker-data:
           type: pypi
           name: idna
@@ -215,8 +215,8 @@ modules:
           type: pypi
           name: ruamel.yaml.clib
       - type: file
-        url: https://files.pythonhosted.org/packages/eb/7f/a6c278746ddbd7094b019b08d1b2187101b1f596f35f81dc27f57d8fcf7c/charset-normalizer-2.0.6.tar.gz
-        sha256: 5ec46d183433dcbd0ab716f2d7f29d8dee50505b3fdb40c6b985c7c4f5a3591f
+        url: https://files.pythonhosted.org/packages/9f/c5/334c019f92c26e59637bb42bd14a190428874b2b2de75a355da394cf16c1/charset-normalizer-2.0.7.tar.gz
+        sha256: e019de665e2bcf9c2b64e2e5aa025fa991da8720daa3c1138cadd2fd1856aed0
         x-checker-data:
           type: pypi
           name: charset-normalizer
@@ -245,8 +245,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2021.2.2.tar.gz
-        sha256: 5be617a97ab3bd26f0453a7b1e2193c5a042eade2f712f22ded43055ec983369
+        url: https://download.jetbrains.com/python/pycharm-community-2021.2.3.tar.gz
+        sha256: 99ed5ebf5ebae4a1726c535072d4be1bb32e5ef48e328dbc9ab85afe26c42855
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
