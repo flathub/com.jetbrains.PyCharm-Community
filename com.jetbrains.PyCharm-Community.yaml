@@ -108,11 +108,11 @@ modules:
           type: pypi
           name: tomli
       - type: file
-        url: https://files.pythonhosted.org/packages/2c/a9/64406cf5c1c31186e1208a290ff10a0add43882edaef5eeba49e15ba6e7f/flit_core-3.4.0.tar.gz
-        sha256: 29468fa2330969167d1f5c23eb9c0661cb6dacfcd46f361a274609a7f4197530
-        x-checker-data:
-          type: pypi
-          name: flit-core
+        url: https://files.pythonhosted.org/packages/6f/cd/3653de7b1d61f0ef95f2459ac752f23a91dbc84f991787201aa52d0cf1cc/flit_core-3.3.0.tar.gz
+        sha256: b1404accffd6504b5f24eeca9ec5d3c877f828d16825348ba81515fa084bd5f0
+        # x-checker-data:
+        #   type: pypi
+        #   name: flit-core
       - type: file
         url: https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz
         sha256: 7dc96269f53a4ccec5c0670940a4281106dd0bb343f47b7471f779df49c2fbe7
