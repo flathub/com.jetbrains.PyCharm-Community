@@ -42,14 +42,14 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/dd/40/9bc1b32521f78c293c1f8ca423c725737dfa9d09640dbeec61cebca7c5f2/virtualenv-20.8.1.tar.gz
-        sha256: bcc17f0b3a29670dd777d6f0755a4c04f28815395bca279cdcb213b97199a6b8
+        url: https://files.pythonhosted.org/packages/8b/67/67e5dd2d1676c3fa8a67c707114325d713feadb7824d9aaf2396be5401d3/virtualenv-20.9.0.tar.gz
+        sha256: bb55ace18de14593947354e5e6cd1be75fb32c3329651da62e92bf5d0aab7213
         x-checker-data:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/1e/5c/3d7b3d91a86d71faf5038c5d259ed36b5d05b7804648e2c43251d574a6e6/setuptools-58.2.0.tar.gz
-        sha256: 2c55bdb85d5bb460bd2e3b12052b677879cffcf46c0c688f2e5bf51d36001145
+        url: https://files.pythonhosted.org/packages/80/98/8de0fd3e86d8286a2594e3fa6afc46d751130d26ebb7b1f34e9067992c6f/setuptools-58.3.0.tar.gz
+        sha256: b0c2461641b58fe30e11d4c3dfba316c513bdf9ec85f9fed0c871c678447205e
         x-checker-data:
           type: pypi
           name: setuptools
