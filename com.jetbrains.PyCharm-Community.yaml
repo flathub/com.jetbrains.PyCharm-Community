@@ -120,8 +120,8 @@ modules:
           type: pypi
           name: packaging
       - type: file
-        url: https://files.pythonhosted.org/packages/3e/f2/e451732f6263b3b95400cd8f938bc238f109b6b5431491d45915421025e4/pyparsing-3.0.2.tar.gz
-        sha256: 9366e57ad2d2faa8dd89775ef284ecae0fc4012c24717f3705613b262d712090
+        url: https://files.pythonhosted.org/packages/a0/e4/2bae99e2bbdeb17c7cb9c2f7ef6022383ffcab8461d2ec339ff19ce4a969/pyparsing-3.0.3.tar.gz
+        sha256: 9e3511118010f112a4b4b435ae50e1eaa610cda191acb9e421d60cf5fde83455
         x-checker-data:
           type: pypi
           name: pyparsing
