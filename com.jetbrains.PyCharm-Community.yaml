@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/80/98/8de0fd3e86d8286a2594e3fa6afc46d751130d26ebb7b1f34e9067992c6f/setuptools-58.3.0.tar.gz
-        sha256: b0c2461641b58fe30e11d4c3dfba316c513bdf9ec85f9fed0c871c678447205e
+        url: https://files.pythonhosted.org/packages/02/b5/456e90af3712ca1b25c60ed74d0facb8b65cbaaa42cdceedf3b210580eef/setuptools-58.4.0.tar.gz
+        sha256: af632270cb4b5ca0ebd272ac1939a3e8f76aa975d2722e999cfdcea2b9e824cb
         x-checker-data:
           type: pypi
           name: setuptools
@@ -114,8 +114,8 @@ modules:
         #   type: pypi
         #   name: flit-core
       - type: file
-        url: https://files.pythonhosted.org/packages/0f/ff/e0212099bf687e471e5f98feb5acc014749269d0521b0cbc2d76bfeec639/packaging-21.1.tar.gz
-        sha256: cb730b9a81a64c88b1058ab094e6e7539a82aded6c6a578e0173ae31ad47592a
+        url: https://files.pythonhosted.org/packages/4d/34/523195b783e799fd401ad4bbc40d787926dd4c61838441df08bf42297792/packaging-21.2.tar.gz
+        sha256: 096d689d78ca690e4cd8a89568ba06d07ca097e3306a4381635073ca91479966
         x-checker-data:
           type: pypi
           name: packaging
@@ -185,8 +185,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/71/81/f597606e81f53eb69330e3f8287e9b5a3f7ed0481824036d550da705cd82/ruamel.yaml-0.17.16.tar.gz
-        sha256: 1a771fc92d3823682b7f0893ad56cb5a5c87c48e62b5399d6f42c8759a583b33
+        url: https://files.pythonhosted.org/packages/4d/15/7fc04de02ca774342800c9adf1a8239703977c49c5deaadec1689ec85506/ruamel.yaml-0.17.17.tar.gz
+        sha256: 9751de4cbb57d4bfbf8fc394e125ed4a2f170fbff3dc3d78abf50be85924f8be
         x-checker-data:
           type: pypi
           name: ruamel.yaml
