@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/02/b5/456e90af3712ca1b25c60ed74d0facb8b65cbaaa42cdceedf3b210580eef/setuptools-58.4.0.tar.gz
-        sha256: af632270cb4b5ca0ebd272ac1939a3e8f76aa975d2722e999cfdcea2b9e824cb
+        url: https://files.pythonhosted.org/packages/cb/c3/c2854129ab277d98b5dd3dae2163c5391928f0274840bef3df6379af852b/setuptools-58.5.1.tar.gz
+        sha256: 11eb0e6b5f3b8db3f28feffa522015bcc58ccaa2100f69c3158d452775786cb5
         x-checker-data:
           type: pypi
           name: setuptools
