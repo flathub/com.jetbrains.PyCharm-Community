@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/1e/00/05f51ceab8d3b9be4295000d8be4c830c53e5477755888994e9825606cd9/setuptools-58.5.3.tar.gz
-        sha256: dae6b934a965c8a59d6d230d3867ec408bb95e73bd538ff77e71fedf1eaca729
+        url: https://files.pythonhosted.org/packages/cd/9a/6fff2cee92de1d34c0e8d48bb2ccedb0899eebb2cfe7955584b53bdaded7/setuptools-59.0.1.tar.gz
+        sha256: 899d27ec8104a68d4ba813b1afd66708a1a10e9391e79be92c8c60f9c77d05e5
         x-checker-data:
           type: pypi
           name: setuptools
@@ -133,8 +133,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/f6/38/45d22be374034bc18720d60ba8e8b6e82242be492808df59d0abe5e5027e/pipenv-2021.11.9.tar.gz
-        sha256: 7662399162bc887ee86e96d0baa6984236228af9c1fd6594be0b18910225579d
+        url: https://files.pythonhosted.org/packages/d5/3a/c0cb462882da253cad436e09a165f2ae2dd8056d0ee91f7b0f902b51dde2/pipenv-2021.11.15.tar.gz
+        sha256: 616766b1e8dfc24b2e7c6dfbbc8276b7d7ba07e778e5eb0f1b6e59fcd4532fd1
         x-checker-data:
           type: pypi
           name: pipenv
