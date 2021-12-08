@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/6e/41/853fda5af9b4c336965ebcaf10009d3ede674a010961ec80afaf17519247/setuptools-59.4.0.tar.gz
-        sha256: b4c634615a0cf5b02cf83c7bedffc8da0ca439f00e79452699454da6fbd4153d
+        url: https://files.pythonhosted.org/packages/e6/e2/f2bfdf364e016f7a464db709ea40d1101c4c5a463dd7019dae0a42dbd1c6/setuptools-59.5.0.tar.gz
+        sha256: d144f85102f999444d06f9c0e8c737fd0194f10f2f7e5fdb77573f6e2fa4fad0
         x-checker-data:
           type: pypi
           name: setuptools
@@ -78,8 +78,8 @@ modules:
           type: pypi
           name: appdirs
       - type: file
-        url: https://files.pythonhosted.org/packages/56/ed/9c876a62efda9901863e2cc8825a13a7fcbda75b4b498103a4286ab1653b/distlib-0.3.3.zip
-        sha256: d982d0751ff6eaaab5e2ec8e691d949ee80eddf01a62eaa96ddb11531fe16b05
+        url: https://files.pythonhosted.org/packages/85/01/88529c93e41607f1a78c1e4b346b24c74ee43d2f41cfe33ecd2e20e0c7e3/distlib-0.3.4.zip
+        sha256: e4b58818180336dc9c529bfb9a0b58728ffc09ad92027a3f30b7cd91e3458579
         x-checker-data:
           type: pypi
           name: distlib
