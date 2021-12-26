@@ -66,8 +66,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/d9/38/9df45cc0be41e596be759d952711d0e540f149019d18f747ec2ade7c8807/filelock-3.4.1.tar.gz
-        sha256: 0f12f552b42b5bf60dba233710bf71337d35494fc8bdd4fd6d9f6d082ad45e06
+        url: https://files.pythonhosted.org/packages/11/d1/22318a1b5bb06c9be4c065ad6a09cb7bfade737758dc08235c99cd6cf216/filelock-3.4.2.tar.gz
+        sha256: 38b4f4c989f9d06d44524df1b24bd19e167d851f19b50bf3e3559952dddc5b80
         x-checker-data:
           type: pypi
           name: filelock
@@ -84,8 +84,8 @@ modules:
           type: pypi
           name: distlib
       - type: file
-        url: https://files.pythonhosted.org/packages/4b/96/d70b9462671fbeaacba4639ff866fb4e9e558580853fc5d6e698d0371ad4/platformdirs-2.4.0.tar.gz
-        sha256: 367a5e80b3d04d2428ffa76d33f124cf11e8fff2acdaa9b43d545f5c7d661ef2
+        url: https://files.pythonhosted.org/packages/be/00/bd080024010e1652de653bd61181e2dfdbef5fa73bfd32fec4c808991c31/platformdirs-2.4.1.tar.gz
+        sha256: 440633ddfebcc36264232365d7840a970e75e1018d15b4327d11f91909045fda
         x-checker-data:
           type: pypi
           name: platformdirs
@@ -185,8 +185,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/3d/d9/38607958632ca25d347a6ac7e11357a8b07ce54ad63f07a462a8f7146989/ruamel.yaml-0.17.18.tar.gz
-        sha256: 92b85e64a1d75adc29f941960f5a88dcf3d233a0ba0c3d0a864ca9645a9b7271
+        url: https://files.pythonhosted.org/packages/c8/90/759f358f3f8770246fea741d50e9535c138d630aad1a62ec46dd63f327ef/ruamel.yaml-0.17.19.tar.gz
+        sha256: b9ce9a925d0f0c35a1dbba56b40f253c53cd526b0fa81cf7b1d24996f28fb1d7
         x-checker-data:
           type: pypi
           name: ruamel.yaml
