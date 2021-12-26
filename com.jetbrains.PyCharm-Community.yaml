@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/3d/52/abcfab4e0f6dcf6b92df7559dce488eac4e3c82f01b82dfb3ac65c18379b/setuptools-60.0.4.tar.gz
-        sha256: 8244876a37456ccbcbe1247b4cba1b015f4e42dfebfadd6a5488bfc12060f21b
+        url: https://files.pythonhosted.org/packages/80/d3/2954b9ac8ad256f352d941453c44d2d2b219aafeb95277e9282bef606329/setuptools-60.1.0.tar.gz
+        sha256: a4377723c53721515f72a3dfc1bfacdcd61edfa19a4cccf82e72e4f50d9cecbd
         x-checker-data:
           type: pypi
           name: setuptools
@@ -66,8 +66,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/79/3f/aae4a951dc5bd2738901e053c057f4b317bf12199f09351f63a002442117/filelock-3.4.0.tar.gz
-        sha256: 93d512b32a23baf4cac44ffd72ccf70732aeff7b8050fcaf6d3ec406d954baf4
+        url: https://files.pythonhosted.org/packages/d9/38/9df45cc0be41e596be759d952711d0e540f149019d18f747ec2ade7c8807/filelock-3.4.1.tar.gz
+        sha256: 0f12f552b42b5bf60dba233710bf71337d35494fc8bdd4fd6d9f6d082ad45e06
         x-checker-data:
           type: pypi
           name: filelock
@@ -185,8 +185,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/4d/15/7fc04de02ca774342800c9adf1a8239703977c49c5deaadec1689ec85506/ruamel.yaml-0.17.17.tar.gz
-        sha256: 9751de4cbb57d4bfbf8fc394e125ed4a2f170fbff3dc3d78abf50be85924f8be
+        url: https://files.pythonhosted.org/packages/3d/d9/38607958632ca25d347a6ac7e11357a8b07ce54ad63f07a462a8f7146989/ruamel.yaml-0.17.18.tar.gz
+        sha256: 92b85e64a1d75adc29f941960f5a88dcf3d233a0ba0c3d0a864ca9645a9b7271
         x-checker-data:
           type: pypi
           name: ruamel.yaml
