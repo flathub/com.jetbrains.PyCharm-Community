@@ -42,14 +42,14 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/6a/95/01db50116d85cd4604b570c370a3b718de99ac44c95d3ee27a753f7ff02a/virtualenv-20.11.2.tar.gz
-        sha256: 7f9e9c2e878d92a434e760058780b8d67a7c5ec016a66784fe4b0d5e50a4eb5c
+        url: https://files.pythonhosted.org/packages/f1/db/4498de0294f0c72a2e0a099d1588e7b55d0c849db740c89978ff73700519/virtualenv-20.13.0.tar.gz
+        sha256: d8458cf8d59d0ea495ad9b34c2599487f8a7772d796f9910858376d1600dd2dd
         x-checker-data:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/15/8f/cf533796488c53b4824be97b79b86ac161bcc011af9613bec6027f52e78d/setuptools-60.1.1.tar.gz
-        sha256: 10d6eff7fc27ada30cc87e21abf324713b7169b97af1f81f8744d66260e91d10
+        url: https://files.pythonhosted.org/packages/9b/be/13f54335c7dba713b0e97e11e7a41db3df4a85073d6c5a6e7f6468b22ee2/setuptools-60.2.0.tar.gz
+        sha256: 675fcebecb43c32eb930481abf907619137547f4336206e4d673180242e1a278
         x-checker-data:
           type: pypi
           name: setuptools
@@ -179,14 +179,14 @@ modules:
           type: pypi
           name: pycosat
       - type: file
-        url: https://files.pythonhosted.org/packages/e7/01/3569e0b535fb2e4a6c384bdbed00c55b9d78b5084e0fb7f4d0bf523d7670/requests-2.26.0.tar.gz
-        sha256: b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7
+        url: https://files.pythonhosted.org/packages/c0/e3/826e27b942352a74b656e8f58b4dc7ed9495ce2d4eeb498181167c615303/requests-2.27.0.tar.gz
+        sha256: 8e5643905bf20a308e25e4c1dd379117c09000bf8a82ebccc462cfb1b34a16b5
         x-checker-data:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/c8/90/759f358f3f8770246fea741d50e9535c138d630aad1a62ec46dd63f327ef/ruamel.yaml-0.17.19.tar.gz
-        sha256: b9ce9a925d0f0c35a1dbba56b40f253c53cd526b0fa81cf7b1d24996f28fb1d7
+        url: https://files.pythonhosted.org/packages/2d/b1/b672cbe8be9ea09d85d2be8c3693811362295aa8483849e85b41caaadb85/ruamel.yaml-0.17.20.tar.gz
+        sha256: 4b8a33c1efb2b443a93fcaafcfa4d2e445f8e8c29c528d9f5cdafb7cc9e4004c
         x-checker-data:
           type: pypi
           name: ruamel.yaml
