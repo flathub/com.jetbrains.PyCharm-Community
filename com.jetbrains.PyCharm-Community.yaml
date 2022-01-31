@@ -48,8 +48,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/69/77/aee1ecacea4d0db740046ce1785e81d16c4b1755af50eceac4ca1a1f8bfd/setuptools-60.5.0.tar.gz
-        sha256: 2404879cda71495fc4d5cbc445ed52fdaddf352b36e40be8dcc63147cb4edabe
+        url: https://files.pythonhosted.org/packages/8f/89/9fec81ec84737c925a1ee992af2c6c7153aec4051c26afeadd6b822354d2/setuptools-60.6.0.tar.gz
+        sha256: eb83b1012ae6bf436901c2a2cee35d45b7260f31fd4b65fd1e50a9f99c11d7f8
         x-checker-data:
           type: pypi
           name: setuptools
@@ -215,8 +215,8 @@ modules:
           type: pypi
           name: ruamel.yaml.clib
       - type: file
-        url: https://files.pythonhosted.org/packages/48/44/76b179e0d1afe6e6a91fd5661c284f60238987f3b42b676d141d01cd5b97/charset-normalizer-2.0.10.tar.gz
-        sha256: 876d180e9d7432c5d1dfd4c5d26b72f099d503e8fcc0feb7532c9289be60fcbd
+        url: https://files.pythonhosted.org/packages/e8/e8/b6cfd28fb430b2ec9923ad0147025bf8bbdf304b1eb3039b69f1ce44ed6e/charset-normalizer-2.0.11.tar.gz
+        sha256: 98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c
         x-checker-data:
           type: pypi
           name: charset-normalizer
@@ -245,8 +245,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2021.3.2.tar.gz
-        sha256: 62c6a25c5e1595a52002916d7ee39244564a3a51a539407ca47d39b73f64a0fc
+        url: https://download.jetbrains.com/python/pycharm-community-2021.3.1.tar.gz
+        sha256: f5dd6e642ee65fa96d0ea8447d4a75589ce4258434222c4d9df00d1e5a46a8f5
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
