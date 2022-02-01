@@ -35,6 +35,8 @@ add-extensions:
     subdirectories: true
     no-autodownload: true
 modules:
+  - shared-modules/libsecret/libsecret.json
+
   - name: virtualenv
     buildsystem: simple
     build-commands:
