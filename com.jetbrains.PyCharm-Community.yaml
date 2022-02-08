@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/d3/a6/ae5e0a6ea3592af875c838c00decb00f1e6f2d0a3bf7604a8cb797eed767/setuptools-60.8.0.tar.gz
-        sha256: 5d7a302d3c3ae24d3bbaaecf5c4544056b2dd44b3e6690014dc096d64f12d672
+        url: https://files.pythonhosted.org/packages/56/4a/8ba3babea25b807d6f65258437d8d3bed6a820e4a7166f322ebb60d2d127/setuptools-60.8.1.tar.gz
+        sha256: 23aad87cc27f4ae704079618c1d117a71bd43d41e355f0698c35f6b1c796d26c
         x-checker-data:
           type: pypi
           name: setuptools
@@ -104,8 +104,8 @@ modules:
           type: pypi
           name: backports.entry-points-selectable
       - type: file
-        url: https://files.pythonhosted.org/packages/3d/6e/d290c9bf16159f02b70c432386aa5bfe22c2857ff460591912fd907b61f6/tomli-2.0.0.tar.gz
-        sha256: c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1
+        url: https://files.pythonhosted.org/packages/c0/3f/d7af728f075fb08564c5949a9c95e44352e23dee646869fa104a3b2060a3/tomli-2.0.1.tar.gz
+        sha256: de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f
         x-checker-data:
           type: pypi
           name: tomli
