@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/56/4a/8ba3babea25b807d6f65258437d8d3bed6a820e4a7166f322ebb60d2d127/setuptools-60.8.1.tar.gz
-        sha256: 23aad87cc27f4ae704079618c1d117a71bd43d41e355f0698c35f6b1c796d26c
+        url: https://files.pythonhosted.org/packages/ae/0b/e458b0d07dced3d7fa2d21d828e708f374ef82040f2012c05d35f47f9af3/setuptools-60.8.2.tar.gz
+        sha256: 66b8598da112b8dc8cd941d54cf63ef91d3b50657b374457eda5851f3ff6a899
         x-checker-data:
           type: pypi
           name: setuptools
@@ -86,8 +86,8 @@ modules:
           type: pypi
           name: distlib
       - type: file
-        url: https://files.pythonhosted.org/packages/be/00/bd080024010e1652de653bd61181e2dfdbef5fa73bfd32fec4c808991c31/platformdirs-2.4.1.tar.gz
-        sha256: 440633ddfebcc36264232365d7840a970e75e1018d15b4327d11f91909045fda
+        url: https://files.pythonhosted.org/packages/47/73/046da71a75870bbcc0469e2ea71b56ffc865e2b4b39337754e8fdb516028/platformdirs-2.5.0.tar.gz
+        sha256: 8ec11dfba28ecc0715eb5fb0147a87b1bf325f349f3da9aab2cd6b50b96b692b
         x-checker-data:
           type: pypi
           name: platformdirs
