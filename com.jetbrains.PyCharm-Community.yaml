@@ -86,8 +86,8 @@ modules:
           type: pypi
           name: distlib
       - type: file
-        url: https://files.pythonhosted.org/packages/be/00/bd080024010e1652de653bd61181e2dfdbef5fa73bfd32fec4c808991c31/platformdirs-2.4.1.tar.gz
-        sha256: 440633ddfebcc36264232365d7840a970e75e1018d15b4327d11f91909045fda
+        url: https://files.pythonhosted.org/packages/47/73/046da71a75870bbcc0469e2ea71b56ffc865e2b4b39337754e8fdb516028/platformdirs-2.5.0.tar.gz
+        sha256: 8ec11dfba28ecc0715eb5fb0147a87b1bf325f349f3da9aab2cd6b50b96b692b
         x-checker-data:
           type: pypi
           name: platformdirs
