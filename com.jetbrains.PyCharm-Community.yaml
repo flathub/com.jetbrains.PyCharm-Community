@@ -187,8 +187,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/2d/b1/b672cbe8be9ea09d85d2be8c3693811362295aa8483849e85b41caaadb85/ruamel.yaml-0.17.20.tar.gz
-        sha256: 4b8a33c1efb2b443a93fcaafcfa4d2e445f8e8c29c528d9f5cdafb7cc9e4004c
+        url: https://files.pythonhosted.org/packages/46/a9/6ed24832095b692a8cecc323230ce2ec3480015fbfa4b79941bd41b23a3c/ruamel.yaml-0.17.21.tar.gz
+        sha256: 8b7ce697a2f212752a35c1ac414471dc16c424c9573be4926b56ff3f5d23b7af
         x-checker-data:
           type: pypi
           name: ruamel.yaml
@@ -217,8 +217,8 @@ modules:
           type: pypi
           name: ruamel.yaml.clib
       - type: file
-        url: https://files.pythonhosted.org/packages/e8/e8/b6cfd28fb430b2ec9923ad0147025bf8bbdf304b1eb3039b69f1ce44ed6e/charset-normalizer-2.0.11.tar.gz
-        sha256: 98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c
+        url: https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz
+        sha256: 2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597
         x-checker-data:
           type: pypi
           name: charset-normalizer
