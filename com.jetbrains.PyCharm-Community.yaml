@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/ae/0b/e458b0d07dced3d7fa2d21d828e708f374ef82040f2012c05d35f47f9af3/setuptools-60.8.2.tar.gz
-        sha256: 66b8598da112b8dc8cd941d54cf63ef91d3b50657b374457eda5851f3ff6a899
+        url: https://files.pythonhosted.org/packages/3e/d3/e85cd0d84cf52054caed83b64dd8c922bbf0e33071689d7e3da3f96caabd/setuptools-60.9.0.tar.gz
+        sha256: 716f9d20b4c3513d1720245eb1dac009b40c9694c88e940e54b67b8b65d09493
         x-checker-data:
           type: pypi
           name: setuptools
@@ -187,8 +187,8 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/2d/b1/b672cbe8be9ea09d85d2be8c3693811362295aa8483849e85b41caaadb85/ruamel.yaml-0.17.20.tar.gz
-        sha256: 4b8a33c1efb2b443a93fcaafcfa4d2e445f8e8c29c528d9f5cdafb7cc9e4004c
+        url: https://files.pythonhosted.org/packages/46/a9/6ed24832095b692a8cecc323230ce2ec3480015fbfa4b79941bd41b23a3c/ruamel.yaml-0.17.21.tar.gz
+        sha256: 8b7ce697a2f212752a35c1ac414471dc16c424c9573be4926b56ff3f5d23b7af
         x-checker-data:
           type: pypi
           name: ruamel.yaml
@@ -217,8 +217,8 @@ modules:
           type: pypi
           name: ruamel.yaml.clib
       - type: file
-        url: https://files.pythonhosted.org/packages/e8/e8/b6cfd28fb430b2ec9923ad0147025bf8bbdf304b1eb3039b69f1ce44ed6e/charset-normalizer-2.0.11.tar.gz
-        sha256: 98398a9d69ee80548c762ba991a4728bfc3836768ed226b3945908d1a688371c
+        url: https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz
+        sha256: 2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597
         x-checker-data:
           type: pypi
           name: charset-normalizer
