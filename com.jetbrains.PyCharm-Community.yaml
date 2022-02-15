@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/3e/d3/e85cd0d84cf52054caed83b64dd8c922bbf0e33071689d7e3da3f96caabd/setuptools-60.9.0.tar.gz
-        sha256: 716f9d20b4c3513d1720245eb1dac009b40c9694c88e940e54b67b8b65d09493
+        url: https://files.pythonhosted.org/packages/e9/84/a1171328f0a8789a1963e301be7c27163ff67da389b94588ab37a55c49f9/setuptools-60.9.1.tar.gz
+        sha256: 1bc2725f0b4d6eb054ee29a0e05fda9c7c0921a6bdc0cf6dd2204da746872b49
         x-checker-data:
           type: pypi
           name: setuptools
@@ -68,8 +68,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/11/d1/22318a1b5bb06c9be4c065ad6a09cb7bfade737758dc08235c99cd6cf216/filelock-3.4.2.tar.gz
-        sha256: 38b4f4c989f9d06d44524df1b24bd19e167d851f19b50bf3e3559952dddc5b80
+        url: https://files.pythonhosted.org/packages/60/0f/3df651e3075cb33e0391146e371b4bf605e87f986856b555eddf73825595/filelock-3.5.0.tar.gz
+        sha256: 137b661e657f7850eec9def2a001efadba3414be523b87cd3f9a037372d80a15
         x-checker-data:
           type: pypi
           name: filelock
