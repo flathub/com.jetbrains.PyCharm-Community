@@ -44,8 +44,8 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/f1/6d/6c92388af71432c2261476f60c254c3982b6b02f66a33e88a14cc845a8b5/virtualenv-20.13.2.tar.gz
-        sha256: 01f5f80744d24a3743ce61858123488e91cb2dd1d3bdf92adaf1bba39ffdedf0
+        url: https://files.pythonhosted.org/packages/e2/a1/f6a76cc83255016ded5aa33a5db637c7d31ed51ee8e367139b9c7eae669e/virtualenv-20.13.3.tar.gz
+        sha256: e9dd1a1359d70137559034c0f5433b34caf504af2dc756367be86a5a32967134
         x-checker-data:
           type: pypi
           name: virtualenv
@@ -205,8 +205,8 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/b0/b1/7bbf5181f8e3258efae31702f5eab87d8a74a72a0aa78bc8c08c1466e243/urllib3-1.26.8.tar.gz
-        sha256: 0e7c33d9a63e7ddfcb86780aac87befc2fbddf46c58dbb487e0855f7ceec283c
+        url: https://files.pythonhosted.org/packages/1b/a5/4eab74853625505725cefdf168f48661b2cd04e7843ab836f3f63abf81da/urllib3-1.26.9.tar.gz
+        sha256: aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e
         x-checker-data:
           type: pypi
           name: urllib3
