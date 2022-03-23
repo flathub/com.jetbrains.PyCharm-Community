@@ -44,8 +44,8 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/e2/a1/f6a76cc83255016ded5aa33a5db637c7d31ed51ee8e367139b9c7eae669e/virtualenv-20.13.3.tar.gz
-        sha256: e9dd1a1359d70137559034c0f5433b34caf504af2dc756367be86a5a32967134
+        url: https://files.pythonhosted.org/packages/4a/71/5d3cefcf514e2edb468669558092caa8673c352fd798e47cf8a4bb3a1566/virtualenv-20.13.4.tar.gz
+        sha256: ce8901d3bbf3b90393498187f2d56797a8a452fb2d0d7efc6fd837554d6f679c
         x-checker-data:
           type: pypi
           name: virtualenv
@@ -135,8 +135,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/82/71/cd2c9501b2796784eea65213c7a787a2aec6393009a134a6f01c2b89b2a1/pipenv-2022.1.8.tar.gz
-        sha256: f84d7119239b22ab2ac2b8fbc7d619d83cf41135206d72a17c4f151cda529fd0
+        url: https://files.pythonhosted.org/packages/fd/e4/5c4ba63cb042df89fd7891d1214263b4160105e05d65d046a05f397d315b/pipenv-2022.3.23.tar.gz
+        sha256: a6df41751df55537dee54349e1dcb7781e7ceb34bb985b084e985a7e0dc43fc5
         x-checker-data:
           type: pypi
           name: pipenv
