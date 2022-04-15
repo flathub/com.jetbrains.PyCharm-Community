@@ -329,8 +329,8 @@ modules:
           type: pypi
           name: packaging
       - type: file
-        url: https://files.pythonhosted.org/packages/9c/c9/a3e3bc667c8372a74aa4b16649c3466364cd84f7aacb73453c51b0c2c8a7/shellingham-1.4.0.tar.gz
-        sha256: 4855c2458d6904829bd34c299f11fdeed7cfefbf8a2c522e4caea6cd76b3171e
+        url: https://files.pythonhosted.org/packages/76/94/7a764d57d0f46534e0022e651da6547bc5cfe7b6372e7e0ed1dde6f5cb67/shellingham-1.4.0-py2.py3-none-any.whl
+        sha256: 536b67a0697f2e4af32ab176c00a50ac2899c5a05e0d8e2dadac8e58888283f9
         x-checker-data:
           type: pypi
           name: shellingham
