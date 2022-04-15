@@ -281,29 +281,29 @@ modules:
           type: pypi
           name: pkginfo
       - type: file
-        url: https://files.pythonhosted.org/packages/20/e5/16ff212c1e452235a90aeb09066144d0c5a6a8c0834397e03f5224495c4e/ptyprocess-0.7.0.tar.gz
-        sha256: 5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220
-        x-checker-data:
-          type: pypi
-          name: ptyprocess
+        url: https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl
+        sha256: 4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35
+        # x-checker-data:
+        #   type: pypi
+        #   name: ptyprocess
       - type: file
-        url: https://files.pythonhosted.org/packages/17/47/72cb04a58a35ec495f96984dddb48232b551aafb95bde614605b754fe6f7/lockfile-0.12.2.tar.gz
-        sha256: 6aed02de03cba24efabcd600b30540140634fc06cfa603822d508d5361e9f799
-        x-checker-data:
-          type: pypi
-          name: lockfile
+        url: https://files.pythonhosted.org/packages/c8/22/9460e311f340cb62d26a38c419b1381b8593b0bb6b5d1f056938b086d362/lockfile-0.12.2-py2.py3-none-any.whl
+        sha256: 6c3cb24f344923d30b2785d5ad75182c8ea7ac1b6171b08657258ec7429d50fa
+        # x-checker-data:
+        #   type: pypi
+        #   name: lockfile
       - type: file
-        url: https://files.pythonhosted.org/packages/a0/0c/45b249b0efce50a430b8810ec34c5f338d853c31c24b0b297597fd28edda/cachy-0.3.0.tar.gz
-        sha256: 186581f4ceb42a0bbe040c407da73c14092379b1e4c0e327fdb72ae4a9b269b1
-        x-checker-data:
-          type: pypi
-          name: cachy
+        url: https://files.pythonhosted.org/packages/82/e6/badd9af6feee43e76c3445b2621a60d3d99fe0e33fffa8df43590212ea63/cachy-0.3.0-py2.py3-none-any.whl
+        sha256: 338ca09c8860e76b275aff52374330efedc4d5a5e45dc1c5b539c1ead0786fe7
+        # x-checker-data:
+        #   type: pypi
+        #   name: cachy
       - type: file
-        url: https://files.pythonhosted.org/packages/d6/f4/154cf374c2daf2020e05c3c6a03c91348d59b23c5366e968feb198306fdf/jeepney-0.8.0.tar.gz
-        sha256: 5efe48d255973902f6badc3ce55e2aa6c5c3b3bc642059ef3a91247bcfcc5806
-        x-checker-data:
-          type: pypi
-          name: jeepney
+        url: https://files.pythonhosted.org/packages/14/b8/bb3e34d71472140f9bfdf5d77cd063e2cc964b72b1bb0b70fe3c1e7db932/jeepney-0.7.1-py3-none-any.whl
+        sha256: 1b5a0ea5c0e7b166b2f5895b91a08c14de8915afda4407fb5022a195224958ac
+        # x-checker-data:
+        #   type: pypi
+        #   name: jeepney
       - type: file
         url: https://files.pythonhosted.org/packages/1b/a5/4eab74853625505725cefdf168f48661b2cd04e7843ab836f3f63abf81da/urllib3-1.26.9.tar.gz
         sha256: aabaf16477806a5e1dd19aa41f8c2b7950dd3c746362d7e3223dbe6de6ac448e
@@ -323,17 +323,17 @@ modules:
           type: pypi
           name: pexpect
       - type: file
-        url: https://files.pythonhosted.org/packages/df/9e/d1a7217f69310c1db8fdf8ab396229f55a699ce34a203691794c5d1cad0c/packaging-21.3.tar.gz
-        sha256: dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb
-        x-checker-data:
-          type: pypi
-          name: packaging
+        url: https://files.pythonhosted.org/packages/3e/89/7ea760b4daa42653ece2380531c90f64788d979110a2ab51049d92f408af/packaging-20.9-py2.py3-none-any.whl
+        sha256: 67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a
+        # x-checker-data:
+        #   type: pypi
+        #   name: packaging
       - type: file
-        url: https://files.pythonhosted.org/packages/9c/c9/a3e3bc667c8372a74aa4b16649c3466364cd84f7aacb73453c51b0c2c8a7/shellingham-1.4.0.tar.gz
-        sha256: 4855c2458d6904829bd34c299f11fdeed7cfefbf8a2c522e4caea6cd76b3171e
-        x-checker-data:
-          type: pypi
-          name: shellingham
+        url: https://files.pythonhosted.org/packages/76/94/7a764d57d0f46534e0022e651da6547bc5cfe7b6372e7e0ed1dde6f5cb67/shellingham-1.4.0-py2.py3-none-any.whl
+        sha256: 536b67a0697f2e4af32ab176c00a50ac2899c5a05e0d8e2dadac8e58888283f9
+        # x-checker-data:
+        #   type: pypi
+        #   name: shellingham
       - type: file
         url: https://files.pythonhosted.org/packages/4d/cd/3b1244a19d61c4cf5bd65966eef97e6bc41e51fe84110916f26554d6ac8c/filelock-3.6.0.tar.gz
         sha256: 9cd540a9352e432c7246a48fe4e8712b10acb1df2ad1f30e8c070b82ae1fed85
@@ -341,11 +341,11 @@ modules:
           type: pypi
           name: filelock
       - type: file
-        url: https://files.pythonhosted.org/packages/11/f2/404d2bfa30fb4ee7c7a7435d593f9f698b25d191cafec69dd0c726f02f11/pylev-1.4.0.tar.gz
-        sha256: 9e77e941042ad3a4cc305dcdf2b2dec1aec2fbe3dd9015d2698ad02b173006d1
-        x-checker-data:
-          type: pypi
-          name: pylev
+        url: https://files.pythonhosted.org/packages/04/78/95cfe72991d22994f0ec5a3b742b31c95a28344d33e06b69406b68398a29/pylev-1.4.0-py2.py3-none-any.whl
+        sha256: 7b2e2aa7b00e05bb3f7650eb506fc89f474f70493271a35c242d9a92188ad3dd
+        # x-checker-data:
+        #   type: pypi
+        #   name: pylev
       - type: file
         url: https://files.pythonhosted.org/packages/28/30/7bf7e5071081f761766d46820e52f4b16c8a08fef02d2eb4682ca7534310/requests-toolbelt-0.9.1.tar.gz
         sha256: 968089d4584ad4ad7c171454f0a5c6dac23971e9472521ea3b6d49d610aa6fc0
@@ -353,11 +353,11 @@ modules:
           type: pypi
           name: requests-toolbelt
       - type: file
-        url: https://files.pythonhosted.org/packages/22/2b/e840597838cc63f96926bd7daca67936031635cfe6c81ee12dc652bd2dce/keyring-23.5.0.tar.gz
-        sha256: 9012508e141a80bd1c0b6778d5c610dd9f8c464d75ac6774248500503f972fb9
-        x-checker-data:
-          type: pypi
-          name: keyring
+        url: https://files.pythonhosted.org/packages/d0/a0/20e656cd1e2313af619e382782bd47b5f77a3f33d81992554f3aac56e90d/keyring-21.8.0-py3-none-any.whl
+        sha256: 4be9cbaaaf83e61d6399f733d113ede7d1c73bc75cb6aeb64eee0f6ac39b30ea
+        # x-checker-data:
+        #   type: pypi
+        #   name: keyring
       - type: file
         url: https://files.pythonhosted.org/packages/60/cd/21a4dd7545350968e544f785e6be4273e6b58cc40a1ab1010d3ce573bc5a/tomlkit-0.10.1.tar.gz
         sha256: 3c517894eadef53e9072d343d37e4427b8f0b6200a70b7c9a19b2ebd1f53b951
@@ -431,11 +431,11 @@ modules:
           type: pypi
           name: requests
       - type: file
-        url: https://files.pythonhosted.org/packages/10/a7/51953e73828deef2b58ba1604de9167843ee9cd4185d8aaffcb45dd1932d/cryptography-36.0.2.tar.gz
-        sha256: 70f8f4f7bb2ac9f340655cbac89d68c527af5bb4387522a8413e841e3e6628c9
-        x-checker-data:
-          type: pypi
-          name: cryptography
+        url: https://files.pythonhosted.org/packages/96/07/4d23f8e34e56d8eeb2c37cd5924928a01c3dd756a1d99e470181bc57551e/cryptography-3.4.8-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+        sha256: 1eb7bb0df6f6f583dd8e054689def236255161ebbcf62b226454ab9ec663746b
+        # x-checker-data:
+        #   type: pypi
+        #   name: cryptography
       - type: file
         url: https://files.pythonhosted.org/packages/ac/b6/b55c3f49042f1df3dcd422b7f224f939892ee94f22abcf503a9b7339eaf2/html5lib-1.1.tar.gz
         sha256: b2e5b40261e20f354d198eae92afc10d750afb487ed5e50f9c4eaf07c184146f
@@ -443,11 +443,11 @@ modules:
           type: pypi
           name: html5lib
       - type: file
-        url: https://files.pythonhosted.org/packages/cd/08/758aeb98db87547484728ea08b0292721f1b05ff9005f59b040d6203c009/SecretStorage-3.3.1.tar.gz
-        sha256: fd666c51a6bf200643495a04abb261f83229dcb6fd8472ec393df7ffc8b6f195
-        x-checker-data:
-          type: pypi
-          name: SecretStorage
+        url: https://files.pythonhosted.org/packages/d9/1e/29cd69fdac7391aa51510dfd42aa70b4e6a826c8cd019ee2a8ab9ec0777f/SecretStorage-3.3.1-py3-none-any.whl
+        sha256: 422d82c36172d88d6a0ed5afdec956514b189ddbfb72fefab0c8a1cee4eaf71f
+        # x-checker-data:
+        #   type: pypi
+        #   name: SecretStorage
       - type: file
         url: https://files.pythonhosted.org/packages/00/9e/92de7e1217ccc3d5f352ba21e52398372525765b2e0c4530e6eb2ba9282a/cffi-1.15.0.tar.gz
         sha256: 920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954
