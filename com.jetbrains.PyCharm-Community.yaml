@@ -455,6 +455,12 @@ modules:
           type: pypi
           name: cffi
       - type: file
+        url: https://files.pythonhosted.org/packages/15/d1/d8798b83e953fd6f86ca9b50f93eec464a9305b0661469c8234e61095481/flit_core-3.7.1.tar.gz
+        sha256: 14955af340c43035dbfa96b5ee47407e377ee337f69e70f73064940d27d0a44f
+        x-checker-data:
+          type: pypi
+          name: flit_core
+      - type: file
         url: https://files.pythonhosted.org/packages/bb/54/549ea28f2fae6cea82d566223015234a03d6a88177f12b2104357517be34/poetry-1.1.13.tar.gz
         sha256: b905ed610085f568aa61574e0e09260c02bff9eae12ff672af39e9f399357ac4
         x-checker-data:
