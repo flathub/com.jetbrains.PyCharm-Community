@@ -127,6 +127,12 @@ modules:
         x-checker-data:
           type: pypi
           name: pyparsing
+      - type: file
+        url: https://files.pythonhosted.org/packages/25/93/f925c1484984bbe921cefcfa25aea6dda96d88844cdfab3a2d5d182637bd/hatchling-0.24.0.tar.gz
+        sha256: ce6765f5b5baf3cb57d2f80196c50e201e3728cacd95353f5c9b4f03dfdf4eb9
+        x-checker-data:
+          type: pypi
+          name: hatchling
 
   - name: pipenv
     buildsystem: simple
@@ -466,6 +472,12 @@ modules:
         x-checker-data:
           type: pypi
           name: poetry
+      - type: file
+        url: https://files.pythonhosted.org/packages/25/93/f925c1484984bbe921cefcfa25aea6dda96d88844cdfab3a2d5d182637bd/hatchling-0.24.0.tar.gz
+        sha256: ce6765f5b5baf3cb57d2f80196c50e201e3728cacd95353f5c9b4f03dfdf4eb9
+        x-checker-data:
+          type: pypi
+          name: hatchling
 
   - name: pycharm
     buildsystem: simple
