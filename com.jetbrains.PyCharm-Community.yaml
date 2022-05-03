@@ -151,6 +151,12 @@ modules:
         x-checker-data:
           type: pypi
           name: pluggy
+      - type: file
+        url: https://files.pythonhosted.org/packages/ac/13/b3d83564c0cc0f1d45b4ea2a78b87b383a8165797613fedf11f1a7e49b48/hatch_vcs-0.2.0.tar.gz
+        sha256: 9913d733b34eec9bb0345d0626ca32165a4ad2de15d1ce643c36d09ca908abff
+        x-checker-data:
+          type: pypi
+          name: hatch-vcs
 
   - name: pipenv
     buildsystem: simple
@@ -514,6 +520,12 @@ modules:
         x-checker-data:
           type: pypi
           name: pluggy
+      - type: file
+        url: https://files.pythonhosted.org/packages/ac/13/b3d83564c0cc0f1d45b4ea2a78b87b383a8165797613fedf11f1a7e49b48/hatch_vcs-0.2.0.tar.gz
+        sha256: 9913d733b34eec9bb0345d0626ca32165a4ad2de15d1ce643c36d09ca908abff
+        x-checker-data:
+          type: pypi
+          name: hatch-vcs
 
   - name: pycharm
     buildsystem: simple
