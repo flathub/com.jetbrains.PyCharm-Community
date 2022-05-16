@@ -68,8 +68,8 @@ modules:
           type: pypi
           name: setuptools-scm
       - type: file
-        url: https://files.pythonhosted.org/packages/4d/cd/3b1244a19d61c4cf5bd65966eef97e6bc41e51fe84110916f26554d6ac8c/filelock-3.6.0.tar.gz
-        sha256: 9cd540a9352e432c7246a48fe4e8712b10acb1df2ad1f30e8c070b82ae1fed85
+        url: https://files.pythonhosted.org/packages/32/0e/e4a925976b09898ca585cdd5497f158daab6ffb59b61dab5108df00416ac/filelock-3.7.0.tar.gz
+        sha256: b795f1b42a61bbf8ec7113c341dad679d772567b936fbd1bf43c9a238e673e20
         x-checker-data:
           type: pypi
           name: filelock
@@ -128,8 +128,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/25/93/f925c1484984bbe921cefcfa25aea6dda96d88844cdfab3a2d5d182637bd/hatchling-0.24.0.tar.gz
-        sha256: ce6765f5b5baf3cb57d2f80196c50e201e3728cacd95353f5c9b4f03dfdf4eb9
+        url: https://files.pythonhosted.org/packages/2c/bb/d157db8ddefd82ea2fdf9cfd07affb3cdb945f50716432c26d71c8ecae09/hatchling-0.25.0.tar.gz
+        sha256: 93f6e366f19a3a366c855afac3725bed7682d5d00e9486ab68540a0ad8766482
         x-checker-data:
           type: pypi
           name: hatchling
@@ -365,8 +365,8 @@ modules:
         #   type: pypi
         #   name: shellingham
       - type: file
-        url: https://files.pythonhosted.org/packages/4d/cd/3b1244a19d61c4cf5bd65966eef97e6bc41e51fe84110916f26554d6ac8c/filelock-3.6.0.tar.gz
-        sha256: 9cd540a9352e432c7246a48fe4e8712b10acb1df2ad1f30e8c070b82ae1fed85
+        url: https://files.pythonhosted.org/packages/32/0e/e4a925976b09898ca585cdd5497f158daab6ffb59b61dab5108df00416ac/filelock-3.7.0.tar.gz
+        sha256: b795f1b42a61bbf8ec7113c341dad679d772567b936fbd1bf43c9a238e673e20
         x-checker-data:
           type: pypi
           name: filelock
@@ -497,8 +497,8 @@ modules:
           type: pypi
           name: poetry
       - type: file
-        url: https://files.pythonhosted.org/packages/25/93/f925c1484984bbe921cefcfa25aea6dda96d88844cdfab3a2d5d182637bd/hatchling-0.24.0.tar.gz
-        sha256: ce6765f5b5baf3cb57d2f80196c50e201e3728cacd95353f5c9b4f03dfdf4eb9
+        url: https://files.pythonhosted.org/packages/2c/bb/d157db8ddefd82ea2fdf9cfd07affb3cdb945f50716432c26d71c8ecae09/hatchling-0.25.0.tar.gz
+        sha256: 93f6e366f19a3a366c855afac3725bed7682d5d00e9486ab68540a0ad8766482
         x-checker-data:
           type: pypi
           name: hatchling
