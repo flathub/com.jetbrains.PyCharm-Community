@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/2b/ca/795fe59736dcc0bd7ff85239ebd017aec6c294983c469b40ee4ef44ca950/setuptools-62.3.0.tar.gz
-        sha256: d4eebe23c2ed4d73fa69d4f78e4b59b9648cbd22c43018ee2e8b911866535463
+        url: https://files.pythonhosted.org/packages/87/db/d840e1b888bd82b0b826b8864d1674df52f6d9d909177e1d144ab38a8c50/setuptools-62.3.1.tar.gz
+        sha256: 28c79c24d83c42a5e6d6cc711e5e9a6c1b89326229feaa5807fc277040658600
         x-checker-data:
           type: pypi
           name: setuptools
@@ -171,8 +171,8 @@ modules:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/2b/ca/795fe59736dcc0bd7ff85239ebd017aec6c294983c469b40ee4ef44ca950/setuptools-62.3.0.tar.gz
-        sha256: d4eebe23c2ed4d73fa69d4f78e4b59b9648cbd22c43018ee2e8b911866535463
+        url: https://files.pythonhosted.org/packages/87/db/d840e1b888bd82b0b826b8864d1674df52f6d9d909177e1d144ab38a8c50/setuptools-62.3.1.tar.gz
+        sha256: 28c79c24d83c42a5e6d6cc711e5e9a6c1b89326229feaa5807fc277040658600
         x-checker-data:
           type: pypi
           name: setuptools
