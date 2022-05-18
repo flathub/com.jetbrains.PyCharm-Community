@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/87/db/d840e1b888bd82b0b826b8864d1674df52f6d9d909177e1d144ab38a8c50/setuptools-62.3.1.tar.gz
-        sha256: 28c79c24d83c42a5e6d6cc711e5e9a6c1b89326229feaa5807fc277040658600
+        url: https://files.pythonhosted.org/packages/4a/25/ec29a23ef38b9456f9965c57a9e1221e6c246d87abbf2a31158799bca201/setuptools-62.3.2.tar.gz
+        sha256: a43bdedf853c670e5fed28e5623403bad2f73cf02f9a2774e91def6bda8265a7
         x-checker-data:
           type: pypi
           name: setuptools
@@ -128,8 +128,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/2c/bb/d157db8ddefd82ea2fdf9cfd07affb3cdb945f50716432c26d71c8ecae09/hatchling-0.25.0.tar.gz
-        sha256: 93f6e366f19a3a366c855afac3725bed7682d5d00e9486ab68540a0ad8766482
+        url: https://files.pythonhosted.org/packages/40/36/526e71593a2a7464425a00e4d2c90ecc8f71c4de2c8d916f22dd30cb9e6a/hatchling-1.0.0.tar.gz
+        sha256: d235a5fa8aff89e8d9d6d4033594aa4c3bc00ec5e31d3e80c153bfcf951b4f98
         x-checker-data:
           type: pypi
           name: hatchling
@@ -171,8 +171,8 @@ modules:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/87/db/d840e1b888bd82b0b826b8864d1674df52f6d9d909177e1d144ab38a8c50/setuptools-62.3.1.tar.gz
-        sha256: 28c79c24d83c42a5e6d6cc711e5e9a6c1b89326229feaa5807fc277040658600
+        url: https://files.pythonhosted.org/packages/4a/25/ec29a23ef38b9456f9965c57a9e1221e6c246d87abbf2a31158799bca201/setuptools-62.3.2.tar.gz
+        sha256: a43bdedf853c670e5fed28e5623403bad2f73cf02f9a2774e91def6bda8265a7
         x-checker-data:
           type: pypi
           name: setuptools
@@ -189,8 +189,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz
-        sha256: 78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872
+        url: https://files.pythonhosted.org/packages/c5/63/a8e4b0c24e8538cec5579edbb2df4ed1f980d5f186878905317139d83b61/certifi-2022.5.18.tar.gz
+        sha256: 6ae10321df3e464305a46e997da41ea56c1d311fb9ff1dd4e04d6f14653ec63a
         x-checker-data:
           type: pypi
           name: certifi
@@ -275,8 +275,8 @@ modules:
           type: pypi
           name: crashtest
       - type: file
-        url: https://files.pythonhosted.org/packages/6c/ae/d26450834f0acc9e3d1f74508da6df1551ceab6c2ce0766a593362d6d57f/certifi-2021.10.8.tar.gz
-        sha256: 78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872
+        url: https://files.pythonhosted.org/packages/c5/63/a8e4b0c24e8538cec5579edbb2df4ed1f980d5f186878905317139d83b61/certifi-2022.5.18.tar.gz
+        sha256: 6ae10321df3e464305a46e997da41ea56c1d311fb9ff1dd4e04d6f14653ec63a
         x-checker-data:
           type: pypi
           name: certifi
@@ -497,8 +497,8 @@ modules:
           type: pypi
           name: poetry
       - type: file
-        url: https://files.pythonhosted.org/packages/2c/bb/d157db8ddefd82ea2fdf9cfd07affb3cdb945f50716432c26d71c8ecae09/hatchling-0.25.0.tar.gz
-        sha256: 93f6e366f19a3a366c855afac3725bed7682d5d00e9486ab68540a0ad8766482
+        url: https://files.pythonhosted.org/packages/40/36/526e71593a2a7464425a00e4d2c90ecc8f71c4de2c8d916f22dd30cb9e6a/hatchling-1.0.0.tar.gz
+        sha256: d235a5fa8aff89e8d9d6d4033594aa4c3bc00ec5e31d3e80c153bfcf951b4f98
         x-checker-data:
           type: pypi
           name: hatchling
