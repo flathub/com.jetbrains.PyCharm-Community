@@ -128,8 +128,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/40/36/526e71593a2a7464425a00e4d2c90ecc8f71c4de2c8d916f22dd30cb9e6a/hatchling-1.0.0.tar.gz
-        sha256: d235a5fa8aff89e8d9d6d4033594aa4c3bc00ec5e31d3e80c153bfcf951b4f98
+        url: https://files.pythonhosted.org/packages/b9/71/457b0f108d1a41e8d8fa90de2aaf403853a275bdde95cec49c963efeda38/hatchling-1.1.0.tar.gz
+        sha256: aca67c2b84675442c15936ef4d643dd544837d83e753c3bdb861177da16691b9
         x-checker-data:
           type: pypi
           name: hatchling
@@ -497,8 +497,8 @@ modules:
           type: pypi
           name: poetry
       - type: file
-        url: https://files.pythonhosted.org/packages/40/36/526e71593a2a7464425a00e4d2c90ecc8f71c4de2c8d916f22dd30cb9e6a/hatchling-1.0.0.tar.gz
-        sha256: d235a5fa8aff89e8d9d6d4033594aa4c3bc00ec5e31d3e80c153bfcf951b4f98
+        url: https://files.pythonhosted.org/packages/b9/71/457b0f108d1a41e8d8fa90de2aaf403853a275bdde95cec49c963efeda38/hatchling-1.1.0.tar.gz
+        sha256: aca67c2b84675442c15936ef4d643dd544837d83e753c3bdb861177da16691b9
         x-checker-data:
           type: pypi
           name: hatchling
