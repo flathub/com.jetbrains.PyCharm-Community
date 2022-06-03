@@ -419,8 +419,8 @@ modules:
           type: pypi
           name: pastel
       - type: file
-        url: https://files.pythonhosted.org/packages/61/3c/2206f39880d38ca7ad8ac1b28d2d5ca81632d163b2d68ef90e46409ca057/msgpack-1.0.3.tar.gz
-        sha256: 51fdc7fb93615286428ee7758cecc2f374d5ff363bdd884c7ea622a7a327a81e
+        url: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
+        sha256: f5d869c18f030202eb412f08b28d2afeea553d6613aee89e200d7aca7ef01f5f
         x-checker-data:
           type: pypi
           name: msgpack
