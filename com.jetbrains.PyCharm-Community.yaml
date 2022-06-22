@@ -210,7 +210,7 @@ modules:
   - name: miniconda
     buildsystem: simple
     build-commands:
-      - exec Miniconda3-latest-Linux-x86_64.sh -b -p ${FLATPAK_DEST}
+      - exec Miniconda3-latest-Linux-x86_64.sh -b -p ${FLATPAK_DEST} -f
     sources:
       - type: file
         url: https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
