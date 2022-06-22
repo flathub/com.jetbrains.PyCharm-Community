@@ -262,17 +262,23 @@ modules:
           type: pypi
           name: ruamel.yaml.clib
       - type: file
-        url: https://files.pythonhosted.org/packages/93/1d/d9392056df6670ae2a29fcb04cfa5cee9f6fbde7311a1bb511d4115e9b7a/charset-normalizer-2.1.0.tar.gz
-        sha256: 575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413
-        x-checker-data:
-          type: pypi
-          name: charset-normalizer
+        url: https://files.pythonhosted.org/packages/56/31/7bcaf657fafb3c6db8c787a865434290b726653c912085fbd371e9b92e1c/charset-normalizer-2.0.12.tar.gz
+        sha256: 2857e29ff0d34db842cd7ca3230549d1a697f96ee6d3fb071cfa6c7393832597
+        # x-checker-data:
+        #   type: pypi
+        #   name: charset-normalizer
       - type: file
         url: https://files.pythonhosted.org/packages/dc/73/88920663229023b724a854d1ab7e3e50a1a28b63eeec399a604ba30f9242/setuptools-62.6.0.tar.gz
         sha256: 990a4f7861b31532871ab72331e755b5f14efbe52d336ea7f6118144dd478741
         x-checker-data:
           type: pypi
           name: setuptools
+      - type: file
+        url: https://files.pythonhosted.org/packages/c0/6c/9f840c2e55b67b90745af06a540964b73589256cb10cc10057c87ac78fc2/wheel-0.37.1.tar.gz
+        sha256: e9a504e793efbca1b8e0e9cb979a249cf4a0a7b5b8c9e8b65a5e39d49529c1c4
+        x-checker-data:
+          type: pypi
+          name: wheel
       - type: file
         url: https://files.pythonhosted.org/packages/c0/6c/9f840c2e55b67b90745af06a540964b73589256cb10cc10057c87ac78fc2/wheel-0.37.1.tar.gz
         sha256: e9a504e793efbca1b8e0e9cb979a249cf4a0a7b5b8c9e8b65a5e39d49529c1c4
