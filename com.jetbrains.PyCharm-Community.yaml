@@ -62,8 +62,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/bc/e6/ac8b0c5076321b9b3e4318c32a8911a260d019be6584556a0b83a47dab4b/setuptools_scm-7.0.3.tar.gz
-        sha256: cf8ab8e235bed840cd4559b658af0d8e8a70896a191bbc510ee914ec5325332d
+        url: https://files.pythonhosted.org/packages/03/b6/052aacb07081ef5d4cae2daaae19c5d11e25b1122087af4710963cb25867/setuptools_scm-7.0.4.tar.gz
+        sha256: c27bc1f48593cfc9527251f1f0fc41ce282ea57bbc7fd5a1ea3acb99325fab4c
         x-checker-data:
           type: pypi
           name: setuptools-scm
@@ -158,8 +158,8 @@ modules:
           type: pypi
           name: hatch-vcs
       - type: file
-        url: https://files.pythonhosted.org/packages/fe/71/1df93bd59163c8084d812d166c907639646e8aac72886d563851b966bf18/typing_extensions-4.2.0.tar.gz
-        sha256: f1c24655a0da0d1b67f07e17a5e6b2a105894e6824b92096378bb3668ef02376
+        url: https://files.pythonhosted.org/packages/9e/1d/d128169ff58c501059330f1ad96ed62b79114a2eb30b8238af63a2e27f70/typing_extensions-4.3.0.tar.gz
+        sha256: e6d2677a32f47fc7eb2795db1dd15c1f34eff616bcaf2cfb5e997f854fa1c4a6
         x-checker-data:
           type: pypi
           name: typing-extensions
@@ -503,8 +503,8 @@ modules:
         #   type: pypi
         #   name: SecretStorage
       - type: file
-        url: https://files.pythonhosted.org/packages/00/9e/92de7e1217ccc3d5f352ba21e52398372525765b2e0c4530e6eb2ba9282a/cffi-1.15.0.tar.gz
-        sha256: 920f0d66a896c2d99f0adbb391f990a84091179542c205fa53ce5787aff87954
+        url: https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz
+        sha256: d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
         x-checker-data:
           type: pypi
           name: cffi
