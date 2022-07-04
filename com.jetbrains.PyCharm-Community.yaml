@@ -171,8 +171,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/14/15/72379e0884455c9b517015e8e5771c69e13749799af460e9199c3c7f6ab9/pipenv-2022.6.7.tar.gz
-        sha256: 6ac0e7a8bbe02859d46c53c03d3f33136bbf49c8c7d9a6d818409e17a604eda0
+        url: https://files.pythonhosted.org/packages/a2/d1/50890e2d3b018230cecf3e0d2597b6cc2d535f6a8b84bf3f9981e42ad989/pipenv-2022.7.4.tar.gz
+        sha256: 18420fbae2851d2b9d70d1e00f77a8c55d09704a177fe872a0a2da56e98eb018
         x-checker-data:
           type: pypi
           name: pipenv
