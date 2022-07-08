@@ -515,8 +515,8 @@ modules:
           type: pypi
           name: flit_core
       - type: file
-        url: https://files.pythonhosted.org/packages/bb/54/549ea28f2fae6cea82d566223015234a03d6a88177f12b2104357517be34/poetry-1.1.13.tar.gz
-        sha256: b905ed610085f568aa61574e0e09260c02bff9eae12ff672af39e9f399357ac4
+        url: https://files.pythonhosted.org/packages/b5/0c/6d139a547c5962da458f7899861d8f8f52a5909e37a100bf22e281007e7c/poetry-1.1.14.tar.gz
+        sha256: 8b5a7676cda9b9e85c71743c672352cabcb6e2f647b6b88fa95e4f374bc8edce
         x-checker-data:
           type: pypi
           name: poetry
