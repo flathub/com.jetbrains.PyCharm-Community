@@ -44,8 +44,8 @@ modules:
         virtualenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/a4/2f/05b77cb73501c01963de2cef343839f0803b64aab4d5476771ae303b97a6/virtualenv-20.15.1.tar.gz
-        sha256: 288171134a2ff3bfb1a2f54f119e77cd1b81c29fc1265a2356f3e8d14c7d58c4
+        url: https://files.pythonhosted.org/packages/6d/0e/0c41bda51d1bd283c69484c932646fcad0b5a36ff5ac9535e4be93aeb89c/virtualenv-20.16.1.tar.gz
+        sha256: 6cc42cad4d1a15c7ea5ed68e602eb49cc243b52d2eead36e577555cb56bf8705
         x-checker-data:
           type: pypi
           name: virtualenv
@@ -128,8 +128,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/83/2d/8fe45dabfdc8630999420fa9439f5dd8138f2a375a41a78f97dd2b7304dc/hatchling-1.5.0.tar.gz
-        sha256: 9ca409a41140cc662164680b78adcd3ba77b23a945984bd9970d11fe38e86a38
+        url: https://files.pythonhosted.org/packages/69/aa/a545bcbb63ca8c8c53b00584450bcc89de282bf1b1c50a150fc6b6f02c82/hatchling-1.6.0.tar.gz
+        sha256: bd6e8505de511ac4217ff50927f6d1845494608e401e63a62b830c31fb613544
         x-checker-data:
           type: pypi
           name: hatchling
@@ -171,8 +171,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/a2/d1/50890e2d3b018230cecf3e0d2597b6cc2d535f6a8b84bf3f9981e42ad989/pipenv-2022.7.4.tar.gz
-        sha256: 18420fbae2851d2b9d70d1e00f77a8c55d09704a177fe872a0a2da56e98eb018
+        url: https://files.pythonhosted.org/packages/e4/2a/2105cf9ff5bface220d3b6e0e82e38a5b3864fc2b444f90d908b1d12f748/pipenv-2022.7.24.tar.gz
+        sha256: 374e63450220d7abb298cbaee06c4b02274e6f1cb2ce7b7b677fd5fd3dd30841
         x-checker-data:
           type: pypi
           name: pipenv
@@ -189,8 +189,8 @@ modules:
           type: pypi
           name: wheel
       - type: file
-        url: https://files.pythonhosted.org/packages/a4/2f/05b77cb73501c01963de2cef343839f0803b64aab4d5476771ae303b97a6/virtualenv-20.15.1.tar.gz
-        sha256: 288171134a2ff3bfb1a2f54f119e77cd1b81c29fc1265a2356f3e8d14c7d58c4
+        url: https://files.pythonhosted.org/packages/6d/0e/0c41bda51d1bd283c69484c932646fcad0b5a36ff5ac9535e4be93aeb89c/virtualenv-20.16.1.tar.gz
+        sha256: 6cc42cad4d1a15c7ea5ed68e602eb49cc243b52d2eead36e577555cb56bf8705
         x-checker-data:
           type: pypi
           name: virtualenv
@@ -250,8 +250,8 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/25/36/f056e5f1389004cf886bb7a8514077f24224238a7534497c014a6b9ac770/urllib3-1.26.10.tar.gz
-        sha256: 879ba4d1e89654d9769ce13121e0f94310ea32e8d2f8cf587b77c08bbcdb30d6
+        url: https://files.pythonhosted.org/packages/6d/d5/e8258b334c9eb8eb78e31be92ea0d5da83ddd9385dc967dd92737604d239/urllib3-1.26.11.tar.gz
+        sha256: ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a
         x-checker-data:
           type: pypi
           name: urllib3
@@ -323,8 +323,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/a4/2f/05b77cb73501c01963de2cef343839f0803b64aab4d5476771ae303b97a6/virtualenv-20.15.1.tar.gz
-        sha256: 288171134a2ff3bfb1a2f54f119e77cd1b81c29fc1265a2356f3e8d14c7d58c4
+        url: https://files.pythonhosted.org/packages/6d/0e/0c41bda51d1bd283c69484c932646fcad0b5a36ff5ac9535e4be93aeb89c/virtualenv-20.16.1.tar.gz
+        sha256: 6cc42cad4d1a15c7ea5ed68e602eb49cc243b52d2eead36e577555cb56bf8705
         x-checker-data:
           type: pypi
           name: virtualenv
@@ -359,8 +359,8 @@ modules:
         #   type: pypi
         #   name: jeepney
       - type: file
-        url: https://files.pythonhosted.org/packages/25/36/f056e5f1389004cf886bb7a8514077f24224238a7534497c014a6b9ac770/urllib3-1.26.10.tar.gz
-        sha256: 879ba4d1e89654d9769ce13121e0f94310ea32e8d2f8cf587b77c08bbcdb30d6
+        url: https://files.pythonhosted.org/packages/6d/d5/e8258b334c9eb8eb78e31be92ea0d5da83ddd9385dc967dd92737604d239/urllib3-1.26.11.tar.gz
+        sha256: ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a
         x-checker-data:
           type: pypi
           name: urllib3
@@ -521,8 +521,8 @@ modules:
           type: pypi
           name: poetry
       - type: file
-        url: https://files.pythonhosted.org/packages/83/2d/8fe45dabfdc8630999420fa9439f5dd8138f2a375a41a78f97dd2b7304dc/hatchling-1.5.0.tar.gz
-        sha256: 9ca409a41140cc662164680b78adcd3ba77b23a945984bd9970d11fe38e86a38
+        url: https://files.pythonhosted.org/packages/69/aa/a545bcbb63ca8c8c53b00584450bcc89de282bf1b1c50a150fc6b6f02c82/hatchling-1.6.0.tar.gz
+        sha256: bd6e8505de511ac4217ff50927f6d1845494608e401e63a62b830c31fb613544
         x-checker-data:
           type: pypi
           name: hatchling
