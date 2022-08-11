@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/00/26/6c26b879cbd65b3c4daf7327a4cb205f8541c695e5d44b0c2c65892c20d1/setuptools-63.4.2.tar.gz
-        sha256: abcb76aa4decd7a17cbe0e4b31bdf549d106ba7f668e87e0860f5f7b84b9b3fe
+        url: https://files.pythonhosted.org/packages/95/d0/fdd5d7386308b1b05dbcf7a8c9315379ac8a6187c4171d936d9a506f1428/setuptools-64.0.1.tar.gz
+        sha256: 378dcbfcc78b81432934fbd684ece21a82cd4b135315698732f7c8a4b97f81a9
         x-checker-data:
           type: pypi
           name: setuptools
@@ -177,8 +177,8 @@ modules:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/00/26/6c26b879cbd65b3c4daf7327a4cb205f8541c695e5d44b0c2c65892c20d1/setuptools-63.4.2.tar.gz
-        sha256: abcb76aa4decd7a17cbe0e4b31bdf549d106ba7f668e87e0860f5f7b84b9b3fe
+        url: https://files.pythonhosted.org/packages/95/d0/fdd5d7386308b1b05dbcf7a8c9315379ac8a6187c4171d936d9a506f1428/setuptools-64.0.1.tar.gz
+        sha256: 378dcbfcc78b81432934fbd684ece21a82cd4b135315698732f7c8a4b97f81a9
         x-checker-data:
           type: pypi
           name: setuptools
@@ -268,8 +268,8 @@ modules:
         #   type: pypi
         #   name: charset-normalizer
       - type: file
-        url: https://files.pythonhosted.org/packages/00/26/6c26b879cbd65b3c4daf7327a4cb205f8541c695e5d44b0c2c65892c20d1/setuptools-63.4.2.tar.gz
-        sha256: abcb76aa4decd7a17cbe0e4b31bdf549d106ba7f668e87e0860f5f7b84b9b3fe
+        url: https://files.pythonhosted.org/packages/95/d0/fdd5d7386308b1b05dbcf7a8c9315379ac8a6187c4171d936d9a506f1428/setuptools-64.0.1.tar.gz
+        sha256: 378dcbfcc78b81432934fbd684ece21a82cd4b135315698732f7c8a4b97f81a9
         x-checker-data:
           type: pypi
           name: setuptools
@@ -557,8 +557,8 @@ modules:
           type: pypi
           name: Cython
       - type: file
-        url: https://files.pythonhosted.org/packages/00/26/6c26b879cbd65b3c4daf7327a4cb205f8541c695e5d44b0c2c65892c20d1/setuptools-63.4.2.tar.gz
-        sha256: abcb76aa4decd7a17cbe0e4b31bdf549d106ba7f668e87e0860f5f7b84b9b3fe
+        url: https://files.pythonhosted.org/packages/95/d0/fdd5d7386308b1b05dbcf7a8c9315379ac8a6187c4171d936d9a506f1428/setuptools-64.0.1.tar.gz
+        sha256: 378dcbfcc78b81432934fbd684ece21a82cd4b135315698732f7c8a4b97f81a9
         x-checker-data:
           type: pypi
           name: setuptools
