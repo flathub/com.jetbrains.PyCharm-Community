@@ -171,8 +171,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/67/6f/81ff57ed9f487a185ea7b0bb2517950f7ad661e3dc7f72e8ab28a8894d7a/pipenv-2022.8.17.tar.gz
-        sha256: 863d75dcd8b3ca8fcd7bfce49978454622dd80fbed1e547d2f43de13c6e1723c
+        url: https://files.pythonhosted.org/packages/92/72/6d99dd79ccc71a5d8f39df5cbd9f74c1d025789fccaca21e09b2e438ccd6/pipenv-2022.8.19.tar.gz
+        sha256: 44013256601acf66f3cbb68c922804a67a8d1b328fe01884851f16e49898852f
         x-checker-data:
           type: pypi
           name: pipenv
@@ -431,8 +431,8 @@ modules:
           type: pypi
           name: clikit
       - type: file
-        url: https://files.pythonhosted.org/packages/93/1d/d9392056df6670ae2a29fcb04cfa5cee9f6fbde7311a1bb511d4115e9b7a/charset-normalizer-2.1.0.tar.gz
-        sha256: 575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413
+        url: https://files.pythonhosted.org/packages/a1/34/44964211e5410b051e4b8d2869c470ae8a68ae274953b1c7de6d98bbcf94/charset-normalizer-2.1.1.tar.gz
+        sha256: 5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845
         x-checker-data:
           type: pypi
           name: charset-normalizer
