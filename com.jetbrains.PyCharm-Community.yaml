@@ -50,8 +50,8 @@ modules:
           type: pypi
           name: virtualenv
       - type: file
-        url: https://files.pythonhosted.org/packages/45/8d/00ecdc169f2ed7d95e1076c63cdf4315d92c875e9cff2e595b6b410fb8d6/setuptools-65.1.0.tar.gz
-        sha256: d2e010624c781b26ad6629a8de9832327cf853dea93894487979e55f9ad06857
+        url: https://files.pythonhosted.org/packages/cc/83/7ea9d9b3a6ff3225aca2fce5e4df373bee7e0a74c539711a4fbfda53374f/setuptools-65.3.0.tar.gz
+        sha256: 7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57
         x-checker-data:
           type: pypi
           name: setuptools
@@ -128,8 +128,8 @@ modules:
           type: pypi
           name: pyparsing
       - type: file
-        url: https://files.pythonhosted.org/packages/01/ea/b578ca819129b5b5c78c56bcae4cb78c478b2c3418fba75b4d8a34b7209e/hatchling-1.8.0.tar.gz
-        sha256: a4f982fdca0717d8c46bfe7b501302f90aaf2a5302845d550b49c8739681feb2
+        url: https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+        sha256: 448b04b23faed669b2b565b998ac955af4feea66c5deed3a1212ac9399d2e1cd
         x-checker-data:
           type: pypi
           name: hatchling
@@ -171,14 +171,14 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/67/6f/81ff57ed9f487a185ea7b0bb2517950f7ad661e3dc7f72e8ab28a8894d7a/pipenv-2022.8.17.tar.gz
-        sha256: 863d75dcd8b3ca8fcd7bfce49978454622dd80fbed1e547d2f43de13c6e1723c
+        url: https://files.pythonhosted.org/packages/09/45/fd7bd81e18104f77214430ff846ab356f85f2ac24d1aa328e3c3ed2b2bb3/pipenv-2022.8.24.tar.gz
+        sha256: edbff81766d4328115b28738df0e5240cb2299a34ff0c60d524ad2855df18c69
         x-checker-data:
           type: pypi
           name: pipenv
       - type: file
-        url: https://files.pythonhosted.org/packages/45/8d/00ecdc169f2ed7d95e1076c63cdf4315d92c875e9cff2e595b6b410fb8d6/setuptools-65.1.0.tar.gz
-        sha256: d2e010624c781b26ad6629a8de9832327cf853dea93894487979e55f9ad06857
+        url: https://files.pythonhosted.org/packages/cc/83/7ea9d9b3a6ff3225aca2fce5e4df373bee7e0a74c539711a4fbfda53374f/setuptools-65.3.0.tar.gz
+        sha256: 7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57
         x-checker-data:
           type: pypi
           name: setuptools
@@ -250,8 +250,8 @@ modules:
           type: pypi
           name: idna
       - type: file
-        url: https://files.pythonhosted.org/packages/6d/d5/e8258b334c9eb8eb78e31be92ea0d5da83ddd9385dc967dd92737604d239/urllib3-1.26.11.tar.gz
-        sha256: ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a
+        url: https://files.pythonhosted.org/packages/b2/56/d87d6d3c4121c0bcec116919350ca05dc3afd2eeb7dc88d07e8083f8ea94/urllib3-1.26.12.tar.gz
+        sha256: 3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e
         x-checker-data:
           type: pypi
           name: urllib3
@@ -268,8 +268,8 @@ modules:
         #   type: pypi
         #   name: charset-normalizer
       - type: file
-        url: https://files.pythonhosted.org/packages/45/8d/00ecdc169f2ed7d95e1076c63cdf4315d92c875e9cff2e595b6b410fb8d6/setuptools-65.1.0.tar.gz
-        sha256: d2e010624c781b26ad6629a8de9832327cf853dea93894487979e55f9ad06857
+        url: https://files.pythonhosted.org/packages/cc/83/7ea9d9b3a6ff3225aca2fce5e4df373bee7e0a74c539711a4fbfda53374f/setuptools-65.3.0.tar.gz
+        sha256: 7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57
         x-checker-data:
           type: pypi
           name: setuptools
@@ -359,8 +359,8 @@ modules:
         #   type: pypi
         #   name: jeepney
       - type: file
-        url: https://files.pythonhosted.org/packages/6d/d5/e8258b334c9eb8eb78e31be92ea0d5da83ddd9385dc967dd92737604d239/urllib3-1.26.11.tar.gz
-        sha256: ea6e8fb210b19d950fab93b60c9009226c63a28808bc8386e05301e25883ac0a
+        url: https://files.pythonhosted.org/packages/b2/56/d87d6d3c4121c0bcec116919350ca05dc3afd2eeb7dc88d07e8083f8ea94/urllib3-1.26.12.tar.gz
+        sha256: 3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e
         x-checker-data:
           type: pypi
           name: urllib3
@@ -431,8 +431,8 @@ modules:
           type: pypi
           name: clikit
       - type: file
-        url: https://files.pythonhosted.org/packages/93/1d/d9392056df6670ae2a29fcb04cfa5cee9f6fbde7311a1bb511d4115e9b7a/charset-normalizer-2.1.0.tar.gz
-        sha256: 575e708016ff3a5e3681541cb9d79312c416835686d054a23accb873b254f413
+        url: https://files.pythonhosted.org/packages/a1/34/44964211e5410b051e4b8d2869c470ae8a68ae274953b1c7de6d98bbcf94/charset-normalizer-2.1.1.tar.gz
+        sha256: 5a3d016c7c547f69d6f81fb0db9449ce888b418b5b9952cc5e6e66843e9dd845
         x-checker-data:
           type: pypi
           name: charset-normalizer
@@ -515,14 +515,14 @@ modules:
           type: pypi
           name: flit_core
       - type: file
-        url: https://files.pythonhosted.org/packages/b5/0c/6d139a547c5962da458f7899861d8f8f52a5909e37a100bf22e281007e7c/poetry-1.1.14.tar.gz
-        sha256: 8b5a7676cda9b9e85c71743c672352cabcb6e2f647b6b88fa95e4f374bc8edce
+        url: https://files.pythonhosted.org/packages/e0/c8/09e126761651e291ab54db1b1d6983c64a1cf67b8b25ce9c806db23e16ab/poetry-1.1.15.tar.gz
+        sha256: a373848fd205f31b2f6bee6b87a201ea1e09ca573a2f40d0991539f564cedffd
         x-checker-data:
           type: pypi
           name: poetry
       - type: file
-        url: https://files.pythonhosted.org/packages/01/ea/b578ca819129b5b5c78c56bcae4cb78c478b2c3418fba75b4d8a34b7209e/hatchling-1.8.0.tar.gz
-        sha256: a4f982fdca0717d8c46bfe7b501302f90aaf2a5302845d550b49c8739681feb2
+        url: https://files.pythonhosted.org/packages/a1/e0/e22e343e7e5853b1d10c5f6fb5072ca3d38aa05e51c9920bb373d393e40c/hatchling-1.8.1.tar.gz
+        sha256: 448b04b23faed669b2b565b998ac955af4feea66c5deed3a1212ac9399d2e1cd
         x-checker-data:
           type: pypi
           name: hatchling
@@ -557,8 +557,8 @@ modules:
           type: pypi
           name: Cython
       - type: file
-        url: https://files.pythonhosted.org/packages/45/8d/00ecdc169f2ed7d95e1076c63cdf4315d92c875e9cff2e595b6b410fb8d6/setuptools-65.1.0.tar.gz
-        sha256: d2e010624c781b26ad6629a8de9832327cf853dea93894487979e55f9ad06857
+        url: https://files.pythonhosted.org/packages/cc/83/7ea9d9b3a6ff3225aca2fce5e4df373bee7e0a74c539711a4fbfda53374f/setuptools-65.3.0.tar.gz
+        sha256: 7732871f4f7fa58fb6bdcaeadb0161b2bd046c85905dbaa066bdcbcc81953b57
         x-checker-data:
           type: pypi
           name: setuptools
