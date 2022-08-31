@@ -171,8 +171,8 @@ modules:
         pipenv
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/09/45/fd7bd81e18104f77214430ff846ab356f85f2ac24d1aa328e3c3ed2b2bb3/pipenv-2022.8.24.tar.gz
-        sha256: edbff81766d4328115b28738df0e5240cb2299a34ff0c60d524ad2855df18c69
+        url: https://files.pythonhosted.org/packages/18/6e/55b5e77915b56a495394786622fb8a580c876ceed97e773c7ce6386032d1/pipenv-2022.8.30.tar.gz
+        sha256: 41475adbc5ade17184643bcfdfa99632e7f61513a17ec71c4832031b8862cbab
         x-checker-data:
           type: pypi
           name: pipenv
@@ -449,8 +449,8 @@ modules:
           type: pypi
           name: msgpack
       - type: file
-        url: https://files.pythonhosted.org/packages/51/be/c4dce945cf7de2dc38d94cf724525f2a97d83b18403eeeb87eecb715dada/poetry-core-1.0.8.tar.gz
-        sha256: 951fc7c1f8d710a94cb49019ee3742125039fc659675912ea614ac2aa405b118
+        url: https://files.pythonhosted.org/packages/ea/47/929cccb98445b627e3a42f29290b3f6dc6c21f3dc0ba7b3bf16215298f94/poetry-core-1.1.0.tar.gz
+        sha256: d145ae121cf79118a8901b60f2c951c4edcc16f55eb8aaefc156aa33aa921f07
         x-checker-data:
           type: pypi
           name: poetry-core
