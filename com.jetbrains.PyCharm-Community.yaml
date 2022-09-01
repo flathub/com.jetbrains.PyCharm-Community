@@ -1,6 +1,6 @@
 app-id: com.jetbrains.PyCharm-Community
 runtime: org.freedesktop.Sdk
-runtime-version: '21.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 command: pycharm
 separate-locales: false
@@ -22,14 +22,14 @@ finish-args:
 add-extensions:
   com.jetbrains.PyCharm.Extensions:
     directory: extensions
-    version: '21.08'
+    version: '22.08'
     add-ld-path: lib
     merge-dirs: bin;lib
     subdirectories: true
     no-autodownload: true
   com.jetbrains.PyCharm.Packages:
     directory: packages
-    version: '21.08'
+    version: '22.08'
     add-ld-path: lib
     merge-dirs: bin;lib;python
     subdirectories: true
