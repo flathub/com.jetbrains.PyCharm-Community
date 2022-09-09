@@ -28,10 +28,10 @@ sources:
   - type: file
     url: https://files.pythonhosted.org/packages/54/c2/7b8c3babedc92d62b3f5f8d2eaa4b969aaa70dba29f05bc7ef7dc3c18494/crashtest-0.4.0-py3-none-any.whl
     sha256: 476839dfa58bb238aa7db8752db7029bfc8bdc87b571d3a15727da8af61b7487
-    x-checker-data:
-      name: crashtest
-      packagetype: bdist_wheel
-      type: pypi
+    # x-checker-data:
+    #   name: crashtest
+    #   packagetype: bdist_wheel
+    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/09/46/3577da4237675e90630e8e9ccd2c7dbcd42afd4463712a207eab148dfbc2/cleo-0.8.1-py2.py3-none-any.whl
     sha256: 141cda6dc94a92343be626bb87a0b6c86ae291dfc732a57bf04310d4b4201753
