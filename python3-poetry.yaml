@@ -26,8 +26,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/54/c2/7b8c3babedc92d62b3f5f8d2eaa4b969aaa70dba29f05bc7ef7dc3c18494/crashtest-0.4.0-py3-none-any.whl
-    sha256: 476839dfa58bb238aa7db8752db7029bfc8bdc87b571d3a15727da8af61b7487
+    url: https://files.pythonhosted.org/packages/76/97/2a99f020be5e4a5a97ba10bc480e2e6a889b5087103a2c6b952b5f819d27/crashtest-0.3.1-py3-none-any.whl
+    sha256: 300f4b0825f57688b47b6d70c6a31de33512eb2fa1ac614f780939aa0cf91680
     # x-checker-data:
     #   name: crashtest
     #   packagetype: bdist_wheel
