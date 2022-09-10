@@ -292,6 +292,13 @@ sources:
     url: https://files.pythonhosted.org/packages/8f/e6/f92d21f915cee7acf1cfe3e0ec60b8e9888dcf40a9814e3838a87ba487d0/jaraco.classes-3.2.2-py3-none-any.whl
     sha256: e6ef6fd3fcf4579a7a019d87d1e56a883f4e4c35cfe925f86731abc58804e647
     x-checker-data:
-      name: distlib
-      packagetype: jaraco.classes
+      name: jaraco.classes
+      packagetype: bdist_wheel
+      type: pypi
+  - type: file
+    url: https://files.pythonhosted.org/packages/0b/ff/1ad78678bee731ae5414ea5e97396b3f91de32186028daa614d322ac5a8b/more_itertools-8.14.0-py3-none-any.whl
+    sha256: 1bc4f91ee5b1b31ac7ceacc17c09befe6a40a503907baf9c839c229b5095cfd2
+    x-checker-data:
+      name: more-itertools
+      packagetype: bdist_wheel
       type: pypi
