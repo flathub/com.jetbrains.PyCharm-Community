@@ -254,8 +254,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/83/63/15ce47ede5b03657e920f3f006e56ca9a16f7873978146f2f77e297bdd22/CacheControl-0.12.11-py2.py3-none-any.whl
-    sha256: 2c75d6a8938cb1933c75c50184549ad42728a27e9f6b92fd677c3151aa72555b
+    url: https://files.pythonhosted.org/packages/1e/49/9db6d5be74f606d1b6f2bd4469827b0eed557c4bbafb30134519510f7f0d/CacheControl-0.12.12-py2.py3-none-any.whl
+    sha256: 5986a16897cd296bdb7b86b42e0403c4ca30b9875f0e0c7c8e509b50cff115b7
     x-checker-data:
       name: CacheControl
       packagetype: bdist_wheel
