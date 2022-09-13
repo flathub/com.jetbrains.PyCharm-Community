@@ -103,8 +103,8 @@ sources:
 #      packagetype: bdist_wheel
 #      type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ac/80/e0df41f336f21d35befa4ff15348eb3e8b2483e131922e8427223b52e688/certifi-2022.6.15.1-py3-none-any.whl
-    sha256: 43dadad18a7f168740e66944e4fa82c6611848ff9056ad910f8f7a3e46ab89e0
+    url: https://files.pythonhosted.org/packages/ca/87/bf1fab5dc5d8ecd30fab4ecb6114881b5cc3859e5d4a6c9b2c48f7d70276/certifi-2022.6.15.2-py3-none-any.whl
+    sha256: 0aa1a42fbd57645fabeb6290a7687c21755b0344ecaeaa05f4e9f6207ae2e9a8
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
