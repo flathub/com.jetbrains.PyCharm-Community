@@ -19,8 +19,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/04/a2/d918dcd22354d8958fe113e1a3630137e0fc8b44859ade3063982eacd2a4/idna-3.3-py3-none-any.whl
-    sha256: 84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff
+    url: https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl
+    sha256: 90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
     x-checker-data:
       name: idna
       packagetype: bdist_wheel
@@ -103,8 +103,8 @@ sources:
 #      packagetype: bdist_wheel
 #      type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ac/80/e0df41f336f21d35befa4ff15348eb3e8b2483e131922e8427223b52e688/certifi-2022.6.15.1-py3-none-any.whl
-    sha256: 43dadad18a7f168740e66944e4fa82c6611848ff9056ad910f8f7a3e46ab89e0
+    url: https://files.pythonhosted.org/packages/ca/87/bf1fab5dc5d8ecd30fab4ecb6114881b5cc3859e5d4a6c9b2c48f7d70276/certifi-2022.6.15.2-py3-none-any.whl
+    sha256: 0aa1a42fbd57645fabeb6290a7687c21755b0344ecaeaa05f4e9f6207ae2e9a8
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
