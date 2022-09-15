@@ -67,8 +67,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2022.2.1.tar.gz
-        sha256: fc91b134b6899a09ce8cbdc1ebdbdcfe1c1ffb6dbe756b30b24d7ad131bf27c8
+        url: https://download.jetbrains.com/python/pycharm-community-2022.2.2.tar.gz
+        sha256: 2f361c5f59c685c9f8d1385029ed753eabe5b688a82acef6e83a50f0d2b9d7a8
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains

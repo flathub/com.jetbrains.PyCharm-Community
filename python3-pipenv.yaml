@@ -6,8 +6,8 @@ build-commands:
     --prefix=${FLATPAK_DEST} "pipenv" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/ac/80/e0df41f336f21d35befa4ff15348eb3e8b2483e131922e8427223b52e688/certifi-2022.6.15.1-py3-none-any.whl
-    sha256: 43dadad18a7f168740e66944e4fa82c6611848ff9056ad910f8f7a3e46ab89e0
+    url: https://files.pythonhosted.org/packages/6a/34/cd29f4dd8a23ce45f2b8ce9631ff2d4205fb74eddb412a3dc4fd1e4aa800/certifi-2022.9.14-py3-none-any.whl
+    sha256: e232343de1ab72c2aa521b625c80f699e356830fd0e2c620b465b304b17b0516
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
