@@ -40,8 +40,8 @@ sources:
     #   packagetype: bdist_wheel
     #   type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/fa/1a/928afa4256942608bd4a4d4ed4452ce12de1b4e6e4a36b7e67c73cb1b82c/poetry_core-1.1.0-py3-none-any.whl
-    sha256: da16a12054bf3f1ff8656d4c289f99c3d6b7704d272fb174004c4dc82e045954
+    url: https://files.pythonhosted.org/packages/28/60/6e60b418132aef03e4142064242c4d1e56e96c56979488ed4fc0ba7627c3/poetry_core-1.2.0-py3-none-any.whl
+    sha256: e248d36c1314dd60fbc66390791923ad8b58c629d3e587080b7c1537a1c0d30f
     x-checker-data:
       name: poetry_core
       packagetype: bdist_wheel
