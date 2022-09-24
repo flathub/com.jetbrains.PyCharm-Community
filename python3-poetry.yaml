@@ -61,8 +61,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/cb/c6/a140cf33c9938f7f52ed9cd27dd00011088d9327b6bba66e360fb8e4f0b1/keyring-23.9.2-py3-none-any.whl
-    sha256: e126cffb36da963fad93158b1b8fdf9ee2976f926163f550671241ed20d32799
+    url: https://files.pythonhosted.org/packages/2a/11/b694ede59e7c677daa2b4201ab4af2d7de2edce7b79a5b51600066aea42e/keyring-23.9.3-py3-none-any.whl
+    sha256: 69732a15cb1433bdfbc3b980a8a36a04878a6cfd7cb99f497b573f31618001c0
     x-checker-data:
       name: keyring
       packagetype: bdist_wheel
@@ -103,8 +103,8 @@ sources:
 #      packagetype: bdist_wheel
 #      type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/6a/34/cd29f4dd8a23ce45f2b8ce9631ff2d4205fb74eddb412a3dc4fd1e4aa800/certifi-2022.9.14-py3-none-any.whl
-    sha256: e232343de1ab72c2aa521b625c80f699e356830fd0e2c620b465b304b17b0516
+    url: https://files.pythonhosted.org/packages/1d/38/fa96a426e0c0e68aabc68e896584b83ad1eec779265a028e156ce509630e/certifi-2022.9.24-py3-none-any.whl
+    sha256: 90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
