@@ -6,8 +6,8 @@ build-commands:
     --prefix=${FLATPAK_DEST} "pipenv" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/6a/34/cd29f4dd8a23ce45f2b8ce9631ff2d4205fb74eddb412a3dc4fd1e4aa800/certifi-2022.9.14-py3-none-any.whl
-    sha256: e232343de1ab72c2aa521b625c80f699e356830fd0e2c620b465b304b17b0516
+    url: https://files.pythonhosted.org/packages/1d/38/fa96a426e0c0e68aabc68e896584b83ad1eec779265a028e156ce509630e/certifi-2022.9.24-py3-none-any.whl
+    sha256: 90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
@@ -27,8 +27,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/95/d0/213938227a6bb21f7a73b357c5d568f1a3735b390fec724bce7216c68d90/pipenv-2022.9.8-py2.py3-none-any.whl
-    sha256: e02642085a160516c49df34fa939a99cea306aa04bef8a5610392aacbfb03574
+    url: https://files.pythonhosted.org/packages/43/14/fb9a7c9b104ffa64d631f6c3ab2dcb9b7ec7ec52d32f82466e9b785bbac0/pipenv-2022.9.24-py2.py3-none-any.whl
+    sha256: 22dd3601ab86b2d1caa36a422c4ec6505e2484e71e3b733554c3c3bb8dbe9606
     x-checker-data:
       name: pipenv
       packagetype: bdist_wheel
