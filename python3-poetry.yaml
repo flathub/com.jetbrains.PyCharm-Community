@@ -123,8 +123,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/07/79/6875ad552af0f2bb98b60fcd281d17620f5ee49f652e34c54969596f780a/poetry_plugin_export-1.0.7-py3-none-any.whl
-    sha256: dd9d4552e7113a86c97908c13b9a439cb46830f247c7e4969e46a0d8d70e4d3f
+    url: https://files.pythonhosted.org/packages/32/75/afe03322cff9f4753ad549eab2429109207dc10efd74cbc1de8b6944b9d9/poetry_plugin_export-1.1.1-py3-none-any.whl
+    sha256: 170fa367794d2385975d75298fe5509f772d35216ee36b8fa50c0350a064b761
     x-checker-data:
       name: poetry_plugin_export
       packagetype: bdist_wheel
@@ -164,8 +164,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/d0/98/c277899f5aa21f6e6946e1c83f2af650cbfee982763ffb91db07ff7d3a13/importlib_metadata-4.13.0-py3-none-any.whl
-    sha256: 8a8a81bcf996e74fee46f0d16bd3eaa382a7eb20fd82445c3ad11f4090334116
+    url: https://files.pythonhosted.org/packages/b5/64/ef29a63cf08f047bb7fb22ab0f1f774b87eed0bb46d067a5a524798a4af8/importlib_metadata-5.0.0-py3-none-any.whl
+    sha256: ddb0e35065e8938f867ed4928d0ae5bf2a53b7773871bfe6bcc7e4fcdc7dea43
     x-checker-data:
       name: importlib_metadata
       packagetype: bdist_wheel
