@@ -150,12 +150,12 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/a7/c5/cdf6f0e54d15a3f3440d26c9f962b58a3b2ff8d76692408251ed4831b68d/requests_toolbelt-0.10.0-py2.py3-none-any.whl
-    sha256: 64c6b8c51b515d123f9f708a29743f44eb70c4479440641ed2df8c4dea56d985
-    x-checker-data:
-      name: requests_toolbelt
-      packagetype: bdist_wheel
-      type: pypi
+    url: https://files.pythonhosted.org/packages/60/ef/7681134338fc097acef8d9b2f8abe0458e4d87559c689a8c306d0957ece5/requests_toolbelt-0.9.1-py2.py3-none-any.whl
+    sha256: 380606e1d10dc85c3bd47bf5a6095f815ec007be7a8b69c878507068df059e6f
+    # x-checker-data:
+    #   name: requests_toolbelt
+    #   packagetype: bdist_wheel
+    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/94/b3/ff2845971788613e646e667043fdb5f128e2e540aefa09a3c55be8290d6d/filelock-3.8.0-py3-none-any.whl
     sha256: 617eb4e5eedc82fc5f47b6d61e4d11cb837c56cb4544e39081099fa17ad109d4
