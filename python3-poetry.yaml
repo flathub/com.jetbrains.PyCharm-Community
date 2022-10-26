@@ -192,8 +192,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/09/85/302c153615db93e9197f13e02f448b3f95d7d786948f2fb3d6d5830a481b/zipp-3.9.0-py3-none-any.whl
-    sha256: 972cfa31bc2fedd3fa838a51e9bc7e64b7fb725a8c00e7431554311f180e9980
+    url: https://files.pythonhosted.org/packages/40/8a/d63273ed0fa4a3d06f77e7b043f6577d8894e95515b0c187c52e2c0efabb/zipp-3.10.0-py3-none-any.whl
+    sha256: 4fcb6f278987a6605757302a6e40e896257570d11c51628968ccb2a47e80c6c1
     x-checker-data:
       name: zipp
       packagetype: bdist_wheel
@@ -206,8 +206,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/db/51/a507c856293ab05cdc1db77ff4bc1268ddd39f29e7dc4919aa497f0adbec/charset_normalizer-2.1.1-py3-none-any.whl
-    sha256: 83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f
+    url: https://files.pythonhosted.org/packages/ff/57/478cbcaf37e1b5f558014734da6921390ba40491d904006289ca49191861/charset_normalizer-3.0.0-py3-none-any.whl
+    sha256: c2a896d961d1e2a035b10f85c71ea49e3837ff79e3d30d6d3304a12172019566
     x-checker-data:
       name: charset_normalizer
       packagetype: bdist_wheel
@@ -275,8 +275,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/c1/23/9dc3c3fc959ad442397dd90cbc9ea2eca7c8a140d242c6e4222675ea9f86/virtualenv-20.16.5-py3-none-any.whl
-    sha256: d07dfc5df5e4e0dbc92862350ad87a36ed505b978f6c39609dc489eadd5b0d27
+    url: https://files.pythonhosted.org/packages/ef/e0/1295d8a0b34f71a81fdf0f09c1ef658ae6d611240829c3c39fb2b6b80967/virtualenv-20.16.6-py3-none-any.whl
+    sha256: 186ca84254abcbde98180fd17092f9628c5fe742273c02724972a1d8a2035108
     x-checker-data:
       name: virtualenv
       packagetype: bdist_wheel
@@ -296,8 +296,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/0b/ff/1ad78678bee731ae5414ea5e97396b3f91de32186028daa614d322ac5a8b/more_itertools-8.14.0-py3-none-any.whl
-    sha256: 1bc4f91ee5b1b31ac7ceacc17c09befe6a40a503907baf9c839c229b5095cfd2
+    url: https://files.pythonhosted.org/packages/5d/87/1ec3fcc09d2c04b977eabf8a1083222f82eaa2f46d5a4f85f403bf8e7b30/more_itertools-9.0.0-py3-none-any.whl
+    sha256: 250e83d7e81d0c87ca6bd942e6aeab8cc9daa6096d12c5308f3f92fa5e5c1f41
     x-checker-data:
       name: more-itertools
       packagetype: bdist_wheel
