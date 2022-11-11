@@ -206,12 +206,12 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ff/57/478cbcaf37e1b5f558014734da6921390ba40491d904006289ca49191861/charset_normalizer-3.0.0-py3-none-any.whl
-    sha256: c2a896d961d1e2a035b10f85c71ea49e3837ff79e3d30d6d3304a12172019566
-    x-checker-data:
-      name: charset_normalizer
-      packagetype: bdist_wheel
-      type: pypi
+    url: https://files.pythonhosted.org/packages/db/51/a507c856293ab05cdc1db77ff4bc1268ddd39f29e7dc4919aa497f0adbec/charset_normalizer-2.1.1-py3-none-any.whl
+    sha256: 83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f
+    # x-checker-data:
+    #   name: charset_normalizer
+    #   packagetype: bdist_wheel
+    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
     sha256: f5d869c18f030202eb412f08b28d2afeea553d6613aee89e200d7aca7ef01f5f
