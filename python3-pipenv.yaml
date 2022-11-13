@@ -34,15 +34,15 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/2b/65/6750814157aba2e560993260d0a5a802536b3bf64bad7e54afc4334eddcc/platformdirs-2.5.3-py3-none-any.whl
-    sha256: 0cb405749187a194f444c25c82ef7225232f11564721eabffc6ec70df83b11cb
+    url: https://files.pythonhosted.org/packages/61/e0/15ba41c6716acb033c3793be3a02f26c53914ecd9bdd6b315001f8f5f581/platformdirs-2.5.4-py3-none-any.whl
+    sha256: af0276409f9a02373d540bf8480021a048711d572745aef4b7842dad245eba10
     x-checker-data:
       name: platformdirs
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ef/e0/1295d8a0b34f71a81fdf0f09c1ef658ae6d611240829c3c39fb2b6b80967/virtualenv-20.16.6-py3-none-any.whl
-    sha256: 186ca84254abcbde98180fd17092f9628c5fe742273c02724972a1d8a2035108
+    url: https://files.pythonhosted.org/packages/fd/76/c99d37939e17e3c53f1c1b7e4f5365a9160b1cd0b37700657eed9a2a6775/virtualenv-20.16.7-py3-none-any.whl
+    sha256: efd66b00386fdb7dbe4822d172303f40cd05e50e01740b19ea42425cbe653e29
     x-checker-data:
       name: virtualenv
       packagetype: bdist_wheel
