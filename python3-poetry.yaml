@@ -75,8 +75,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/f2/c5/8e4cdbcbf81c5003a88722c34009bbda692d495dbccc2bf23edf9402d83d/jsonschema-4.17.0-py3-none-any.whl
-    sha256: f660066c3966db7d6daeaea8a75e0b68237a48e51cf49882087757bb59916248
+    url: https://files.pythonhosted.org/packages/9f/df/824fdaa0d7228fa2e8a5171a408dbabe2c66955afd5be5211725389640b5/jsonschema-4.17.1-py3-none-any.whl
+    sha256: 410ef23dcdbca4eaedc08b850079179883c2ed09378bd1f760d4af4aacfa28d7
     x-checker-data:
       name: jsonschema
       packagetype: bdist_wheel
