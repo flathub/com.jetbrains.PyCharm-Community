@@ -40,8 +40,8 @@ sources:
     #   packagetype: bdist_wheel
     #   type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/12/e4/5c91edb0bc975752c308e425a86b02b5b00cf990b362cfc482254d66cbbb/poetry_core-1.3.2-py3-none-any.whl
-    sha256: ea0f5a90b339cde132b4e43cff78a1b440cd928db864bb67cfc97fdfcefe7218
+    url: https://files.pythonhosted.org/packages/53/2e/8c9edbd32862b801e7e01ac5bb7a2fce827c5b535da9421003a857ac6204/poetry_core-1.4.0-py3-none-any.whl
+    sha256: 5559ab80384ac021db329ef317086417e140ee1176bcfcb3a3838b544e213c8e
     x-checker-data:
       name: poetry_core
       packagetype: bdist_wheel
@@ -75,8 +75,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/f2/c5/8e4cdbcbf81c5003a88722c34009bbda692d495dbccc2bf23edf9402d83d/jsonschema-4.17.0-py3-none-any.whl
-    sha256: f660066c3966db7d6daeaea8a75e0b68237a48e51cf49882087757bb59916248
+    url: https://files.pythonhosted.org/packages/9f/df/824fdaa0d7228fa2e8a5171a408dbabe2c66955afd5be5211725389640b5/jsonschema-4.17.1-py3-none-any.whl
+    sha256: 410ef23dcdbca4eaedc08b850079179883c2ed09378bd1f760d4af4aacfa28d7
     x-checker-data:
       name: jsonschema
       packagetype: bdist_wheel
