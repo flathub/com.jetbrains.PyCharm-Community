@@ -13,8 +13,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/94/b3/ff2845971788613e646e667043fdb5f128e2e540aefa09a3c55be8290d6d/filelock-3.8.0-py3-none-any.whl
-    sha256: 617eb4e5eedc82fc5f47b6d61e4d11cb837c56cb4544e39081099fa17ad109d4
+    url: https://files.pythonhosted.org/packages/ae/89/3cfdeebfc8bef6cb649079d603d795cd5e047ceba63e52aae108a088a93f/filelock-3.8.1-py3-none-any.whl
+    sha256: 3156639b1454b5f828255abf5710f7fc1e10dac69bde3e09e6189b29a91f2505
     x-checker-data:
       name: filelock
       packagetype: bdist_wheel
