@@ -6,8 +6,8 @@ build-commands:
     --prefix=${FLATPAK_DEST} "virtualenv" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/94/b3/ff2845971788613e646e667043fdb5f128e2e540aefa09a3c55be8290d6d/filelock-3.8.0-py3-none-any.whl
-    sha256: 617eb4e5eedc82fc5f47b6d61e4d11cb837c56cb4544e39081099fa17ad109d4
+    url: https://files.pythonhosted.org/packages/7c/37/4fed6f28d8010c791437b808a94f37c4ae58ee3998b653d2c0286a8cc190/filelock-3.8.2-py3-none-any.whl
+    sha256: 8df285554452285f79c035efb0c861eb33a4bcfa5b7a137016e32e6a90f9792c
     x-checker-data:
       name: filelock
       packagetype: bdist_wheel
@@ -20,8 +20,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/4c/5a/43d00dcd60392a249472638199c0fd7d023160194b35455fbbaae43eda20/virtualenv-20.17.0-py3-none-any.whl
-    sha256: 40a7e06a98728fd5769e1af6fd1a706005b4bb7e16176a272ed4292473180389
+    url: https://files.pythonhosted.org/packages/18/a2/7931d40ecb02b5236a34ac53770f2f6931e3082b7a7dafe915d892d749d6/virtualenv-20.17.1-py3-none-any.whl
+    sha256: ce3b1684d6e1a20a3e5ed36795a97dfc6af29bc3970ca8dab93e11ac6094b3c4
     x-checker-data:
       name: virtualenv
       packagetype: bdist_wheel
