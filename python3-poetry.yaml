@@ -302,3 +302,10 @@ sources:
       name: more-itertools
       packagetype: bdist_wheel
       type: pypi
+  - type: file
+    url: https://files.pythonhosted.org/packages/da/3d/e93c5d32902fb442ba6c39856748150130d689f1e10232d3fe7812662861/trove_classifiers-2022.12.1-py3-none-any.whl
+    sha256: 20ce6feeadd5793718b2106f0c832f821f29838aec792143e620b0a0a0a810b8
+    x-checker-data:
+      name: trove_classifiers
+      packagetype: bdist_wheel
+      type: pypi
