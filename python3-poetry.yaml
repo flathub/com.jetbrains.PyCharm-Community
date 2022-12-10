@@ -42,10 +42,10 @@ sources:
   - type: file
     url: https://files.pythonhosted.org/packages/12/e4/5c91edb0bc975752c308e425a86b02b5b00cf990b362cfc482254d66cbbb/poetry_core-1.3.2-py3-none-any.whl
     sha256: ea0f5a90b339cde132b4e43cff78a1b440cd928db864bb67cfc97fdfcefe7218
-    # x-checker-data:
-    #   name: poetry_core
-    #   packagetype: bdist_wheel
-    #   type: pypi
+    x-checker-data:
+      name: poetry_core
+      packagetype: bdist_wheel
+      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl
     sha256: 4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35
