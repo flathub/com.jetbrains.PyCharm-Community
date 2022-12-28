@@ -6,15 +6,15 @@ build-commands:
     --prefix=${FLATPAK_DEST} "virtualenv" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/7c/37/4fed6f28d8010c791437b808a94f37c4ae58ee3998b653d2c0286a8cc190/filelock-3.8.2-py3-none-any.whl
-    sha256: 8df285554452285f79c035efb0c861eb33a4bcfa5b7a137016e32e6a90f9792c
+    url: https://files.pythonhosted.org/packages/14/4c/b201d0292ca4e0950f0741212935eac9996f69cd66b92a3587e594999163/filelock-3.9.0-py3-none-any.whl
+    sha256: f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d
     x-checker-data:
       name: filelock
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/87/69/cd019a9473bcdfb38983e2d550ccb239264fc4c2fc32c42ac1b1cc2506b6/platformdirs-2.6.0-py3-none-any.whl
-    sha256: 1a89a12377800c81983db6be069ec068eee989748799b946cce2a6e80dcc54ca
+    url: https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl
+    sha256: 83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490
     x-checker-data:
       name: platformdirs
       packagetype: bdist_wheel

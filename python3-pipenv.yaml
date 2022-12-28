@@ -6,15 +6,15 @@ build-commands:
     --prefix=${FLATPAK_DEST} "pipenv" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/1d/38/fa96a426e0c0e68aabc68e896584b83ad1eec779265a028e156ce509630e/certifi-2022.9.24-py3-none-any.whl
-    sha256: 90c1a32f1d68f940488354e36370f6cca89f0f106db09518524c88d6ed83f382
+    url: https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl
+    sha256: 4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
     x-checker-data:
       name: certifi
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/7c/37/4fed6f28d8010c791437b808a94f37c4ae58ee3998b653d2c0286a8cc190/filelock-3.8.2-py3-none-any.whl
-    sha256: 8df285554452285f79c035efb0c861eb33a4bcfa5b7a137016e32e6a90f9792c
+    url: https://files.pythonhosted.org/packages/14/4c/b201d0292ca4e0950f0741212935eac9996f69cd66b92a3587e594999163/filelock-3.9.0-py3-none-any.whl
+    sha256: f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d
     x-checker-data:
       name: filelock
       packagetype: bdist_wheel
@@ -27,15 +27,15 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/e4/70/89e76ec283919f482c74034760cb3ac6960e1c71d12ae79c8cc7fb7133ff/pipenv-2022.11.30-py3-none-any.whl
-    sha256: 2d9d0c97e6ac356f3aeefda7322f36e017ea0b8ab3542cd23ced25e6f1546872
+    url: https://files.pythonhosted.org/packages/d3/94/49d389bf66be0aea4a82adb0f00f6057e66934878694350712bb284ec099/pipenv-2022.12.19-py3-none-any.whl
+    sha256: eed9c479d918a809deec23a4136f2b66091f035c849012acca3a9898d5f0938f
     x-checker-data:
       name: pipenv
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/87/69/cd019a9473bcdfb38983e2d550ccb239264fc4c2fc32c42ac1b1cc2506b6/platformdirs-2.6.0-py3-none-any.whl
-    sha256: 1a89a12377800c81983db6be069ec068eee989748799b946cce2a6e80dcc54ca
+    url: https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl
+    sha256: 83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490
     x-checker-data:
       name: platformdirs
       packagetype: bdist_wheel
