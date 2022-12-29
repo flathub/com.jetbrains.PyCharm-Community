@@ -199,12 +199,12 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/0f/b0/939590ce00f29354d4fdb43dda1da9e0ff5172bcc72ec75a385debc1ee31/poetry-1.3.1-py3-none-any.whl
-    sha256: e8c24984af3e124ef31a5891c1c11871c948687368ee451e95f7f101ffbf8204
-    x-checker-data:
-      name: poetry
-      packagetype: bdist_wheel
-      type: pypi
+    url: https://files.pythonhosted.org/packages/79/1e/7373dfc4fe1174e03e58846ea94c3b635e209385125ecd62f1570771b25d/poetry-1.2.2-py3-none-any.whl
+    sha256: 93ea3c4a622485c2a7b7249f1e34e4ac84f8229ded76153b67506313201b154f
+    # x-checker-data:
+    #   name: poetry
+    #   packagetype: bdist_wheel
+    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/db/51/a507c856293ab05cdc1db77ff4bc1268ddd39f29e7dc4919aa497f0adbec/charset_normalizer-2.1.1-py3-none-any.whl
     sha256: 83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f
