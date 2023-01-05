@@ -136,8 +136,8 @@ sources:
       name: cffi
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/3d/1a/d31fce69c119df1fddab3706b63c53d363982c55d841d9c3839b12f15327/shellingham-1.5.0-py2.py3-none-any.whl
-    sha256: a8f02ba61b69baaa13facdba62908ca8690a94b8119b69f5ec5873ea85f7391b
+    url: https://files.pythonhosted.org/packages/ae/2a/7ad62b2c56e71c6330fc35cfd5813376e788146ef7c884cc2fdf5fe77696/shellingham-1.5.0.post1-py2.py3-none-any.whl
+    sha256: 368bf8c00754fd4f55afb7bbb86e272df77e4dc76ac29dbcbb81a59e9fc15744
     x-checker-data:
       name: shellingham
       packagetype: bdist_wheel
@@ -164,8 +164,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/35/07/fd0145f9e57356098fe15415dbb9616fd628373ecf88faab9aae0c988d2c/importlib_metadata-5.2.0-py3-none-any.whl
-    sha256: 0eafa39ba42bf225fc00e67f701d71f85aead9f878569caf13c3724f704b970f
+    url: https://files.pythonhosted.org/packages/26/a7/9da7d5b23fc98ab3d424ac2c65613d63c1f401efb84ad50f2fa27b2caab4/importlib_metadata-6.0.0-py3-none-any.whl
+    sha256: 7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad
     x-checker-data:
       name: importlib_metadata
       packagetype: bdist_wheel
@@ -240,8 +240,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/a8/c1/4237cf3bb3c8ba91d593d2196ffb8ac4c7122abf565d06678cfd48a71b5a/pkginfo-1.9.2-py3-none-any.whl
-    sha256: d580059503f2f4549ad6e4c106d7437356dbd430e2c7df99ee1efe03d75f691e
+    url: https://files.pythonhosted.org/packages/e0/d9/892645f176da62dd53dd8e3d99a14720ce1853364ae488aec65faa138eb2/pkginfo-1.9.4-py3-none-any.whl
+    sha256: 7fc056f8e6b93355925083373b0f6bfbabe84ee3f29854fd155c9d6a4211267d
     x-checker-data:
       name: pkginfo
       packagetype: bdist_wheel
