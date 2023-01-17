@@ -82,8 +82,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/8f/7b/42582927d281d7cb035609cd3a543ffac89b74f3f4ee8e1c50914bcb57eb/packaging-22.0-py3-none-any.whl
-    sha256: 957e2148ba0e1a3b282772e791ef1d8083648bc131c8ab0c1feba110ce1146c3
+    url: https://files.pythonhosted.org/packages/ed/35/a31aed2993e398f6b09a790a181a7927eb14610ee8bbf02dc14d31677f1c/packaging-23.0-py3-none-any.whl
+    sha256: 714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2
     x-checker-data:
       name: packaging
       packagetype: bdist_wheel
@@ -110,8 +110,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/d1/20/4c2ea55d6547460a93dce9112599953be1c939155eae7a8e11a17c4d0b2c/dulwich-0.20.50.tar.gz
-    sha256: 50a941796b2c675be39be728d540c16b5b7ce77eb9e1b3f855650ece6832d2be
+    url: https://files.pythonhosted.org/packages/f2/40/d0d12cbc9b8971ea9901d9661843119faf62318387b7df6a490149a90c4b/dulwich-0.21.1.tar.gz
+    sha256: 5e9d7b158638248036f5f275dcb8b040b18ca2dda329cfdb6749ef40aebdd6f1
     x-checker-data:
       name: dulwich
       type: pypi
@@ -136,8 +136,8 @@ sources:
       name: cffi
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/3d/1a/d31fce69c119df1fddab3706b63c53d363982c55d841d9c3839b12f15327/shellingham-1.5.0-py2.py3-none-any.whl
-    sha256: a8f02ba61b69baaa13facdba62908ca8690a94b8119b69f5ec5873ea85f7391b
+    url: https://files.pythonhosted.org/packages/ae/2a/7ad62b2c56e71c6330fc35cfd5813376e788146ef7c884cc2fdf5fe77696/shellingham-1.5.0.post1-py2.py3-none-any.whl
+    sha256: 368bf8c00754fd4f55afb7bbb86e272df77e4dc76ac29dbcbb81a59e9fc15744
     x-checker-data:
       name: shellingham
       packagetype: bdist_wheel
@@ -164,8 +164,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/35/07/fd0145f9e57356098fe15415dbb9616fd628373ecf88faab9aae0c988d2c/importlib_metadata-5.2.0-py3-none-any.whl
-    sha256: 0eafa39ba42bf225fc00e67f701d71f85aead9f878569caf13c3724f704b970f
+    url: https://files.pythonhosted.org/packages/26/a7/9da7d5b23fc98ab3d424ac2c65613d63c1f401efb84ad50f2fa27b2caab4/importlib_metadata-6.0.0-py3-none-any.whl
+    sha256: 7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad
     x-checker-data:
       name: importlib_metadata
       packagetype: bdist_wheel
@@ -185,8 +185,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/65/0c/cc6644eaa594585e5875f46f3c83ee8762b647b51fc5b0fb253a242df2dc/urllib3-1.26.13-py2.py3-none-any.whl
-    sha256: 47cc05d99aaa09c9e72ed5809b60e7ba354e64b59c9c173ac3018642d8bb41fc
+    url: https://files.pythonhosted.org/packages/fe/ca/466766e20b767ddb9b951202542310cba37ea5f2d792dae7589f1741af58/urllib3-1.26.14-py2.py3-none-any.whl
+    sha256: 75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1
     x-checker-data:
       name: urllib3
       packagetype: bdist_wheel
@@ -240,8 +240,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/a8/c1/4237cf3bb3c8ba91d593d2196ffb8ac4c7122abf565d06678cfd48a71b5a/pkginfo-1.9.2-py3-none-any.whl
-    sha256: d580059503f2f4549ad6e4c106d7437356dbd430e2c7df99ee1efe03d75f691e
+    url: https://files.pythonhosted.org/packages/b3/f2/6e95c86a23a30fa205ea6303a524b20cbae27fbee69216377e3d95266406/pkginfo-1.9.6-py3-none-any.whl
+    sha256: 4b7a555a6d5a22169fcc9cf7bfd78d296b0361adad412a346c1226849af5e546
     x-checker-data:
       name: pkginfo
       packagetype: bdist_wheel
@@ -268,8 +268,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ca/91/6d9b8ccacd0412c08820f72cebaa4f0c0441b5cda699c90f618b6f8a1b42/requests-2.28.1-py3-none-any.whl
-    sha256: 8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349
+    url: https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl
+    sha256: 64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
     x-checker-data:
       name: requests
       packagetype: bdist_wheel
