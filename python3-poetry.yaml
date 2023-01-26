@@ -112,9 +112,9 @@ sources:
   - type: file
     url: https://files.pythonhosted.org/packages/d1/20/4c2ea55d6547460a93dce9112599953be1c939155eae7a8e11a17c4d0b2c/dulwich-0.20.50.tar.gz
     sha256: 50a941796b2c675be39be728d540c16b5b7ce77eb9e1b3f855650ece6832d2be
-    x-checker-data:
-      name: dulwich
-      type: pypi
+#    x-checker-data:
+#      name: dulwich
+#      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/39/7b/88dbb785881c28a102619d46423cb853b46dbccc70d3ac362d99773a78ce/pexpect-4.8.0-py2.py3-none-any.whl
     sha256: 0b48a55dcb3c05f3329815901ea4fc1537514d6ba867a152b581d69ae3710937
@@ -185,8 +185,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/65/0c/cc6644eaa594585e5875f46f3c83ee8762b647b51fc5b0fb253a242df2dc/urllib3-1.26.13-py2.py3-none-any.whl
-    sha256: 47cc05d99aaa09c9e72ed5809b60e7ba354e64b59c9c173ac3018642d8bb41fc
+    url: https://files.pythonhosted.org/packages/fe/ca/466766e20b767ddb9b951202542310cba37ea5f2d792dae7589f1741af58/urllib3-1.26.14-py2.py3-none-any.whl
+    sha256: 75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1
     x-checker-data:
       name: urllib3
       packagetype: bdist_wheel
@@ -268,8 +268,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/ca/91/6d9b8ccacd0412c08820f72cebaa4f0c0441b5cda699c90f618b6f8a1b42/requests-2.28.1-py3-none-any.whl
-    sha256: 8fefa2a1a1365bf5520aac41836fbee479da67864514bdb821f31ce07ce65349
+    url: https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl
+    sha256: 64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
     x-checker-data:
       name: requests
       packagetype: bdist_wheel
