@@ -123,8 +123,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/5c/35/b88b68d6ef53840d694e2a9656670bc049b8c144930ca7c96662a0f26ac6/poetry_plugin_export-1.2.0-py3-none-any.whl
-    sha256: 109fb43ebfd0e79d8be2e7f9d43ba2ae357c4975a18dfc0cfdd9597dd086790e
+    url: https://files.pythonhosted.org/packages/ca/9e/8ca64ca388309ccd216f8376a864b24676510ef877a0e2ec2e7d84c27e55/poetry_plugin_export-1.3.0-py3-none-any.whl
+    sha256: 6e5919bf84afcb08cdd419a03f909f490d8671f00633a3c6df8ba09b0820dc2f
     x-checker-data:
       name: poetry_plugin_export
       packagetype: bdist_wheel
@@ -192,8 +192,8 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/d8/20/256eb3f3f437c575fb1a2efdce5e801a5ce3162ea8117da96c43e6ee97d8/zipp-3.11.0-py3-none-any.whl
-    sha256: 83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa
+    url: https://files.pythonhosted.org/packages/01/3c/9d84fc1dbac1c5103bf3cd994e4895642001f75eb2139bddbc02aa1906e5/zipp-3.12.0-py3-none-any.whl
+    sha256: 9eb0a4c5feab9b08871db0d672745b53450d7f26992fd1e4653aa43345e97b86
     x-checker-data:
       name: zipp
       packagetype: bdist_wheel
