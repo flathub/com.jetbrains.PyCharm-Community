@@ -27,22 +27,22 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/d3/94/49d389bf66be0aea4a82adb0f00f6057e66934878694350712bb284ec099/pipenv-2022.12.19-py3-none-any.whl
-    sha256: eed9c479d918a809deec23a4136f2b66091f035c849012acca3a9898d5f0938f
+    url: https://files.pythonhosted.org/packages/32/e6/c48973f664fc86a6406b7c792742c25b85ea1359ddb9e1358f09305b4519/pipenv-2023.2.4-py3-none-any.whl
+    sha256: dd62abe8efa34b3d13e47b226bd151a1110dc5591557c559beca7d52efb55c18
     x-checker-data:
       name: pipenv
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl
-    sha256: 83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490
+    url: https://files.pythonhosted.org/packages/ba/24/a83a900a90105f8ad3f20df5bb5a2cde886df7125c7827e196e4ed4fa8a7/platformdirs-3.0.0-py3-none-any.whl
+    sha256: b1d5eb14f221506f50d6604a561f4c5786d9e80355219694a1b244bcd96f4567
     x-checker-data:
       name: platformdirs
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/18/a2/7931d40ecb02b5236a34ac53770f2f6931e3082b7a7dafe915d892d749d6/virtualenv-20.17.1-py3-none-any.whl
-    sha256: ce3b1684d6e1a20a3e5ed36795a97dfc6af29bc3970ca8dab93e11ac6094b3c4
+    url: https://files.pythonhosted.org/packages/51/19/6a5c76a1f622d5e72ca156345843879cfe3d13b918b40b93ef542aa2a855/virtualenv-20.19.0-py3-none-any.whl
+    sha256: 54eb59e7352b573aa04d53f80fc9736ed0ad5143af445a1e539aada6eb947dd1
     x-checker-data:
       name: virtualenv
       packagetype: bdist_wheel
