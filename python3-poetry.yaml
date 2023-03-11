@@ -8,297 +8,129 @@ sources:
   - type: file
     url: https://files.pythonhosted.org/packages/bf/90/445a7dbd275c654c268f47fa9452152709134f61f09605cf776407055a89/pyrsistent-0.19.3.tar.gz
     sha256: 1a2994773706bbb4995c31a97bc94f1418314923bd1048c6d964837040376440
-    x-checker-data:
-      name: pyrsistent
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/54/24/b4293291fa1dd830f353d2cb163295742fa87f179fcc8a20a306a81978b7/SecretStorage-3.3.3-py3-none-any.whl
     sha256: f356e6628222568e3af06f2eba8df495efa13b3b63081dafd4f7d9a7b7bc9f99
-    x-checker-data:
-      name: SecretStorage
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl
     sha256: 90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2
-    x-checker-data:
-      name: idna
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/76/97/2a99f020be5e4a5a97ba10bc480e2e6a889b5087103a2c6b952b5f819d27/crashtest-0.3.1-py3-none-any.whl
     sha256: 300f4b0825f57688b47b6d70c6a31de33512eb2fa1ac614f780939aa0cf91680
-    # x-checker-data:
-    #   name: crashtest
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/45/0c/3825603bf62f360829b1eea29a43dadce30829067e288170b3bf738aafd0/cleo-1.0.0a5-py3-none-any.whl
     sha256: ff53056589300976e960f75afb792dfbfc9c78dcbb5a448e207a17b643826360
-    # x-checker-data:
-    #   name: cleo
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/12/e4/5c91edb0bc975752c308e425a86b02b5b00cf990b362cfc482254d66cbbb/poetry_core-1.3.2-py3-none-any.whl
     sha256: ea0f5a90b339cde132b4e43cff78a1b440cd928db864bb67cfc97fdfcefe7218
-    # x-checker-data:
-    #   name: poetry_core
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/22/a6/858897256d0deac81a172289110f31629fc4cee19b6f01283303e18c8db3/ptyprocess-0.7.0-py2.py3-none-any.whl
     sha256: 4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35
-    x-checker-data:
-      name: ptyprocess
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/6c/10/a7d0fa5baea8fe7b50f448ab742f26f52b80bfca85ac2be9d35cdd9a3246/pyparsing-3.0.9-py3-none-any.whl
     sha256: 5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc
-    x-checker-data:
-      name: pyparsing
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/62/db/0e9a09b2b95986dcd73ac78be6ed2bd73ebe8bac65cba7add5b83eb9d899/keyring-23.13.1-py3-none-any.whl
     sha256: 771ed2a91909389ed6148631de678f82ddc73737d85a927f382a8a1b157898cd
-    x-checker-data:
-      name: keyring
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/c8/22/9460e311f340cb62d26a38c419b1381b8593b0bb6b5d1f056938b086d362/lockfile-0.12.2-py2.py3-none-any.whl
     sha256: 6c3cb24f344923d30b2785d5ad75182c8ea7ac1b6171b08657258ec7429d50fa
-    x-checker-data:
-      name: lockfile
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/c1/97/c698bd9350f307daad79dd740806e1a59becd693bd11443a0f531e3229b3/jsonschema-4.17.3-py3-none-any.whl
     sha256: a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6
-    x-checker-data:
-      name: jsonschema
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/ed/35/a31aed2993e398f6b09a790a181a7927eb14610ee8bbf02dc14d31677f1c/packaging-23.0-py3-none-any.whl
     sha256: 714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2
-    x-checker-data:
-      name: packaging
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/82/e6/badd9af6feee43e76c3445b2621a60d3d99fe0e33fffa8df43590212ea63/cachy-0.3.0-py2.py3-none-any.whl
     sha256: 338ca09c8860e76b275aff52374330efedc4d5a5e45dc1c5b539c1ead0786fe7
-    x-checker-data:
-      name: cachy
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/86/82/5e81dbf8a94c011e5240595149626d92e78a110f01311face1ab08431566/cryptography-37.0.4-cp36-abi3-manylinux_2_24_x86_64.whl
     sha256: b7f8dd0d4c1f21759695c05a5ec8536c12f31611541f8904083f3dc582604280
-#    x-checker-data:
-#      name: cryptography
-#      packagetype: bdist_wheel
-#      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl
     sha256: 4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18
-    x-checker-data:
-      name: certifi
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/d1/20/4c2ea55d6547460a93dce9112599953be1c939155eae7a8e11a17c4d0b2c/dulwich-0.20.50.tar.gz
     sha256: 50a941796b2c675be39be728d540c16b5b7ce77eb9e1b3f855650ece6832d2be
-#    x-checker-data:
-#      name: dulwich
-#      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/39/7b/88dbb785881c28a102619d46423cb853b46dbccc70d3ac362d99773a78ce/pexpect-4.8.0-py2.py3-none-any.whl
     sha256: 0b48a55dcb3c05f3329815901ea4fc1537514d6ba867a152b581d69ae3710937
-    x-checker-data:
-      name: pexpect
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/5c/35/b88b68d6ef53840d694e2a9656670bc049b8c144930ca7c96662a0f26ac6/poetry_plugin_export-1.2.0-py3-none-any.whl
     sha256: 109fb43ebfd0e79d8be2e7f9d43ba2ae357c4975a18dfc0cfdd9597dd086790e
-    x-checker-data:
-      name: poetry_plugin_export
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz
     sha256: d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
-    x-checker-data:
-      name: cffi
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/ae/2a/7ad62b2c56e71c6330fc35cfd5813376e788146ef7c884cc2fdf5fe77696/shellingham-1.5.0.post1-py2.py3-none-any.whl
     sha256: 368bf8c00754fd4f55afb7bbb86e272df77e4dc76ac29dbcbb81a59e9fc15744
-    x-checker-data:
-      name: shellingham
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/04/78/95cfe72991d22994f0ec5a3b742b31c95a28344d33e06b69406b68398a29/pylev-1.4.0-py2.py3-none-any.whl
     sha256: 7b2e2aa7b00e05bb3f7650eb506fc89f474f70493271a35c242d9a92188ad3dd
-    x-checker-data:
-      name: pylev
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/60/ef/7681134338fc097acef8d9b2f8abe0458e4d87559c689a8c306d0957ece5/requests_toolbelt-0.9.1-py2.py3-none-any.whl
     sha256: 380606e1d10dc85c3bd47bf5a6095f815ec007be7a8b69c878507068df059e6f
-    # x-checker-data:
-    #   name: requests_toolbelt
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/14/4c/b201d0292ca4e0950f0741212935eac9996f69cd66b92a3587e594999163/filelock-3.9.0-py3-none-any.whl
     sha256: f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d
-    x-checker-data:
-      name: filelock
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/26/a7/9da7d5b23fc98ab3d424ac2c65613d63c1f401efb84ad50f2fa27b2caab4/importlib_metadata-6.0.0-py3-none-any.whl
     sha256: 7efb448ec9a5e313a57655d35aa54cd3e01b7e1fbcf72dce1bf06119420f5bad
-    x-checker-data:
-      name: importlib_metadata
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl
     sha256: a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78
-    x-checker-data:
-      name: webencodings
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/2b/df/971fa5db3250bb022105d17f340339370f73d502e65e687a94ca1a4c4b1f/tomlkit-0.11.6-py3-none-any.whl
     sha256: 07de26b0d8cfc18f871aec595fda24d95b08fef89d147caa861939f37230bf4b
-    x-checker-data:
-      name: tomlkit
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/fe/ca/466766e20b767ddb9b951202542310cba37ea5f2d792dae7589f1741af58/urllib3-1.26.14-py2.py3-none-any.whl
     sha256: 75edcdc2f7d85b137124a6c3c9fc3933cdeaa12ecb9a6a959f22797a0feca7e1
-    x-checker-data:
-      name: urllib3
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/d8/20/256eb3f3f437c575fb1a2efdce5e801a5ce3162ea8117da96c43e6ee97d8/zipp-3.11.0-py3-none-any.whl
     sha256: 83a28fcb75844b5c0cdaf5aa4003c2d728c77e05f5aeabe8e95e56727005fbaa
-    x-checker-data:
-      name: zipp
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/79/1e/7373dfc4fe1174e03e58846ea94c3b635e209385125ecd62f1570771b25d/poetry-1.2.2-py3-none-any.whl
     sha256: 93ea3c4a622485c2a7b7249f1e34e4ac84f8229ded76153b67506313201b154f
-    # x-checker-data:
-    #   name: poetry
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/db/51/a507c856293ab05cdc1db77ff4bc1268ddd39f29e7dc4919aa497f0adbec/charset_normalizer-2.1.1-py3-none-any.whl
     sha256: 83e9a75d1911279afd89352c68b45348559d1fc0506b054b346651b5e7fee29f
-    # x-checker-data:
-    #   name: charset_normalizer
-    #   packagetype: bdist_wheel
-    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/22/44/0829b19ac243211d1d2bd759999aa92196c546518b0be91de9cacc98122a/msgpack-1.0.4.tar.gz
     sha256: f5d869c18f030202eb412f08b28d2afeea553d6613aee89e200d7aca7ef01f5f
-    x-checker-data:
-      name: msgpack
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/fb/6e/6f83bf616d2becdf333a1640f1d463fef3150e2e926b7010cb0f81c95e88/attrs-22.2.0-py3-none-any.whl
     sha256: 29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836
-    x-checker-data:
-      name: attrs
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl
     sha256: 8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9
-    x-checker-data:
-      name: pycparser
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/ae/72/2a1e2290f1ab1e06f71f3d0f1646c9e4634e70e1d37491535e19266e8dc9/jeepney-0.8.0-py3-none-any.whl
     sha256: c0a454ad016ca575060802ee4d590dd912e35c122fa04e70306de3d076cce755
-    x-checker-data:
-      name: jeepney
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/b3/f2/6e95c86a23a30fa205ea6303a524b20cbae27fbee69216377e3d95266406/pkginfo-1.9.6-py3-none-any.whl
     sha256: 4b7a555a6d5a22169fcc9cf7bfd78d296b0361adad412a346c1226849af5e546
-    x-checker-data:
-      name: pkginfo
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl
     sha256: 83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490
-    x-checker-data:
-      name: platformdirs
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/83/63/15ce47ede5b03657e920f3f006e56ca9a16f7873978146f2f77e297bdd22/CacheControl-0.12.11-py2.py3-none-any.whl
     sha256: 2c75d6a8938cb1933c75c50184549ad42728a27e9f6b92fd677c3151aa72555b
-    x-checker-data:
-      name: CacheControl
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl
     sha256: 0d78f8fde1c230e99fe37986a60526d7049ed4bf8a9fadbad5f00e22e58e041d
-    x-checker-data:
-      name: html5lib
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl
     sha256: 64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
-    x-checker-data:
-      name: requests
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/18/a2/7931d40ecb02b5236a34ac53770f2f6931e3082b7a7dafe915d892d749d6/virtualenv-20.17.1-py3-none-any.whl
     sha256: ce3b1684d6e1a20a3e5ed36795a97dfc6af29bc3970ca8dab93e11ac6094b3c4
-    x-checker-data:
-      name: virtualenv
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/76/cb/6bbd2b10170ed991cf64e8c8b85e01f2fb38f95d1bc77617569e0b0b26ac/distlib-0.3.6-py2.py3-none-any.whl
     sha256: f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
-    x-checker-data:
-      name: distlib
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/60/28/220d3ae0829171c11e50dded4355d17824d60895285631d7eb9dee0ab5e5/jaraco.classes-3.2.3-py3-none-any.whl
     sha256: 2353de3288bc6b82120752201c6b1c1a14b058267fa424ed5ce5984e3b922158
-    x-checker-data:
-      name: jaraco.classes
-      packagetype: bdist_wheel
-      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/5d/87/1ec3fcc09d2c04b977eabf8a1083222f82eaa2f46d5a4f85f403bf8e7b30/more_itertools-9.0.0-py3-none-any.whl
     sha256: 250e83d7e81d0c87ca6bd942e6aeab8cc9daa6096d12c5308f3f92fa5e5c1f41
-    x-checker-data:
-      name: more-itertools
-      packagetype: bdist_wheel
-      type: pypi
