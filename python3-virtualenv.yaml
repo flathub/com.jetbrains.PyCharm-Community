@@ -1,10 +1,17 @@
-# Generated with flatpak-pip-generator virtualenv --runtime com.jetbrains.PyCharm-Professional --checker-data --yaml
+# Generated with flatpak-pip-generator virtualenv --runtime com.jetbrains.PyCharm-Community --checker-data --yaml
 name: python3-virtualenv
 buildsystem: simple
 build-commands:
   - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
     --prefix=${FLATPAK_DEST} "virtualenv" --no-build-isolation
 sources:
+  - type: file
+    url: https://files.pythonhosted.org/packages/76/cb/6bbd2b10170ed991cf64e8c8b85e01f2fb38f95d1bc77617569e0b0b26ac/distlib-0.3.6-py2.py3-none-any.whl
+    sha256: f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
+    x-checker-data:
+      name: distlib
+      packagetype: bdist_wheel
+      type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/14/4c/b201d0292ca4e0950f0741212935eac9996f69cd66b92a3587e594999163/filelock-3.9.0-py3-none-any.whl
     sha256: f58d535af89bb9ad5cd4df046f741f8553a418c01a7856bf0d173bbc9f6bd16d
@@ -24,12 +31,5 @@ sources:
     sha256: 3c22fa5a7c7aa106ced59934d2c20a2ecb7f49b4130b8bf444178a16b880fa45
     x-checker-data:
       name: virtualenv
-      packagetype: bdist_wheel
-      type: pypi
-  - type: file
-    url: https://files.pythonhosted.org/packages/76/cb/6bbd2b10170ed991cf64e8c8b85e01f2fb38f95d1bc77617569e0b0b26ac/distlib-0.3.6-py2.py3-none-any.whl
-    sha256: f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e
-    x-checker-data:
-      name: distlib
       packagetype: bdist_wheel
       type: pypi
