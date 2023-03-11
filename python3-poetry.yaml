@@ -247,12 +247,12 @@ sources:
       packagetype: bdist_wheel
       type: pypi
   - type: file
-    url: https://files.pythonhosted.org/packages/7b/e1/593f693096c50411a2bf9571f66bc3be9d0f79a4a50e95aab581458b0e3c/platformdirs-3.1.1-py3-none-any.whl
-    sha256: e5986afb596e4bb5bde29a79ac9061aa955b94fca2399b7aaac4090860920dd8
-    x-checker-data:
-      name: platformdirs
-      packagetype: bdist_wheel
-      type: pypi
+    url: https://files.pythonhosted.org/packages/c1/c7/9be9d651b93efce682b45142a6267034fc4215972780748618c02e236361/platformdirs-2.6.2-py3-none-any.whl
+    sha256: 83c8f6d04389165de7c9b6f0c682439697887bca0aa2f1c87ef1826be3584490
+    # x-checker-data:
+    #   name: platformdirs
+    #   packagetype: bdist_wheel
+    #   type: pypi
   - type: file
     url: https://files.pythonhosted.org/packages/83/63/15ce47ede5b03657e920f3f006e56ca9a16f7873978146f2f77e297bdd22/CacheControl-0.12.11-py2.py3-none-any.whl
     sha256: 2c75d6a8938cb1933c75c50184549ad42728a27e9f6b92fd677c3151aa72555b
