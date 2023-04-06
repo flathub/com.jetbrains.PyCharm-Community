@@ -55,7 +55,7 @@ modules:
       - chmod -R a-s,go+rX,go-w ${FLATPAK_DEST}/pycharm
       - python3 ${FLATPAK_DEST}/pycharm/plugins/python-ce/helpers/pydev/setup_cython.py
         build_ext --inplace
-      - install pycharm/bin/pycharm.sh ${FLATPAK_DEST}/bin/pycharm
+      - install pycharm.sh ${FLATPAK_DEST}/bin/pycharm-zypak.sh
       - install -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps -Dm644 pycharm/bin/pycharm.svg
       - install -t ${FLATPAK_DEST}/share/applications/ -Dm644 com.jetbrains.PyCharm-Community.desktop
       - install -t ${FLATPAK_DEST}/share/appdata/ -Dm644 com.jetbrains.PyCharm-Community.appdata.xml
@@ -77,11 +77,22 @@ modules:
         path: com.jetbrains.PyCharm-Community.appdata.xml
       - type: file
         path: com.jetbrains.PyCharm-Community.desktop
+      - type: script
+        dest-filename: pycharm.sh
+        commands:
+          - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
+          - exec zypak-wrapper /app/pycharm/bin/pycharm.sh "$@"
+      
+  - name: zypak
+    sources:
+      - type: git
+        url: https://github.com/refi64/zypak
+        tag: v2022.04
 
   - name: wrapper
     buildsystem: meson
     config-opts:
-      - -Deditor_binary=/app/pycharm/bin/pycharm.sh
+      - -Deditor_binary=/app/bin/pycharm-zypak.sh
       - -Dprogram_name=pycharm
       - -Deditor_title=PyCharm
     sources:
