@@ -67,8 +67,8 @@ modules:
       - install -d "${FLATPAK_DEST}/packages"
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2023.1.1.tar.gz
-        sha256: 4de47ea21ede9ed52fedf42513ab2d886683d7d66784c1ce9b4d3c8b84da7a29
+        url: https://download.jetbrains.com/python/pycharm-community-2023.1.2.tar.gz
+        sha256: 1445b48b091469176644cb85a0a6f953783920fb1ec9a53bcbdd932ad8c947b0
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
