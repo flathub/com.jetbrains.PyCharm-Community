@@ -146,21 +146,20 @@
 				<ul>
 					<li>PyCharm now recognizes ctypes Arrays so now you won’t get wrong inspection messages when defining or using such arrays</li>
 					<li>We had a bug that made Tensorflow’s references to be unresolved and that was also fixed</li>
-					<li>The PyCharm debugger got some fixes:
-						<ul>
-							<li>The issue causing the debugger to hang when a syntax error was encountered was resolved</li>
-							<li>When classes were given certain names, the debugger would be unable to inspect their variables, this is no longer a problem</li>
-							<li>Exceptions thrown when debugging a project with multiprocessing modules will not stop the debugger anymore</li>
-							<li>An issue that caused debugger functions like “Step into” to not work properly in our latest release was solved</li>
-							<li>We had a bug that caused the debugger not to run normally when using Matplotlib and it was solved</li>
-						</ul>
-					</li>
 					<li>An error displayed when trying to run Jupyter Notebook’ cells using managed and configured Jupyter servers that was not allowing Jupyter cells to run is now resolved</li>
 					<li>We improved Jupyter’s server response error messages to be more user friendly</li>
 					<li>A bug we had for imported names that was causing them to be imported again after inlining a function was fixed</li>
 					<li>AltGr keymaps for certain characters that were not working are now fixed</li>
 					<li>New SQL completion suggestions of join conditions based on column or table name match and auto-inject SQL by literals</li>
 					<li>Some JavaScript and Vue.js inspection issues were resolved</li>
+				</ul>
+				The PyCharm debugger got some fixes:
+				<ul>
+					<li>The issue causing the debugger to hang when a syntax error was encountered was resolved</li>
+					<li>When classes were given certain names, the debugger would be unable to inspect their variables, this is no longer a problem</li>
+					<li>Exceptions thrown when debugging a project with multiprocessing modules will not stop the debugger anymore</li>
+					<li>An issue that caused debugger functions like “Step into” to not work properly in our latest release was solved</li>
+					<li>We had a bug that caused the debugger not to run normally when using Matplotlib and it was solved</li>
 				</ul>
 			</description>
 		</release>
