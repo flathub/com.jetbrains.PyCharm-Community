@@ -111,8 +111,8 @@ sources:
     url: https://files.pythonhosted.org/packages/64/de/375aa14daaee107f987da76ca32f7a907fea00fa8b8afb67dc09bec0de91/pyrsistent-0.19.3-py3-none-any.whl
     sha256: ccf0d6bd208f8111179f0c26fdf84ed7c3891982f2edaeae7422575f47e66b64
   - type: file
-    url: https://files.pythonhosted.org/packages/c0/35/810a00f4f722f62b763bfdad3f592075bfa2348ed49ced381d20e75ae4e7/rapidfuzz-2.13.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
-    sha256: 53dcae85956853b787c27c1cb06f18bb450e22cf57a4ad3444cf03b8ff31724a
+    url: https://files.pythonhosted.org/packages/94/c2/7707fd4cecfb026d3cbc7fadebfd9203828c0c2bfedd5c476ca633f7b8cb/rapidfuzz-2.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+    sha256: c35da09ab9797b020d0d4f07a66871dfc70ea6566363811090353ea971748b5a
   - type: file
     url: https://files.pythonhosted.org/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl
     sha256: 64299f4909223da747622c030b781c0d7811e359c37124b4bd368fb8c6518baa
