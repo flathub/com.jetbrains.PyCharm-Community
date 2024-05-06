@@ -22,14 +22,14 @@ finish-args:
 add-extensions:
   com.jetbrains.PyCharm.Extensions:
     directory: extensions
-    version: '22.08'
+    version: '23.08'
     add-ld-path: lib
     merge-dirs: bin;lib
     subdirectories: true
     no-autodownload: true
   com.jetbrains.PyCharm.Packages:
     directory: packages
-    version: '22.08'
+    version: '23.08'
     add-ld-path: lib
     merge-dirs: bin;lib;python
     subdirectories: true
