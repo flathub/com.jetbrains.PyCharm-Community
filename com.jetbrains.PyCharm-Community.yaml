@@ -68,8 +68,8 @@ modules:
       - cat idea.properties | tee -a ${FLATPAK_DEST}/bin/idea.properties
     sources:
       - type: file
-        url: https://download.jetbrains.com/python/pycharm-community-2024.2.2.tar.gz
-        sha256: 4f30b1f877a5909dcd181e95305ec43d17c36743583d7dcf0180e700d44a3407
+        url: https://download.jetbrains.com/python/pycharm-community-2024.2.4.tar.gz
+        sha256: 08fc092c4c7919a43caa64ec04684060ca9f6f0df27a1be68fe088020b705b28
         dest-filename: pycharm-community.tar.gz
         x-checker-data:
           type: jetbrains
