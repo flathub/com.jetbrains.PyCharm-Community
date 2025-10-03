@@ -183,7 +183,6 @@
 					<li>New SQL completion suggestions of join conditions based on column or table name match and auto-inject SQL by literals</li>
 					<li>Some JavaScript and Vue.js inspection issues were resolved</li>
 				</ul>
-				The PyCharm debugger got some fixes:
 				<ul>
 					<li>The issue causing the debugger to hang when a syntax error was encountered was resolved</li>
 					<li>When classes were given certain names, the debugger would be unable to inspect their variables, this is no longer a problem</li>
@@ -321,9 +320,6 @@
 	<developer_name>JetBrains s.r.o.</developer_name>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">https://www.jetbrains.com/pycharm/img/screenshots/complexLook@2x.jpg</image>
-		</screenshot>
-		<screenshot>
 			<image type="source">https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg</image>
 		</screenshot>
 	</screenshots>
