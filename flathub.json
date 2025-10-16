@@ -1,4 +1,5 @@
 {
   "only-arches": ["x86_64"],
-  "end-of-life": "The Community Edition has been discontinued."
+  "end-of-life": "The Community Edition has been discontinued.",
+  "end-of-life-rebase": "com.jetbrains.PyCharm-Professional"
 }
