@@ -1,7 +1,7 @@
 {
   "id": "com.jetbrains.PyCharm-Community",
   "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "26.08",
+  "runtime-version": "25.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "pycharm-wrapper",
   "finish-args": [
@@ -18,7 +18,7 @@
   "add-extensions": {
     "com.jetbrains.PyCharm.Extensions": {
       "directory": "extensions",
-      "version": "26.08",
+      "version": "25.08",
       "add-ld-path": "lib",
       "merge-dirs": "bin;lib",
       "subdirectories": true,
