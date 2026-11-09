@@ -8,19 +8,13 @@
   "finish-args": [
     "--device=dri",
     "--env=PATH=/app/bin:/app/extensions/bin:/usr/bin",
-    "--env=PYCHARM_JDK=${FLATPAK_DEST}/extra/jbr/",
     "--filesystem=home",
-    "--filesystem=xdg-run/keyring",
     "--share=ipc",
     "--share=network",
-    "--socket=pulseaudio",
-    "--socket=session-bus",
     "--socket=ssh-auth",
+    "--socket=gpg-agent",
     "--socket=fallback-x11",
-    "--socket=wayland",
-    "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--talk-name=org.freedesktop.FileManager1"
+    "--socket=wayland"
   ],
   "add-extensions": {
     "com.jetbrains.PyCharm.Extensions": {
