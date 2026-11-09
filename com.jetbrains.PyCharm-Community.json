@@ -1,10 +1,9 @@
 {
-  "app-id": "com.jetbrains.PyCharm-Community",
+  "id": "com.jetbrains.PyCharm-Community",
   "runtime": "org.freedesktop.Sdk",
   "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "pycharm-wrapper",
-  "separate-locales": false,
   "finish-args": [
     "--device=dri",
     "--env=PATH=/app/bin:/app/extensions/bin:/usr/bin",
@@ -91,6 +90,29 @@
         {
           "type": "file",
           "path": "idea.properties"
+        },
+        {
+          "name": "dbus",
+          "buildsystem": "meson",
+          "config-opts": [
+            "-Dtools=true",
+            "-Dmessage_bus=false",
+            "-Dsystemd=disabled",
+            "-Dx11_autolaunch=disabled"
+          ],
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://dbus.freedesktop.org/releases/dbus/dbus-1.16.2.tar.xz",
+              "sha256": "0ba2a1a4b16afe7bceb2c07e9ce99a8c2c3508e5dec290dbb643384bd6beb7e2",
+              "x-checker-data": {
+                "type": "anitya",
+                "project-id": 5356,
+                "stable-only": true,
+                "url-template": "https://dbus.freedesktop.org/releases/dbus/dbus-$version.tar.xz"
+              }
+            }
+          ]
         },
         {
           "type": "script",
