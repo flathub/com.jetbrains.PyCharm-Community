@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=PyCharm Community Edition
 GenericName=The intelligent Python IDE
-Exec=pycharm
+Exec=pycharm-wrapper %F
 Terminal=false
 Icon=com.jetbrains.PyCharm-Community
 Type=Application

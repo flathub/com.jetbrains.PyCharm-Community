@@ -1,4 +1,4 @@
-# Generated with uv tool run flatpak_pip_generator pipenv --runtime org.freedesktop.Sdk//25.08 --checker-data --yaml
+# Generated with uv tool run flatpak_pip_generator pipenv --runtime org.freedesktop.Sdk//26.08 --checker-data --yaml
 name: python3-pipenv
 buildsystem: simple
 build-commands:

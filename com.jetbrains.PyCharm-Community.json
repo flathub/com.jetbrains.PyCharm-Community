@@ -1,9 +1,9 @@
 {
   "app-id": "com.jetbrains.PyCharm-Community",
   "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "25.08",
+  "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
-  "command": "pycharm",
+  "command": "pycharm-wrapper",
   "separate-locales": false,
   "finish-args": [
     "--device=dri",
@@ -19,7 +19,7 @@
   "add-extensions": {
     "com.jetbrains.PyCharm.Extensions": {
       "directory": "extensions",
-      "version": "25.08",
+      "version": "26.08",
       "add-ld-path": "lib",
       "merge-dirs": "bin;lib",
       "subdirectories": true,
@@ -34,35 +34,47 @@
       "name": "pycharm",
       "buildsystem": "simple",
       "build-commands": [
-        "install -D apply_extra /app/bin/apply_extra",
-        "install -D pycharm /app/bin/pycharm",
-        "install -D idea.properties ${FLATPAK_DEST}/idea.properties",
-        "install -Dm644 -t /app/share/metainfo com.jetbrains.PyCharm-Community.metainfo.xml",
-        "install -Dm644 -t /app/share/applications com.jetbrains.PyCharm-Community.desktop",
-        "install -Dm644 -t /app/share/icons/hicolor/scalable/apps com.jetbrains.PyCharm-Community.svg",
+        "cp -a pycharm-*/* ${FLATPAK_DEST}",
+        "cat idea.properties >> ${FLATPAK_DEST}/bin/idea.properties",
+        "install -D -t ${FLATPAK_DEST}/bin/ pycharm-wrapper",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
         "install -d \"${FLATPAK_DEST}/extensions\"",
         "install -d \"${FLATPAK_DEST}/packages\""
       ],
       "sources": [
         {
-          "type": "extra-data",
+          "type": "archive",
+          "strip-components": 0,
           "url": "https://github.com/JetBrains/intellij-community/releases/download/pycharm%2F2026.3/pycharm-2026.3.tar.gz",
           "sha256": "5c26292b328e45a259a96e94f3b1c03fc78b78ab5c238a4c7f70114f493e8864",
-          "size": 1281892617,
-          "filename": "pycharm-community.tar.gz",
           "only-arches": [
             "x86_64"
-          ]
+          ],
+          "x-checker-data": {
+            "type": "json",
+            "url": "https://api.github.com/repos/JetBrains/intellij-community/releases",
+            "version-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).tag_name | sub(\"^pycharm/\"; \"\")",
+            "url-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).assets[] | select(.name==\"pycharm-\" + $version + \".tar.gz\") | .browser_download_url",
+            "is-main-source": true
+          }
         },
         {
-          "type": "extra-data",
+          "type": "archive",
+          "strip-components": 0,
           "url": "https://github.com/JetBrains/intellij-community/releases/download/pycharm%2F2026.3/pycharm-2026.3-aarch64.tar.gz",
           "sha256": "46b8518432b7633237e7f864c2a11ca9b05cb16b10638cb70129f5001274954f",
-          "size": 1304767052,
-          "filename": "pycharm-community.tar.gz",
           "only-arches": [
             "aarch64"
-          ]
+          ],
+          "x-checker-data": {
+            "type": "json",
+            "url": "https://api.github.com/repos/JetBrains/intellij-community/releases",
+            "version-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).tag_name | sub(\"^pycharm/\"; \"\")",
+            "url-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).assets[] | select(.name==\"pycharm-\" + $version + \"-aarch64.tar.gz\") | .browser_download_url",
+            "is-main-source": true
+          }
         },
         {
           "type": "file",
@@ -82,21 +94,9 @@
         },
         {
           "type": "script",
-          "dest-filename": "apply_extra",
+          "dest-filename": "pycharm-wrapper",
           "commands": [
-            "set -ex",
-            "echo",
-            "tar xf pycharm-community.tar.gz --strip-components 1",
-            "rm -f pycharm-community.tar.gz",
-            "cat /app/idea.properties | tee -a /app/extra/bin/idea.properties",
-            "python3 /app/extra/plugins/python-ce/helpers/pydev/setup_cython.py build_ext --inplace"
-          ]
-        },
-        {
-          "type": "script",
-          "dest-filename": "pycharm",
-          "commands": [
-            "exec /app/extra/bin/pycharm \"$@\""
+            "/app/extra/bin/pycharm $@"
           ]
         }
       ]
