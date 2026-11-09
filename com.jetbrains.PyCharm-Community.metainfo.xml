@@ -2,7 +2,7 @@
 <component type="desktop-application">
 	<id>com.jetbrains.PyCharm-Community</id>
 	<metadata_license>CC-BY-SA</metadata_license>
-	<name>PyCharm-Community</name>
+	<name>PyCharm Open</name>
 	<summary>The most intelligent Python IDE</summary>
 	<description>
 		<p>PyCharm is designed by programmers, for programmers, to provide all the tools you need for productive Python development.</p>
