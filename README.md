@@ -7,13 +7,13 @@ You only need to download sources from www.jetbrains.com/pycharm
 ## How to build PyCharm-Community
 
 ```
-flatpak-builder --repo=repo flatpakbuildir com.jetbrains.PyCharm-Community.json --force-clean
+flatpak-builder --repo=repo build com.jetbrains.PyCharm-Community.yaml --force-clean
 ```
 
 ## Add PyCharm-Community repo to remote
 
 ```
-flatpak remote-add --user mypycharm repo
+flatpak remote-add --user mypycharm repo --no-gpg-verify
 ```
 
 ## How to install PyCharm-Community from flatpak
