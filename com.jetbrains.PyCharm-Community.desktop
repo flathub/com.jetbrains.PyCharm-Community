@@ -1,10 +1,12 @@
 [Desktop Entry]
-Name=PyCharm Community Edition
+Name=PyCharm Open
 GenericName=The intelligent Python IDE
-Exec=pycharm
+Exec=pycharm-wrapper %F
 Terminal=false
 Icon=com.jetbrains.PyCharm-Community
 Type=Application
 Categories=Development;IDE;
-X-Desktop-File-Install-Version=0.21
+Keywords=development;pycharm;ide;python;
+MimeType=text/plain;inode/directory;
+StartupNotify=true
 StartupWMClass=jetbrains-pycharm-ce
