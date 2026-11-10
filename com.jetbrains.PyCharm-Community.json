@@ -82,7 +82,7 @@
           "type": "script",
           "dest-filename": "pycharm-wrapper",
           "commands": [
-            "/app/extra/bin/pycharm $@"
+            "/app/bin/pycharm $@"
           ]
         }
       ]
