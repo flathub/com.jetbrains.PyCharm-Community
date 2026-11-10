@@ -9,4 +9,4 @@ Categories=Development;IDE;
 Keywords=development;pycharm;ide;python;
 MimeType=text/plain;inode/directory;
 StartupNotify=true
-StartupWMClass=jetbrains-pycharm-ce
+StartupWMClass=com.jetbrains.PyCharm-Community

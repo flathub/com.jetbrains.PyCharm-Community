@@ -2,8 +2,43 @@
 <component type="desktop-application">
 	<id>com.jetbrains.PyCharm-Community</id>
 	<metadata_license>CC-BY-SA</metadata_license>
-	<name>PyCharm Open</name>
-	<summary>The most intelligent Python IDE</summary>
+	<project_license>Apache-2.0</project_license>
+	<name>PyCharm OSS</name>
+	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
+	<update_contact>community-support@jetbrains.com</update_contact>
+	<summary>The professional Python IDE for you and your agents</summary>
+	<url type="bugtracker">https://youtrack.jetbrains.com/issues/PY/</url>
+	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
+	<url type="homepage">https://www.jetbrains.com/pycharm/</url>
+	<url type="vcs-browser">https://github.com/JetBrains/intellij-community</url>
+	<url type="contact">https://www.jetbrains.com/company/contacts</url>
+	<developer id="com.jetbrains">
+		<name>JetBrains s.r.o.</name>
+	</developer>
+	<content_rating type="oars-1.1">
+		<content_attribute id="social-info">moderate</content_attribute>
+	</content_rating>
+	<categories>
+		<category>Development</category>
+		<category>IDE</category>
+	</categories>
+	<keywords>
+		<keyword>python</keyword>
+		<keyword>development</keyword>
+		<keyword>ide</keyword>
+	</keywords>
+	<requires>
+		<memory>8192</memory>
+		<control>keyboard</control>
+		<control>pointing</control>
+		<display_length>720</display_length>
+	</requires>
+	<recommends>
+		<internet>always</internet>
+	</recommends>
+	<supports>
+		<internet>offline-only</internet>
+	</supports>
 	<description>
 		<p>PyCharm is designed by programmers, for programmers, to provide all the tools you need for productive Python development.</p>
 		<p>PyCharm provides smart code completion, code inspections, on-the-fly error highlighting and quick-fixes, along with automated code refactorings and rich navigation capabilities.</p>
@@ -12,33 +47,83 @@
 		<p>In addition to Python, PyCharm supports JavaScript, CoffeeScript, TypeScript, Cython, SQL, HTML/CSS, template languages, AngularJS, Node.js, and more.</p>
 		<p>A huge collection of tools out of the box: an integrated debugger and test runner; Python profiler; a built-in terminal; and integration with major VCS and built-in Database Tools.</p>
 	</description>
-	<url type="homepage">http://www.jetbrains.com/pycharm/</url>
-	<url type="bugtracker">https://youtrack.jetbrains.com/</url>
-	<url type="help">https://www.jetbrains.com/help/pycharm/</url>
-	<launchable type="desktop-id">com.jetbrains.PyCharm-Community.desktop</launchable>
-	<releases>
-		<release version="2026.2.2" date="2026-09-07">
-			<description></description>
-		</release>
-		<release version="2026.1.4" date="2026-07-03">
-			<description/>
-		</release>
-		<release version="2026.1.2" date="2026-03-30">
-			<description/>
-		</release>
-		<release version="2026.1" date="2026-03-30">
-			<description/>
-		</release>
-		<release version="2025.3.4" date="2026-03-25">
-			<description/>
-		</release>
-	</releases>
-	<project_license>Apache-2.0</project_license>
-	<developer_name>JetBrains s.r.o.</developer_name>
 	<screenshots>
 		<screenshot type="default">
 			<image type="source">https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg</image>
 		</screenshot>
 	</screenshots>
-	<content_rating type="oars-1.1"/>
+	<releases>
+		<release version="2026.3" date="2026-11-05">
+			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538649</url>
+			<description>
+				<p>This major release introduces JetBrains Air – a new layer for agentic development that lets you run, track, and verify multi-agent workflows inside your IDE. Alongside Air, version 2026.3 delivers major updates across workspace tooling, Python 3.15 support, and core frameworks:</p>
+				<ul>
+					<li>JetBrains Air: Run ACP-compatible agents, track sessions across repositories, and review diffs in context – featuring free agentic coding with Junie Lite.</li>
+					<li>Workspace support: Dedicated consoles and terminals per subproject running against isolated dependencies, plus quick creation or conversion of workspace members initialized with <code>uv</code>, Hatch, or Poetry.</li>
+					<li>Python 3.15 lazy imports: Defer module loading to cut startup times in applications with heavy dependencies while retaining full code insight.</li>
+					<li>FastAPI support (Pro): Visualize endpoint dependencies with interactive graphs that mark yield/return calls and detect circular dependencies.</li>
+					<li>Redesigned Python interpreter widget: Access and recreate environments organized around the tools that manage them (<code>uv</code>, Poetry, Hatch, and conda).</li>
+					<li>Deeper Pydantic support: Field constraint checks in the editor, direct navigation from <code>@field_validator</code>, and code completion for model configuration options.</li>
+				</ul>
+				<p>Read about all the key changes on our what's new page.</p>
+			</description>
+		</release>
+		<release version="2026.2.4" date="2026-10-30">
+			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538642/PyCharm-2026.2.4-262.11879.98-build-Release-Notes</url>
+			<description>
+				<p>This update fixes security issues.</p>
+				<p>Oracle's fixes for CVE-2026-91403 and CVE-2026-114820 were integrated into JBR.</p>
+			</description>
+		</release>
+		<release version="2026.2.3" date="2026-09-18">
+			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538615</url>
+			<description>
+				<p>This update fixes several type-checking false positives along with issues in Ruff, Jupyter, Databricks, and interpreter setup:</p>
+				<ul>
+					<li>Get correct type inference from Numpy-style docstrings, including favoring type annotations over docstring types and handling <code>tuple[...]</code> with three or more arguments.</li>
+					<li>Avoid false positive warnings about missing <code>str</code> or <code>repr</code> implementations for <code>IPv4Address</code>/<code>IPv6Address</code>, string literals, and <code>str</code> subtypes.</li>
+					<li>Avoid a false positive <code>Expected type 'TypedDict | None', got 'dict' instead</code> error when passing a <code>dict</code> where a <code>TypedDict | None</code> is expected.</li>
+					<li>Get better handling of <code># type: ignore</code> comments.</li>
+					<li>Avoid duplicated type checker messages for Pydantic <code>Field</code>.</li>
+					<li>Avoid a crash loop when using Ruff version 0.16.5 or later.</li>
+					<li>Generate a new Python environment with <code>uv</code> even when <code>UV_PROJECT_ENVIRONMENT</code> is set.</li>
+					<li>See Jupyter variables again when using a remote Conda interpreter.</li>
+					<li>Let the Databricks plugin respect your proxy settings in PyCharm 2026.</li>
+				</ul>
+			</description>
+		</release>
+		<release version="2026.2.2" date="2026-09-07">
+			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538610</url>
+			<description>
+				<ul>
+					<li>Fixed a freeze during dictionary type comparison</li>
+					<li>PyCharm now shows relevant control flow elements using sticky-lines</li>
+					<li>Proper type resolutions for <code>__slots__</code> in enums</li>
+					<li>Inlay hints for enum <code>auto()</code></li>
+					<li>Generic bounds are displayed in parameter info</li>
+					<li>Unpacking a list no longer produces <code>Any</code></li>
+					<li>Completion for <code>TypedDict</code> class parameters like <code>extra_items</code></li>
+				</ul>
+			</description>
+		</release>
+		<release version="2026.2.1" date="2026-08-12">
+			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538600</url>
+			<description>
+				<p>AI agents now work in your Jupyter notebooks and target the right Python environment, marimo notebooks arrive, plus changes to bundled plugins.</p>
+				<ul>
+					<li>AI agents like Claude Code and Codex can now create, edit, and run <code>.ipynb</code> notebooks against a live kernel, so data persists across cells.</li>
+					<li>AI agents now target your project's configured interpreter - <code>uv</code>, Poetry, pip, or conda - so packages land in the right environment instead of a system one.</li>
+					<li>Open, edit, and run reactive marimo notebooks directly in PyCharm via the new plugin from the marimo team.</li>
+					<li>We're unbundling and deprecating several low-usage plugins for a leaner, more focused experience.</li>
+					<li>Explore the redesigned Python Packages window with a collapsible dependency tree and inline Install/Update links.</li>
+					<li>Find and install packages fast with a new floating search popup that shows the target environment and dependency group.</li>
+					<li>Read richer type-mismatch errors that break down why the types don't match.</li>
+					<li>View a type diff for callables and composite types so both sides read the same way.</li>
+					<li>See fully rendered names and types in inspection tooltips, with clickable links.</li>
+					<li>PyCharm no longer creates venvs for end-of-life Python 2.7, 3.6, and 3.7. However, you can still use the interpreters created earlier.</li>
+					<li><code>Session.get(Entity, id)</code> is now inferred as a model instance rather than the class in SQLAlchemy 2.0.</li>
+				</ul>
+			</description>
+		</release>
+	</releases>
 </component>
