@@ -6,7 +6,6 @@
   "command": "pycharm-wrapper",
   "finish-args": [
     "--device=dri",
-    "--env=PATH=/app/bin:/app/extensions/bin:/usr/bin",
     "--filesystem=home",
     "--share=ipc",
     "--share=network",
@@ -15,16 +14,6 @@
     "--socket=fallback-x11",
     "--socket=wayland"
   ],
-  "add-extensions": {
-    "com.jetbrains.PyCharm.Extensions": {
-      "directory": "extensions",
-      "version": "25.08",
-      "add-ld-path": "lib",
-      "merge-dirs": "bin;lib",
-      "subdirectories": true,
-      "no-autodownload": true
-    }
-  },
   "modules": [
     "python3-virtualenv.yaml",
     "python3-pipenv.yaml",
@@ -38,9 +27,7 @@
         "install -D -t ${FLATPAK_DEST}/bin/ pycharm-wrapper",
         "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo/ ${FLATPAK_ID}.metainfo.xml",
         "install -Dm644 -t ${FLATPAK_DEST}/share/applications/ ${FLATPAK_ID}.desktop",
-        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg",
-        "install -d \"${FLATPAK_DEST}/extensions\"",
-        "install -d \"${FLATPAK_DEST}/packages\""
+        "install -Dm644 -t ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/ ${FLATPAK_ID}.svg"
       ],
       "sources": [
         {
