@@ -15,7 +15,7 @@
     "--socket=wayland"
   ],
   "modules": [
-    "python3-deps.json"
+    "python3-deps.json",
     {
       "name": "pycharm",
       "buildsystem": "simple",
