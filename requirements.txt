@@ -109,3 +109,5 @@ urllib3
 zipp
 
 zstandard
+
+setuptools

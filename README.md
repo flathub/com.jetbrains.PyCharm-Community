@@ -33,3 +33,15 @@ flatpak run com.jetbrains.PyCharm-Community
 ```
 flatpak uninstall --user com.jetbrains.PyCharm-Community
 ```
+
+## How to update and maintain the `python3-deps.json` ?
+For any new package imported into your source code via pip, open the `requirements.txt` file and add the new package at the very bottom.
+
+>[!Note]
+>I really advise you to keep an empty line between all pip dependencies so it is easier to look and find for packages
+
+Then, you will have to update the `python3-deps.json` with this tool `/flatpak-tools/python-deps-creator.py` that you can run it via the command below
+
+```bash
+python3 flatpak-tools/python-deps-creator.py --requirements=requirements.txt --output=python3-deps.json
+```
