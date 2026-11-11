@@ -1,7 +1,7 @@
 {
   "id": "com.jetbrains.PyCharm-Community",
   "runtime": "org.freedesktop.Sdk",
-  "runtime-version": "25.08",
+  "runtime-version": "26.08",
   "sdk": "org.freedesktop.Sdk",
   "command": "pycharm-wrapper",
   "finish-args": [
@@ -15,9 +15,7 @@
     "--socket=wayland"
   ],
   "modules": [
-    "python3-virtualenv.yaml",
-    "python3-pipenv.yaml",
-    "python3-poetry.yaml",
+    "python3-requirements.json",
     {
       "name": "pycharm",
       "buildsystem": "simple",

@@ -1,0 +1,2 @@
+virtualenv
+pipenv==2026.10.4

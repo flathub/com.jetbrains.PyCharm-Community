@@ -33,3 +33,7 @@ flatpak run com.jetbrains.PyCharm-Community
 ```
 flatpak uninstall --user com.jetbrains.PyCharm-Community
 ```
+## Update deps
+```
+./flatpak-pip-generator.sh
+```
