@@ -33,3 +33,9 @@ flatpak run com.jetbrains.PyCharm-Community
 ```
 flatpak uninstall --user com.jetbrains.PyCharm-Community
 ```
+## Update deps
+```
+./flatpak-pip-generator pipenv --runtime org.freedesktop.Sdk//26.08 --checker-data
+./flatpak-pip-generator poetry --runtime org.freedesktop.Sdk//26.08 --checker-data
+./flatpak-pip-generator virtualenv --runtime org.freedesktop.Sdk//26.08 --checker-data
+```
