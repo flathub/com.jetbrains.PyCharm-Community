@@ -160,6 +160,15 @@
                 },
                 {
                     "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ff/9c/13569626440e88f09d16f43ec1c2aa0d10a523be2811414580d1cfb7c9f3/backports_zstd-1.8.0.tar.gz",
+                    "sha256": "9dae4f4c481716e3db473d667457b4f508ff7459c0931b567a5c9677fb3db316",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "backports-zstd"
+                    }
+                },
+                {
+                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/ad/9b/9fb3585dabcd73a1b2a6267f63f62649347c9e6d072c9fde365b105abb2c/build-1.6.1-py3-none-any.whl",
                     "sha256": "ecd351a4be9d35a9eaaba244a7687143c9c7d4aea6ac964e7e7ddab20cbcf4e7",
                     "x-checker-data": {
