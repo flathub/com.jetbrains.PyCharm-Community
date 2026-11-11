@@ -15,9 +15,7 @@
     "--socket=wayland"
   ],
   "modules": [
-    "python3-virtualenv.json",
-    "python3-pipenv.json",
-    "python3-poetry.json",
+    "python3-requirements.json",
     {
       "name": "pycharm",
       "buildsystem": "simple",
