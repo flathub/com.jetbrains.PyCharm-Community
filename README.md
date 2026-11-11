@@ -35,5 +35,5 @@ flatpak uninstall --user com.jetbrains.PyCharm-Community
 ```
 ## Update deps
 ```
-./flatpak-pip-generator.py --runtime='org.freedesktop.Sdk//26.08' --requirements-file=requirements.txt --checker-data
+./flatpak-pip-generator.sh
 ```
