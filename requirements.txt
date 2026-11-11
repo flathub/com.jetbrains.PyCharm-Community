@@ -1,3 +1,2 @@
 virtualenv
-pipenv
-poetry
+pipenv==2026.10.4
