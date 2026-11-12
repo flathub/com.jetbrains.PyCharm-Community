@@ -53,7 +53,24 @@
 	</description>
 	<screenshots>
 		<screenshot type="default">
-			<image type="source">https://www.jetbrains.com/pycharm/img/screenshots/simpleLook@2x.jpg</image>
+			<image>https://raw.githubusercontent.com/flathub/com.jetbrains.PyCharm-Community/refs/heads/master/screenshots/hello-world.png</image>
+			<caption>Python support</caption>
+		</screenshot>
+		<screenshot>
+			<image>https://raw.githubusercontent.com/flathub/com.jetbrains.PyCharm-Community/refs/heads/master/screenshots/create-new-project.png</image>
+			<caption>Create new Python project</caption>
+		</screenshot>
+		<screenshot>
+			<image>https://raw.githubusercontent.com/flathub/com.jetbrains.PyCharm-Community/refs/heads/master/screenshots/debug.png</image>
+			<caption>Debugging Python</caption>
+		</screenshot>
+		<screenshot>
+			<image>https://raw.githubusercontent.com/flathub/com.jetbrains.PyCharm-Community/refs/heads/master/screenshots/execution.png</image>
+			<caption>Execute Python project</caption>
+		</screenshot>
+		<screenshot>
+			<image>https://raw.githubusercontent.com/flathub/com.jetbrains.PyCharm-Community/refs/heads/master/screenshots/packages.png</image>
+			<caption>Packages management</caption>
 		</screenshot>
 	</screenshots>
 	<releases>
