@@ -101,13 +101,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4e/67/db522d908f9f07423c4fd6128c49e6279516053ec0c25c7f63864c0882eb/pipenv-2026.11.0-py3-none-any.whl",
-                    "sha256": "70f53e11c9429f2ce2511aa044bfd20b1e9c3e8aa3492978894d679fc96e18c3",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pipenv",
-                        "packagetype": "bdist_wheel"
-                    }
+                    "url": "https://files.pythonhosted.org/packages/86/41/4d8bd00a309037c6fdf77ed601e91af78bd5c8e97e62042c90d134ba69af/pipenv-2026.10.4-py3-none-any.whl",
+                    "sha256": "308125623e4d08dfe32936f7259a9ed33c5480baa2c9a291a1ff8a9328eeeb1f"
                 },
                 {
                     "type": "file",
@@ -295,8 +290,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7a/7b/96fb5eb5f1e77588d17678e6c598cadc31ce2565352cabcf5069d1070b57/findpython-0.9.0-py3-none-any.whl",
-                    "sha256": "0d58e63106cab47a48793cc7b51faba3956caa46b3b8043c92d738bfef5e2a33",
+                    "url": "https://files.pythonhosted.org/packages/bb/a5/fae2000239a1f0225c9f31ec5f790f465d3cf135e79937ad19c876303e21/findpython-0.8.0-py3-none-any.whl",
+                    "sha256": "4a61ee1618a8b55014f7d41f59345d322be93f6ce62395bdccccc651b3f7e28a",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "findpython",
@@ -434,8 +429,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/1b/08f1ee028bff827941c5f9a53e5160bb1c67b20f0c49dcc55d2287397c24/pkginfo-2.0-py3-none-any.whl",
-                    "sha256": "98c7aaa804dfe017b0de65d4b41a2f4649a656f43d3c21525b13e8075716fa1b",
+                    "url": "https://files.pythonhosted.org/packages/f3/8f/3e29b55ad92de525931a5683ca245af58d50d5756f35cd74555aaf859427/pkginfo-1.13.3-py3-none-any.whl",
+                    "sha256": "66520cd19fddf3faa9554d68dcc0e6801944275bf612e8b581dfba968a9b4cc9",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pkginfo",
