@@ -102,12 +102,7 @@
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/86/41/4d8bd00a309037c6fdf77ed601e91af78bd5c8e97e62042c90d134ba69af/pipenv-2026.10.4-py3-none-any.whl",
-                    "sha256": "308125623e4d08dfe32936f7259a9ed33c5480baa2c9a291a1ff8a9328eeeb1f",
-                    "x-checker-data": {
-                        "type": "pypi",
-                        "name": "pipenv",
-                        "packagetype": "bdist_wheel"
-                    }
+                    "sha256": "308125623e4d08dfe32936f7259a9ed33c5480baa2c9a291a1ff8a9328eeeb1f"
                 },
                 {
                     "type": "file",
