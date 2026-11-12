@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=PyCharm Open
-GenericName=Python IDE for you and your agents
+GenericName=Python IDE
 Exec=pycharm-wrapper %F
 Terminal=false
 Icon=com.jetbrains.PyCharm-Community
