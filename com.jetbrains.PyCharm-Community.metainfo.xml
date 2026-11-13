@@ -74,6 +74,10 @@
 		</screenshot>
 	</screenshots>
 	<releases>
+		<release version="2026.2.5" date="2026-11-13">
+			<url type="details">https://github.com/JetBrains/intellij-community/releases/tag/pycharm/2026.2.5</url>
+			<description></description>
+		</release>
 		<release version="2026.3" date="2026-11-05">
 			<url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538649</url>
 			<description>
