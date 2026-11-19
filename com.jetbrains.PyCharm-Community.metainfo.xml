@@ -44,7 +44,7 @@
         <internet>offline-only</internet>
     </supports>
     <description>
-        <p>PyCharm provides everything you need out of the box to code faster and smarter. Whether you’re an experienced developer or just starting your journey with the language, the JetBrains IDE for Python helps you get your work done.</p>
+        <p>PyCharm OSS provides everything you need out of the box to code faster and smarter. Whether you’re an experienced developer or just starting your journey with the language, the JetBrains IDE for Python helps you get your work done.</p>
         <ul>
             <li>Essential Python support</li>
             <li>Smart code editor with auto-completion</li>
@@ -54,6 +54,7 @@
             <li>JetBrains AI tools: Free 30-day AI Pro trial (plugin)</li>
             <li>Local AI-powered full line code completion (plugin)</li>
         </ul>
+        <p>PyCharm OSS Edition is a free IDE built on open-source code that provides essential features for Python.</p>
     </description>
     <screenshots>
         <screenshot type="default">
