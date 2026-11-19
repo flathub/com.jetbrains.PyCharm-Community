@@ -78,7 +78,24 @@
             <caption>Packages management</caption>
         </screenshot>
     </screenshots>
+    <!-- https://data.services.jetbrains.com/products/releases?code=PCP&type=release&latest=true -->
     <releases>
+        <release version="2026.3.0.1" date="2026-11-19">
+            <url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538653</url>
+            <description>
+                <p>This update includes fixes related to interpreter setup (Python 2.7 detection, Python 3.14/3.15 in the conda wizard, the default uv Python version), WSL paths to <code>.env</code> files in run configurations, the <em>All rows</em> option in the dataframe viewer, and a setting to turn off the <code>pyproject.toml</code>-based project model.</p>
+                <p>This major release introduces JetBrains Air – a new layer for agentic development that lets you run, track, and verify multi-agent workflows inside your IDE. Alongside Air, version 2026.3 delivers major updates across workspace tooling, Python 3.15 support, and core frameworks:</p>
+                <ul>
+                    <li>JetBrains Air: Run ACP-compatible agents, track sessions across repositories, and review diffs in context – featuring free agentic coding with Junie Lite.</li>
+                    <li>Workspace support: Dedicated consoles and terminals per subproject running against isolated dependencies, plus quick creation or conversion of workspace members initialized with <code>uv</code>, Hatch, or Poetry.</li>
+                    <li>Python 3.15 lazy imports: Defer module loading to cut startup times in applications with heavy dependencies while retaining full code insight.</li>
+                    <li>FastAPI support (Pro): Visualize endpoint dependencies with interactive graphs that mark yield/return calls and detect circular dependencies.</li>
+                    <li>Redesigned Python interpreter widget: Access and recreate environments organized around the tools that manage them (<code>uv</code>, Poetry, Hatch, and conda).</li>
+                    <li>Deeper Pydantic support: Field constraint checks in the editor, direct navigation from <code>@field_validator</code>, and code completion for model configuration options.</li>
+                </ul>
+                <p>Read about all the key changes on our what's new page.</p>
+            </description>
+        </release>
         <release version="2026.3" date="2026-11-05">
             <url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538649</url>
             <description>
@@ -129,25 +146,6 @@
                     <li>Generic bounds are displayed in parameter info</li>
                     <li>Unpacking a list no longer produces<code>Any</code></li>
                     <li>Completion for <code>TypedDict</code> class parameters like<code>extra_items</code></li>
-                </ul>
-            </description>
-        </release>
-        <release version="2026.2.1" date="2026-08-12">
-            <url type="details">https://youtrack.jetbrains.com/articles/PY-A-233538600</url>
-            <description>
-                <p>AI agents now work in your Jupyter notebooks and target the right Python environment, marimo notebooks arrive, plus changes to bundled plugins.</p>
-                <ul>
-                    <li>AI agents like Claude Code and Codex can now create, edit, and run <code>.ipynb</code> notebooks against a live kernel, so data persists across cells.</li>
-                    <li>AI agents now target your project's configured interpreter - <code>uv</code>, Poetry, pip, or conda - so packages land in the right environment instead of a system one.</li>
-                    <li>Open, edit, and run reactive marimo notebooks directly in PyCharm via the new plugin from the marimo team.</li>
-                    <li>We're unbundling and deprecating several low-usage plugins for a leaner, more focused experience.</li>
-                    <li>Explore the redesigned Python Packages window with a collapsible dependency tree and inline Install/Update links.</li>
-                    <li>Find and install packages fast with a new floating search popup that shows the target environment and dependency group.</li>
-                    <li>Read richer type-mismatch errors that break down why the types don't match.</li>
-                    <li>View a type diff for callables and composite types so both sides read the same way.</li>
-                    <li>See fully rendered names and types in inspection tooltips, with clickable links.</li>
-                    <li>PyCharm no longer creates venvs for end-of-life Python 2.7, 3.6, and 3.7. However, you can still use the interpreters created earlier.</li>
-                    <li><code>Session.get(Entity, id)</code> is now inferred as a model instance rather than the class in SQLAlchemy 2.0.</li>
                 </ul>
             </description>
         </release>
