@@ -37,10 +37,9 @@
             "x86_64"
           ],
           "x-checker-data": {
-            "type": "json",
-            "url": "https://api.github.com/repos/JetBrains/intellij-community/releases",
-            "version-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).tag_name | sub(\"^pycharm/\"; \"\")",
-            "url-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).assets[] | select(.name==\"pycharm-\" + $version + \".tar.gz\") | .browser_download_url",
+            "type": "jetbrains",
+            "code": "PCC",
+            "oss": true,
             "is-main-source": true
           }
         },
@@ -53,10 +52,9 @@
             "aarch64"
           ],
           "x-checker-data": {
-            "type": "json",
-            "url": "https://api.github.com/repos/JetBrains/intellij-community/releases",
-            "version-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).tag_name | sub(\"^pycharm/\"; \"\")",
-            "url-query": "first(.[] | select(.tag_name | test(\"^pycharm/\"))).assets[] | select(.name==\"pycharm-\" + $version + \"-aarch64.tar.gz\") | .browser_download_url",
+            "type": "jetbrains",
+            "code": "PCC",
+            "oss": true,
             "is-main-source": true
           }
         },
